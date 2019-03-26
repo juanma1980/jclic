@@ -339,7 +339,6 @@ public class AuthorSingleFrame extends JPanel
               break;
             } else {
               if (!prompted) {
-                System.out.println("FullPath: "+fullPath+" - sequence: "+sequence+" - activityName: "+activityName);
                 prompted = (messages.showQuestionDlg(progressDialog, "msg_prompt_loadReferences", null,
                     "yn") == Messages.YES);
                 if (!prompted) {
