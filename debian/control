@@ -3,7 +3,7 @@ Section: misc
 Priority: optional
 Homepage: http://clic.xtec.net/en/jclic/index.htm
 Maintainer: José L. Redrejo Rodríguez <jredrejo@debian.org>
-Build-Depends: debhelper (>= 5.0.51), quilt, llxsrchelper
+Build-Depends: debhelper (>= 5.0.51), quilt, llxsrchelper, python3-poinstaller
 Build-Depends-Indep: ant, openjdk-8-jdk
 Standards-Version: 3.9.3
 
