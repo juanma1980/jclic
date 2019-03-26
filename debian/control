@@ -1,31 +1,29 @@
 Source: jclic
-Section: misc
+Section: education
 Priority: optional
-Homepage: http://clic.xtec.net/en/jclic/index.htm
-Maintainer: José L. Redrejo Rodríguez <jredrejo@debian.org>
-Build-Depends: debhelper (>= 5.0.51), quilt, llxsrchelper, python3-poinstaller
-Build-Depends-Indep: ant, openjdk-8-jdk
-Standards-Version: 3.9.3
+Maintainer: Francesc Busquets <francesc@gmail.com>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: ant, default-jdk | openjdk-7-jdk | openjdk-8-jdk | openjdk-9-jdk | openjdk-10-jdk | openjdk-11-jdk
+Standards-Version: 3.9.7
+Homepage: http://clic.xtec.cat
+#Vcs-Git: git://git.debian.org/collab-maint/jclic.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/jclic.git;a=summary
 
 Package: jclic
 Architecture: all
-Depends: ${misc:Depends}, openjdk-8-jre, openjdk-8-jre-headless
-Recommends: libmysql-java, iceweasel
-Suggests: ttf-liberation | ttf-mscorefonts-installer
-Description: Tool for the development & use of multimedia educational activities
+Depends: ${misc:Depends}, default-jre | openjdk-7-jre | openjdk-8-jre | openjdk-9-jdk | openjdk-10-jdk | openjdk-11-jdk
+Suggests: ttf-mscorefonts-installer
+Description: Authoring tool and player for multimedia educational activities
  JClic is formed by a set of computer applications that are used for
- carrying out different types of educational activities: puzzles,
- associations, text exercises, crosswords...
- .
- The activities are not usually used alone, but packed in projects. A
- project is formed by a set of activities and one or more sequences,
- which indicate the order in which they have to be shown.
- .
- Its community (http://clic.xtec.net/db/listact_en.jsp) has developed a web
- site with more than 1.000 activities available in several languages.
- .
- This package contains JClic-author to create and modify activity 
- projects, JClic standalone player to play the activities and 
- JClic-reports that allows the management of a database to track 
- students work and results.
+ carrying out different types of educational activities: puzzles, associations,
+ text exercises, crosswords...
 
+Package: jclic-reports
+Architecture: all
+Depends: ${misc:Depends}, jclic (= ${source:Version})
+Recommends: libmysql-java
+Description: Reporting system for JClic activities
+ JClic Reports tracks JClic activities played by students, collecting
+ and storing in a database information about time spended on activities,
+ number of attempts and score. JClic Reports acts also as a tiny HTTP server
+ to represent the collected data in HTML pages and diagrams.
