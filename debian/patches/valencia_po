@@ -24,7 +24,7 @@ Reviewed-By: <name and email of someone who approved the patch>
 Last-Update: 2019-03-26
 
 --- /dev/null
-+++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-activities/listactivities_ca@valencia.po
++++ b/i18n/fromLaunchpad/po/jclic-activities/listactivities_ca@valencia.po
 @@ -0,0 +1,169 @@
 +msgid ""
 +msgstr ""
@@ -196,7 +196,7 @@ Last-Update: 2019-03-26
 +"Les caselles neutres de la graella (aquelles que no pertanyen a cap paraula) "
 +"s'omplen amb caràcters seleccionats a l'atzar en cada jugada."
 --- /dev/null
-+++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-author/AuthorMessages_ca@valencia.po
++++ b/i18n/fromLaunchpad/po/jclic-author/AuthorMessages_ca@valencia.po
 @@ -0,0 +1,3489 @@
 +msgid ""
 +msgstr ""
@@ -1199,7 +1199,7 @@ Last-Update: 2019-03-26
 +
 +#: edit_seq_action_exit
 +msgid "Exit JClic"
-+msgstr "Sortir del JClic"
++msgstr "Eixir del JClic"
 +
 +#: edit_seq_arrow_fwd
 +msgid "Forward arrow:"
@@ -3101,11 +3101,11 @@ Last-Update: 2019-03-26
 +
 +#: applet_exitUrl
 +msgid "On exit, go to:"
-+msgstr "En sortir, anar a:"
++msgstr "En eixir, anar a:"
 +
 +#: applet_exitUrl_tooltip
 +msgid "URL where to redirect the navigation on JClic exit"
-+msgstr "URL cap on es redirigirà la navegació en sortir del JClic"
++msgstr "URL cap on es redirigirà la navegació en eixir del JClic"
 +
 +#: applet_infoFrame
 +msgid "Info frame name:"
@@ -3687,9 +3687,9 @@ Last-Update: 2019-03-26
 +msgstr ""
 +"La imatge \"%s\" té unes dimensions de %s píxels, que excedeixen el màxim "
 +"permès pel JClic Author (%s). Voleu redimensionar-la?"
---- jclic-0.3.2.10.orig/i18n/fromLaunchpad/po/jclic-core/JClicMessages_ca@valencia.po
-+++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-core/JClicMessages_ca@valencia.po
-@@ -8,14 +8,15 @@ msgstr ""
+--- a/i18n/fromLaunchpad/po/jclic-core/JClicMessages_ca@valencia.po
++++ b/i18n/fromLaunchpad/po/jclic-core/JClicMessages_ca@valencia.po
+@@ -8,14 +8,15 @@
  "Project-Id-Version: jclic\n"
  "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
  "POT-Creation-Date: 2008-03-27 00:34+0200\n"
@@ -3707,7 +3707,7 @@ Last-Update: 2019-03-26
  
  #. #JClic main messages
  #: label_time
-@@ -24,7 +25,7 @@ msgstr "temps"
+@@ -24,7 +25,7 @@
  
  #: label_actions
  msgid "tries"
@@ -3716,7 +3716,7 @@ Last-Update: 2019-03-26
  
  #: label_score
  msgid "score"
-@@ -85,7 +86,7 @@ msgstr "Quant a"
+@@ -85,7 +86,7 @@
  
  #: action_about_tooltip
  msgid "User reports"
@@ -3725,7 +3725,7 @@ Last-Update: 2019-03-26
  
  #: about_window_lb_report
  msgid "Report"
-@@ -101,7 +102,7 @@ msgstr "Activitats no registrades"
+@@ -101,7 +102,7 @@
  
  #: report_system_standard
  msgid "Report not registered in any DB"
@@ -3734,7 +3734,7 @@ Last-Update: 2019-03-26
  
  #: report_lb_time
  msgid "Time"
-@@ -109,7 +110,7 @@ msgstr "Temps"
+@@ -109,7 +110,7 @@
  
  #: msg_error_loading_sequence
  msgid "Error loading sequence"
@@ -3743,7 +3743,7 @@ Last-Update: 2019-03-26
  
  #: media_qt_error_initializing
  msgid "Error initializing QuickTime!"
-@@ -117,7 +118,7 @@ msgstr "Error inicialitzant QuickTime"
+@@ -117,7 +118,7 @@
  
  #: media_check_url
  msgid "messages/checkmedia.html"
@@ -3752,7 +3752,7 @@ Last-Update: 2019-03-26
  
  #: filesystem_openURL
  msgid "Open URL..."
-@@ -141,641 +142,645 @@ msgstr "Mou l'element seleccionat cap av
+@@ -141,641 +142,645 @@
  
  #: editor_moveUp_tooltip
  msgid "Move the selected element up"
@@ -4554,7 +4554,7 @@ Last-Update: 2019-03-26
  
  #. #Abstract of the GPL license, version 2.0, as shown on the About window
  #: html_gpl_license
-@@ -789,3 +794,15 @@ msgid ""
+@@ -789,3 +794,15 @@
  "<a href\\=\"http\\://www.gnu.org/copyleft/gpl.html\">GNU General Public "
  "License</a>  for more details."
  msgstr ""
@@ -4571,7 +4571,7 @@ Last-Update: 2019-03-26
 +"a>.                                                                                                                                                        \n"
 +"                                                   "
 --- /dev/null
-+++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-installer/installer_ca@valencia.po
++++ b/i18n/fromLaunchpad/po/jclic-installer/installer_ca@valencia.po
 @@ -0,0 +1,73 @@
 +msgid ""
 +msgstr ""
@@ -4647,7 +4647,7 @@ Last-Update: 2019-03-26
 +msgid "Reports server."
 +msgstr "Servidor d'informes."
 --- /dev/null
-+++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-persistent/PersistentPathsMessages_ca@valencia.po
++++ b/i18n/fromLaunchpad/po/jclic-persistent/PersistentPathsMessages_ca@valencia.po
 @@ -0,0 +1,35 @@
 +msgid ""
 +msgstr ""
@@ -4685,7 +4685,7 @@ Last-Update: 2019-03-26
 +msgid "Installation directory"
 +msgstr "Directori d'instal·lació"
 --- /dev/null
-+++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-player/PlayerMessages_ca@valencia.po
++++ b/i18n/fromLaunchpad/po/jclic-player/PlayerMessages_ca@valencia.po
 @@ -0,0 +1,833 @@
 +msgid ""
 +msgstr ""
@@ -5245,7 +5245,7 @@ Last-Update: 2019-03-26
 +
 +#: action_exit_caption
 +msgid "Exit"
-+msgstr "Surt"
++msgstr "Eixir"
 +
 +#: action_exit_tooltip
 +msgid "Close JClic"
@@ -5521,7 +5521,7 @@ Last-Update: 2019-03-26
 +msgid "Optional variant code of the language"
 +msgstr "Codi opcional de variant de l'idioma"
 --- /dev/null
-+++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-reportServer/ReportServerMessages_ca@valencia.po
++++ b/i18n/fromLaunchpad/po/jclic-reportServer/ReportServerMessages_ca@valencia.po
 @@ -0,0 +1,308 @@
 +msgid ""
 +msgstr ""
@@ -5675,7 +5675,7 @@ Last-Update: 2019-03-26
 +
 +#: form_btn_exit
 +msgid "Exit"
-+msgstr "Surt"
++msgstr "Eixir"
 +
 +#: form_btn_exit_tooltip
 +msgid "Stop server and shutdown program"
@@ -5832,7 +5832,7 @@ Last-Update: 2019-03-26
 +"Ordre emprada per a engegar el navegador (firefox, iexplore, mozilla, "
 +"opera...)"
 --- /dev/null
-+++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-reportServlets/reportMessages_ca@valencia.po
++++ b/i18n/fromLaunchpad/po/jclic-reportServlets/reportMessages_ca@valencia.po
 @@ -0,0 +1,597 @@
 +msgid ""
 +msgstr ""
@@ -6432,7 +6432,7 @@ Last-Update: 2019-03-26
 +msgid "Passwords don't match\\!"
 +msgstr "Les contrasenyes no coincideixen\\!"
 --- /dev/null
-+++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-shapers/listshapers_ca@valencia.po
++++ b/i18n/fromLaunchpad/po/jclic-shapers/listshapers_ca@valencia.po
 @@ -0,0 +1,33 @@
 +msgid ""
 +msgstr ""
@@ -6468,7 +6468,7 @@ Last-Update: 2019-03-26
 +msgid "Cuts"
 +msgstr "Retalls"
 --- /dev/null
-+++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-utilities/BasicMessages_ca@valencia.po
++++ b/i18n/fromLaunchpad/po/jclic-utilities/BasicMessages_ca@valencia.po
 @@ -0,0 +1,335 @@
 +msgid ""
 +msgstr ""
@@ -6805,3 +6805,528 @@ Last-Update: 2019-03-26
 +#: SAVING_FILE
 +msgid "Saving file"
 +msgstr "Desant el fitxer"
+--- /dev/null
++++ b/src/core/edu/xtec/resources/messages/PlayerMessages_ca_ES_valencia.properties
+@@ -0,0 +1,334 @@
++# JClic player messages
++m_File=Fitxers
++settings_passwordRequired=Per a efectuar aquesta operaci\u00F3 cal introduir la contrasenya d'administraci\u00F3 del JClic.
++m_Help=Ajuda
++m_Skin=Aparen\u00E7a
++action_helpAbout_caption=Quant a...
++libraryManager_mainLibraryTitle=Biblioteca principal
++library_badFormat=Aquest fitxer JClic no \u00E9s del tipus "biblioteca de projectes".\nLes biblioteques s\u00F3n un tipus especial de fitxers JClic.
++library_mainMenu=Men\u00FA principal
++library_newLibraryName=Nova biblioteca de projectes
++libraryManager_new_prompt=Voleu crear una nova biblioteca de projectes o connectar-vos a una llibreria existent?
++libraryManager_connectToLibrary=Connectar-se a...
++libraryManager_createNewLibrary=Nova
++libraryManager_new_tooltip=Crea una nova biblioteca o connecta't a una existent
++libraryManager_new_caption=Nova
++menuElement_dlg_icon_tooltip=Imatge que es mostra al bot\u00F3
++menuElement_dlg_description_tooltip=Text flotant que apareixer\u00E0 quan es deixi el punter quiet sobre el bot\u00F3.
++menuElement_dlg_description=Descripci\u00F3:
++edit_find_image=Cerca imatge...
++menuElement_dlg_icon=Icona:
++edit_find_file=Cerca fitxer...
++menuElement_dlg_project_tooltip=Ubicaci\u00F3 del projecte JClic
++menuElement_dlg_project=Projecte:
++menuElement_dlg_text_tooltip=Text del bot\u00F3
++edit_text=Text:
++menu_dlg_name_tooltip=Nom de la carpeta
++library_dlg_name_tooltip=Nom de la biblioteca
++edit_name=Nom:
++edit_title=T\u00EDtol:
++library_dlg_title=Propietats de la biblioteca
++menu_dlg_title=Propietats de la carpeta
++menuElement_dlg_title=Propietats del bot\u00F3
++menu_delete_tooltip=Elimina el men\u00FA seleccionat
++menu_delete_caption=Elimina
++menuElement_delete_tooltip=Elimina l'element de men\u00FA seleccionat
++action_libraries_caption=Biblioteques...
++dlg_save_title=Desa el fitxer...
++error_propertiesFile_beg=Error en obrir "
++error_propertiesFile_end=". S'utilitzaran els valors per defecte.
++menuElement_delete_caption=Elimina
++menu_newMenuElement_tooltip=Crea un nou bot\u00F3 de projecte
++menu_newMenuName=Nova carpeta
++menu_newMenu_tooltip=Crea una nova carpeta de botons de projecte
++menu_newMenu_caption=Nova carpeta d'icones
++menu_newMenuElement_caption=Nou bot\u00F3 de projecte
++menu_newMenuElementName=Nou bot\u00F3
++library_cancel_tooltip=Cancel\u00B7la les modificacions
++library_cancel_caption=Cancel\u00B7la
++libraryManager_edit_tooltip=Edita la biblioteca seleccionada
++libraryManager_edit_caption=Edita
++library_select_caption_ok_tooltip=Desa els canvis
++library_select_caption_tooltip=Escull la carpeta seleccionada
++library_select_caption_ok=D'acord
++library_select_caption=Selecciona
++library_caption=Biblioteca de projectes JClic
++libraryManager_select_tooltip=Obre la biblioteca seleccionada
++libraryManager_cancel_tooltip=Cancel\u00B7la
++libraryManager_cancel_caption=Cancel\u00B7la
++libraryManager_select_caption=Selecciona
++libraryManager_caption=Selecci\u00F3 de la biblioteca de projectes
++
++library_error_reading=Error en llegir la biblioteca de projectes!
++
++wizard_next=Endavant >
++
++wizard_prev=< Enrere
++
++wizard_finish=Finalitza
++
++library_error_creating_icons=Error en crear la icona a la biblioteca!
++
++install_title=Instal\u00B7laci\u00F3 de projectes JClic
++
++install_info_description=Instal\u00B7laci\u00F3 d'un nou projecte JClic
++
++install_info_from=Des de:
++
++wizard_cancel=Cancel\u00B7la
++
++wizard_cancel_tooltip=Cancel\u00B7la l'operaci\u00F3
++
++wizard_finish_tooltip=Finalitza l'operaci\u00F3
++
++wizard_next_tooltip=Pas seg\u00FCent de l'operaci\u00F3
++
++wizard_prev_tooltip=Pas anterior de l'operaci\u00F3
++
++install_select_library=Seleccioneu la biblioteca on s'instal\u00B7lar\u00E0 el projecte:
++
++install_copy_files=C\u00F2pia de fitxers
++
++install_source=Origen:
++
++install_dest=Dest\u00ED:
++
++install_status=Estat:
++
++install_start=Inicia la instal\u00B7laci\u00F3
++
++install_start_tooltip=Inicia la c\u00F2pia de fitxers al vostre ordinador
++
++install_progress_tooltip=Progr\u00E9s de la instal\u00B7laci\u00F3
++
++install_msg_waiting=Esperant confirmaci\u00F3.
++
++install_msg_creating_dirs=Creant carpetes
++
++install_msg_copying=Copiant el fitxer
++
++install_msg_end=Acabat!
++
++install_msg_cleanup=Fent neteja...
++
++install_msg_cancel=Instal\u00B7laci\u00F3 cancel\u00B7lada!
++
++install_error=S'ha produ\u00EFt un error durant la instal\u00B7laci\u00F3!
++
++install_select_folder=Seleccioneu la carpeta on es crearan les icones del projecte:
++
++install_library_folders=Carpetes de la biblioteca:
++
++install_success_1=El projecte s'ha instal\u00B7lat correctament!
++
++install_success_2=Per a posar-lo en marxa seleccioneu la seva
++
++install_success_3=icona a la biblioteca de projectes.
++
++wizard_info=Feu clic a "Endavant" per comen\u00E7ar.
++
++install_step_1=1. Selecci\u00F3 de la biblioteca
++
++install_step_2=2. Desc\u00E0rrega de fitxers
++
++install_step_3=3. Creaci\u00F3 d'icones
++
++install_step_4=Instal\u00B7laci\u00F3 acabada!
++
++install_info_info=Heu sol\u00B7licitat instal\u00B7lar el projecte:
++
++settings_title=Configuraci\u00F3
++
++library_error_clone=No s'ha pogut clonar la biblioteca!
++
++settings_security=Seguretat
++
++settings_password_protect=Protegeix els canvis de configuraci\u00F3 amb contrasenya
++
++settings_new_password=Nova contrasenya:
++
++settings_new_password_confirm=Confirmaci\u00F3 de la nova contrasenya:
++
++settings_general=General
++
++settings_look=Aspecte:
++
++settings_skin=Pell:
++
++settings_language=Idioma:
++
++settings_reports=Informes
++
++settings_report_use=Enregistra els resultats de les activitats en una base de dades
++
++settings_report_engine=Classe:
++
++settings_report_params=Par\u00E0metres:
++
++settings_media=Multim\u00E8dia
++
++settings_media_enabled=Multim\u00E8dia activat
++
++settings_media_system=Sistema multim\u00E8dia:
++
++settings_media_event_sounds=Sons d'esdeveniment activats
++
++settings_library=Biblioteques
++
++settings_library_autorun=Mostra autom\u00E0ticament la biblioteca a l'inici
++
++m_Tools=Eines
++
++m_File_Mnemonic=F
++
++m_Tools_Mnemonic=E
++
++m_Help_Mnemonic=J
++
++m_Activity=Activitat
++
++m_Activity_Mnemonic=A
++
++action_openFile_caption=Obre el fitxer...
++
++action_openFile_tooltip=Obre un fitxer de projecte JClic
++
++action_openFile_keys=OO
++
++action_openUrl_caption=Obre una ubicaci\u00F3 web...
++
++action_openUrl_tooltip=Obre un projecte JClic directament des d'Internet
++
++action_openUrl_keys=UU
++
++action_exit_caption=Eixir
++
++action_exit_tooltip=Tanca el JClic
++
++action_exit_keys=RX
++
++action_settings_caption=Configuraci\u00F3...
++
++action_settings_tooltip=Ajusta les opcions globals del programa
++
++action_settings_keys=C
++
++action_libraries_tooltip=Obre o modifica una biblioteca JClic.
++
++action_libraries_keys=BB
++
++action_helpAbout_tooltip=Informaci\u00F3 sobre el JClic
++
++action_helpAbout_keys=AA
++
++menuElement_err_iconTooLarge=Aquesta imatge \u00E9s massa gran per fer-la servir com a icona!
++
++settings_report_tcp=Connecta't a un servidor d'informes JClic:
++
++settings_report_jdbc=Connecta't directament a una base de dades JDBC:
++
++settings_report_other=Altres:
++
++settings_report_address=Servidor:
++
++settings_report_port=Port:
++
++settings_report_driver=Controlador:
++
++settings_report_url=URL:
++
++settings_report_user=Usuari:
++
++settings_report_pwd=Contrasenya:
++
++settings_report_options=Par\u00E0metres:
++
++settings_report_err_server=El nom del servidor d'informes \u00E9s incorrecte!
++
++settings_report_err_port=Valor incorrecte del port en el sistema d'informes! Si us plau, indiqueu un valor entre 1000 i 65000.
++
++settings_report_err=Dades incorrectes per al sistema d'informes!
++
++settings_report_type=Sistema d'informes:
++
++settings_media_jmf=Java Media Framework (JMF)
++
++settings_media_qt=QuickTime
++
++settings_media_default=Detecci\u00F3 autom\u00E0tica
++
++settings_security_tooltip=Opcions de seguretat
++
++settings_report_tooltip=Configuraci\u00F3 del sistema d'informes
++
++settings_media_tooltip=Configuraci\u00F3 del sistema multim\u00E8dia
++
++settings_general_tooltip=Opcions d'idioma i aspecte
++
++settings_library_tooltip=Configuraci\u00F3 i edici\u00F3 de biblioteques
++
++settings_look_tooltip=Aspecte de la interf\u00EDcie d'usuari
++
++settings_skin_tooltip=Selecci\u00F3 del disseny gr\u00E0fic del JClic
++
++settings_language_tooltip=Selecci\u00F3 d'idioma
++
++settings_report_use_tooltip=Activa o desactiva la connexi\u00F3 a una base de dades d'informes JClic
++
++settings_report_tcp_tooltip=Motor d'informes basat en una connexi\u00F3 TCP/IP
++
++settings_report_jdbc_tooltip=Motor d'informes basat en una connexi\u00F3 directa a una base de dades
++
++settings_report_other_tooltip=Altres motors d'informes...
++
++settings_report_address_tooltip=Nom o adre\u00E7a IP del servidor d'informes
++
++settings_report_port_tooltip=Port utilitzat en la connexi\u00F3 (per defecte: 5510)
++
++edit_file=Fitxer:
++
++error_launchLibrary=Error en obrir la biblioteca
++
++install_toSourceFolder=Instal\u00B7lant a la carpeta d'origen!
++
++edit_find_media=Cerca recurs...
++
++libraryManager_delete_caption=Suprimeix
++
++libraryManager_delete_tooltip=Suprimeix la refer\u00E8ncia a la biblioteca seleccionada
++
++libraryManager_delete_confirm=Realment voleu suprimir la refer\u00E8ncia a la biblioteca seleccionada?
++
++libraryManager_new_exists=Aquesta biblioteca ja est\u00E0 connectada al sistema.
++
++edit_find_image_keys=C*
++
++menu_newMenuElement_caption_keys=NN
++
++menu_newMenu_caption_keys=MM
++
++edit_find_file_keys=FF
++
++libraryManager_newLibaryOption=Crea una nova biblioteca de projectes
++
++libraryManager_connectToExistingOption=Afegeix un enlla\u00E7 a una biblioteca ja existent
++
++libraryManager_fileOrUrlCaption=Fitxer o URL:
++
++libraryManager_newLibraryTitle=Nova biblioteca de projectes:
++
++libraryManager_warnNoFileSelected=Si us plau, escriviu l'URL o el nom de fitxer de la biblioteca de projectes a la qual voleu accedir\\!
++
++install_launchProject=Obre ara el projecte
++
++settings_browser=Navegador preferit:
++
++settings_browser_tooltip=Ordre emprada per a engegar el navegador (firefox, iexplore, mozilla, opera...)
++
++settings_country=Codi de pa\u00EDs:
++
++settings_country_tooltip=Codi opcional de dues lletres corresponent a la variant dialectal d'un territori (ex.: BR per a portugu\u00E8s del Brasil)
++
++settings_variant=Variant:
++
++settings_variant_tooltip=Codi opcional de variant de l'idioma
+--- a/src/report/reportServer/edu/xtec/resources/messages/ReportServerMessages_ca_ES_valencia.properties
++++ b/src/report/reportServer/edu/xtec/resources/messages/ReportServerMessages_ca_ES_valencia.properties
+@@ -1,149 +1,71 @@
+-# SOME DESCRIPTIVE TITLE.
+-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+-# This file is distributed under the same license as the PACKAGE package.
+-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+-#
+-#, fuzzy
+-!=Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2008-06-30 12:04+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset\=UTF-8\nContent-Transfer-Encoding: 8bit\n
+-
+-error_serverCannotStart=No s'ha pogut posar en funcionament el servidor\\!
+-
+-error_incorrectData=Dades incorrectes\\!
+-
++error_serverCannotStart=No s'ha pogut posar en marxa el servidor!
++error_incorrectData=Dades incorrectes!
+ column_IP_title=IP
+-
+ column_port_title=Port
+-
+-column_started_title=En funcionament
+-
++column_started_title=Engegat
+ column_lastMessage_title=Darrer missatge
+-
+-column_IP_tooltip=Adre\u00e7a IP de l'ordinador client
+-
+-column_port_tooltip=Port local emprat per a esta connexi\u00f3
+-
+-column_started_tooltip=Data i hora en qu\u00e8 s'ha iniciat la connexi\u00f3
+-
+-column_lastMessage_tooltip=Cap\u00e7alera del darrer missatge rebut
+-
+-error_propertiesFile_beg=No es pot obrir el fitxer de configuraci\u00f3 "
+-
+-error_propertiesFile_end=". El programa utilitzar\u00e0 els valors per defecte.
+-
++column_IP_tooltip=Adre\u00E7a IP de l'ordinador client
++column_port_tooltip=Port local emprat per a aquesta connexi\u00F3
++column_started_tooltip=Data i hora en qu\u00E8 s'ha iniciat la connexi\u00F3
++column_lastMessage_tooltip=Cap\u00E7alera del darrer missatge rebut
++error_propertiesFile_beg=No es pot obrir el fitxer de configuraci\u00F3 "
++error_propertiesFile_end=". El programa utilitzar\u00E0 els valors per defecte.
+ form_title=Servidor d'informes JClic
+-
+ form_connections_title=Connexions:
+-
+ form_messages_title=Missatges de sistema:
+-
+-form_settings_title=Configuraci\u00f3:
+-
+-form_connections_close=Tanca la connexi\u00f3
+-
+-form_connections_close_tooltip=Tanca la connexi\u00f3 seleccionada a la llista
+-
++form_settings_title=Configuraci\u00F3:
++form_connections_close=Tanca la connexi\u00F3
++form_connections_close_tooltip=Tanca la connexi\u00F3 seleccionada a la llista
+ form_settings_driver=Controlador:
+-
+ form_settings_driver_tooltip=Controlador JDBC utilitzat per a connectar amb la base de dades
+-
+ form_settings_database=Base de dades:
+-
+ form_settings_database_tooltip=Nom de la base de dades d'informes
+-
+ form_settings_port=Port:
+-
+-form_settings_port_tooltip=Port TCP on el servidor atendr\u00e0 les connexions
+-
++form_settings_port_tooltip=Port TCP on el servidor atendr\u00E0 les connexions
+ form_settings_password_tooltip=Contrasenya de l'usuari de sistema
+-
+ form_settings_password=Contrasenya:
+-
+ form_settings_user_tooltip=Nom d'usuari de sistema de la base de dades
+-
+ form_settings_user=Usuari:
+-
+ ERROR=ERROR
+-
+-form_settings_timeout=Timeout:
+-
+-form_settings_timeout_tooltip=M\u00e0xim nombre de segons d'inactivitat perm\u00e9s a les connexions
+-
+-form_btn_start=Posa en funcionament
+-
+-form_btn_stop=Para
+-
+-form_btn_exit=Ix
+-
+-form_btn_exit_tooltip=Para el servidor i tanca el programa
+-
+-form_btn_stop_tooltip=Tanca totes les connexions i para el servidor
+-
+-form_btn_start_tooltip=Inicia l'atenci\u00f3 als clients
+-
+-form_messages_verbose=Mostra informaci\u00f3 ampliada
+-
++form_settings_timeout=Temps m\u00e0xim d'espera:
++form_settings_timeout_tooltip=M\u00E0xim nombre de segons d'inactivitat perm\u00E8s a les connexions
++form_btn_start=Engega
++form_btn_stop=Atura
++form_btn_exit=Eixir
++form_btn_exit_tooltip=Atura el servidor i tancar el programa
++form_btn_stop_tooltip=Tancar totes les connexions i atura el servidor
++form_btn_start_tooltip=Inicia l'atenci\u00F3 als clients
++form_messages_verbose=Mostra informaci\u00F3 ampliada
+ form_messages_verbose_tooltip=Mostra tots els missatges entrants
+-
+ form_messages_copy=Copia
+-
+ form_messages_copy_tooltip=Copia el contingut de la finestra a la carpeta de sistema
+-
+ form_messages_clear=Esborra
+-
+ form_messages_clear_tooltip=Neteja la finestra de missatges
+-
+-error_DB=L'acci\u00f3 sol\u00b7licitada no s'ha pogut completar
+-
+-settings_title=Configuraci\u00f3 de servidor d'informes JClic
+-
++error_DB=L'acci\u00F3 sol\u00b7licitada no s'ha pogut completar
++settings_title=Configuraci\u00F3 de servidor d'informes JClic
+ settings_options_title=Opcions
+-
+ settings_options_language=Idioma:
+-
+-settings_options_look=Aparen\u00e7a:
+-
++settings_options_look=Aparen\u00E7a:
+ settings_db_title=Base de dades
+-
+ settings_db_driver=Controlador:
+-
+ settings_options_tooltips=Etiquetes d'ajuda
+-
+ settings_db_url=URL:
+-
+ settings_db_usr=Usuari de la base de dades:
+-
+ settings_db_pwd=Contrasenya:
+-
+ settings_server_title=Servidor d'informes
+-
+-settings_server_timeout=Temps m\u00e0xim d'espera:
+-
++settings_server_timeout=Temps m\u00E0xim d'espera:
+ settings_server_port=Port:
+-
+-settings_server_autostart=Posada en funcionament autom\u00e0tica
+-
++settings_server_autostart=Engegada autom\u00E0tica
+ settings_web_title=Servidor web
+-
+-settings_server_logFile=Escriu logs al fitxer:
+-
+-settings_button=Configuraci\u00f3...
+-
+-error_writting_settings=Error en escriure el fitxer de configuraci\u00f3\\!
+-
+-form_btn_show=inicia el navegador...
+-
+-error_starting_browser=Error en executar el navegador\\!
+-
+-error_opening_logs=Error en obrir els fitxers de registre\\!
+-
++settings_server_logFile=Escriure logs al fitxer:
++settings_button=Configuraci\u00F3...
++error_writting_settings=Error en escriure el fitxer de configuraci\u00F3!
++form_btn_show=engega el navegador...
++error_starting_browser=Error en executar el navegador!
++error_opening_logs=Error en obrir els fitxers de registre!
+ settings_file=Fitxer...
+-
+ settings_tablePrefix=Prefix dels noms de les taules:
+-
+-settings_createTables=Crea taules si no existixen
+-
+-settings_session_lifetime=Durada m\u00e0xima d'una sessi\u00f3 inactiva (minuts):
+-
++settings_createTables=Crea taules si no existeixen
++settings_session_lifetime=Durada m\u00E0xima d'una sessi\u00F3 inactiva (minuts):
+ settings_browser=Navegador preferit:
+-
+-settings_browser_tooltip=Orde emprada per a iniciar el navegador (firefox, iexplore, mozilla, opera...)
++settings_browser_tooltip=Ordre emprada per a engegar el navegador (firefox, iexplore, mozilla, opera...)

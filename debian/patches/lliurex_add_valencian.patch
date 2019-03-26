@@ -9,11 +9,9 @@ Subject: lliurex_add_valencian
  src/core/edu/xtec/util/Messages.java           | 14 +++++++++++++-
  2 files changed, 22 insertions(+), 6 deletions(-)
 
-diff --git a/src/core/edu/xtec/jclic/media/EventSounds.java b/src/core/edu/xtec/jclic/media/EventSounds.java
-index 88c95b1..5e1accf 100644
 --- a/src/core/edu/xtec/jclic/media/EventSounds.java
 +++ b/src/core/edu/xtec/jclic/media/EventSounds.java
-@@ -210,11 +210,15 @@ public class EventSounds extends Object implements Domable, Cloneable {
+@@ -210,11 +210,15 @@
    }
  
    public void close() {
@@ -34,11 +32,9 @@ index 88c95b1..5e1accf 100644
      parent = null;
    }
  
-diff --git a/src/core/edu/xtec/util/Messages.java b/src/core/edu/xtec/util/Messages.java
-index 58988f2..0d2ff44 100644
 --- a/src/core/edu/xtec/util/Messages.java
 +++ b/src/core/edu/xtec/util/Messages.java
-@@ -115,7 +115,18 @@ public class Messages {
+@@ -115,7 +115,13 @@
              JOptionPane.OK_CANCEL_OPTION);
          pane.setSelectionValues(getDescriptiveLanguageCodes(null));
          pane.setWantsInput(true);
@@ -47,18 +43,26 @@ index 58988f2..0d2ff44 100644
 +        String systemlanguage=Locale.getDefault().getLanguage();
 +        if (System.getenv("LANG").contains("valenci"))
 +        {
-+            System.out.println(" [ Valencian ] ");
 +            systemlanguage="val";
-+        }
-+        else
-+        {
-+            System.out.println(" [ LANG ] ");
 +        }
 +        String initialSelection=getDescriptiveLanguageCode(systemlanguage);
          pane.setInitialSelectionValue(initialSelection);
          showDlg((Component) options.get(Options.MAIN_PARENT_COMPONENT), pane, "Language selecion");
          String sel = (String) pane.getInputValue();
-@@ -677,6 +688,7 @@ public class Messages {
+@@ -147,6 +153,12 @@
+ 
+   public void setLocale(String language, String country, String variant) {
+     Locale l;
++	if (language.contains("val"))
++	{
++		language="ca";
++		country="ES";
++		variant="valencia";
++	}
+     if (country == null) {
+       country = "";
+     }
+@@ -677,6 +689,7 @@
    static {
      ISO_639_2_CODES.put("ast", "asturianu");
      ISO_639_2_CODES.put("vec", "vèneto");
