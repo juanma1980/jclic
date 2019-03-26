@@ -9,7 +9,7 @@ Standards-Version: 3.9.3
 
 Package: jclic
 Architecture: all
-Depends: ${misc:Depends}, openjdk-8-jre, default-jre-headless
+Depends: ${misc:Depends}, openjdk-8-jre, openjdk-8-jre-headless
 Recommends: libmysql-java, iceweasel
 Suggests: ttf-liberation | ttf-mscorefonts-installer
 Description: Tool for the development & use of multimedia educational activities
