@@ -10,5 +10,13 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --with i18n
 
+ifeq ($(DEB_BUILD_ARCH), i386)
+		update-alternatives --set java /usr/lib/jvm/java-8-openjdk-i386/jre/bin/java
+endif
+
+ifeq ($(DEB_BUILD_ARCH), amd64)
+		update-alternatives --set java /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+endif
+
+	dh $@ --with i18n
