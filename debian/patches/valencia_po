@@ -1,0 +1,6807 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ jclic (0.3.2.10-lliurex2) bionic; urgency=medium
+ .
+   * Bionic release
+Author: Juanma Navarro Mañez <juanma1980@gmail.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2019-03-26
+
+--- /dev/null
++++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-activities/listactivities_ca@valencia.po
+@@ -0,0 +1,169 @@
++msgid ""
++msgstr ""
++"Project-Id-Version: JClic 0.2.0.0\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2008-02-04 19:15+0200\n"
++"PO-Revision-Date: 2008-02-11 17:43+0000\n"
++"Last-Translator: Francesc Busquets <francesc@gmail.com>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2015-12-09 11:48+0000\n"
++"X-Generator: Launchpad (build 17865)\n"
++
++#: @associations.ComplexAssociation
++msgid ""
++"Complex association|In this activity there are also two sets of information, "
++"but these may have a different number of parts and there may be different "
++"types of relation between them e.g.: one-to-one, various to one, parts "
++"without a relation, etc."
++msgstr ""
++"Associació complexa|En aquest tipus d'activitat es presenten també dos "
++"conjunts d'informació, però aquests poden tenir un nombre diferent "
++"d'elements i entre ells es poden donar diversos tipus de relació, p. ex.: un a un, "
++"diversos a un, elements sense assignar..."
++
++#: @associations.SimpleAssociation
++msgid ""
++"Simple association|There are two sets of information that have the same "
++"number of parts. Each part from the original set corresponds to one, and "
++"only one, part of the image set."
++msgstr ""
++"Associació simple|Es presenten dos conjunts d'informació que tenen el mateix "
++"nombre d'elements. A cada element del conjunt origen correspon un i només un "
++"element del conjunt imatge."
++
++#: @memory.MemoryGame
++msgid ""
++"Finding pairs|Each of the pieces appear twice, but face down. In each go two "
++"pieces are turned over and are turned back over if they are not the same. "
++"The objective is to find all the pairs."
++msgstr ""
++"Joc de memòria|Cada una de les peces que formen l'objecte apareix amagat "
++"dues vegades dins de la finestra de joc. En cada tirada es destapen un "
++"parell de peces, que es tornen a amagar si no són idèntiques. L'objectiu és "
++"destapar totes les parelles."
++
++#: @panels.Explore
++msgid ""
++"Explore activity|An initial piece of information is shown and, upon clicking "
++"on it, a given piece of information is shown for each element."
++msgstr ""
++"Activitat d'exploracio|Es mostra una informació inicial i en fer clic damunt "
++"seu es mostra, per a cada element, una determinada peça d'informació."
++
++#: @panels.Identify
++msgid ""
++"Identify cells|There is just one set of information and you have to click on "
++"those parts that meet a certain condition."
++msgstr ""
++"Activitat d'identificació|Es presenta només un conjunt d'informació i cal "
++"fer clic damunt aquells elements que compleixin una determinada condició."
++
++#: @panels.InformationScreen
++msgid ""
++"Information screen|One set of information is shown and there is the option "
++"of activating the multimedia content for each piece of information."
++msgstr ""
++"Pantalla d'informació|Es mostra un conjunt d'informació i, opcionalment, "
++"s'ofereix la possibilitat d'activar el contingut multimèdia que porti cada "
++"element."
++
++#: @puzzles.DoublePuzzle
++msgid ""
++"Double puzzle|Two grids are shown. One contains the disordered information "
++"and the other is empty. The object has to be rearranged in the empty grid by "
++"dragging the pieces one by one."
++msgstr ""
++"Puzzle doble|Es mostren dos plafons. En un hi ha la informació desordenada i "
++"l'altre està buit. Cal reconstruir l'objecte en el plafó buit portant-hi les "
++"peces una per una."
++
++#: @puzzles.ExchangePuzzle
++msgid ""
++"Exchange puzzle|The information is swapped within the same panel. In each go "
++"two pieces swap position until the object is reordered."
++msgstr ""
++"Puzzle d'intercanvi|En un únic plafó es barreja la informació. En cada "
++"tirada es commuten les posicions de dues peces, fins a ordenar l'objecte."
++
++#: @puzzles.HolePuzzle
++msgid ""
++"Hole puzzle|In the same panel one piece is missing and the others are "
++"shuffled. In each go one of the pieces next to the empty space is moved "
++"until they are back in the original order."
++msgstr ""
++"Puzzle de forat|En un únic plafó es fa desaparèixer una peça i es barregen "
++"les restants. En cada tirada es pot desplaçar una de les peces veïnes al "
++"forat, fins a tenir-les totes en l'ordre original."
++
++#: @text.WrittenAnswer
++msgid ""
++"Written answer|A set of information is shown and the corresponding text for "
++"each of its parts must be written."
++msgstr ""
++"Resposta escrita|Es mostra un conjunt d'informació i, per a cadascun dels "
++"seus elements, cal escriure el text corresponent."
++
++#: @text.FillInBlanks
++msgid ""
++"Text: Fill-in blanks|The user has to complete certain words, letters and "
++"phrases that have been hidden or camouflaged in a text. The solution of each "
++"of the elements may be set up in different ways: writing in a blank space; "
++"correcting a phrase that contains errors; or selecting from a list of "
++"various possible answers."
++msgstr ""
++"Text: Omplir forats|En un text se seleccionen determinades paraules, lletres "
++"i frases que s'amaguen o es camuflen i l'usuari ha de completar. La "
++"resolució de cadascun dels elements amagats es pot plantejar de maneres "
++"diferents: escrivint en un espai buit, corregint una expressió que conté "
++"errades o seleccionant en una llista de diverses respostes possibles."
++
++#: @text.Identify
++msgid ""
++"Text: Identify elements|The user has to point out some words, letters, "
++"numbers, symbols or punctuation marks with a click of the mouse."
++msgstr ""
++"Text: Identificar elements|L'usuari ha d'assenyalar amb un clic de ratolí "
++"determinades paraules, lletres, xifres, símbols o signes de puntuació."
++
++#: @text.Order
++msgid ""
++"Text: Order elements|When designing this activity some of the words or "
++"paragraphs of a text are selected to be shuffled around. The user has to put "
++"them back in order."
++msgstr ""
++"Text: Ordenar elements|En el moment de dissenyar l'activitat se seleccionen "
++"en el text algunes paraules o paràgrafs que es barrejaran entre si. L'usuari "
++"ha de tornar a posar-ho en ordre."
++
++#: @text.Complete
++msgid ""
++"Text: Complete text|Various parts of a text (letters, words, punctuation "
++"signs, or phrases) are taken out and the user has to complete it."
++msgstr ""
++"Text: Completar text|En un text es fan desaparèixer determinades parts "
++"(lletres, paraules, signes de puntuació, frases) i l'usuari ha de completar-"
++"lo."
++
++#: @textGrid.CrossWord
++msgid ""
++"Crosswords|The word table has to be completed according to its definitions. "
++"The definitions may be text, graphics or sound. The programme automatically "
++"shows the definitions of the two words which cross in the cursor position."
++msgstr ""
++"Mots encreuats|Cal anar omplint el tauler de paraules a partir de les seves "
++"definicions. Les definicions poden ser textuals, gràfiques o sonores. El "
++"programa mostra automàticament les definicions de les dues paraules que es "
++"creuen en la posició on es trobi el cursor en cada moment."
++
++#: @textGrid.WordSearch
++msgid ""
++"Word search|The hidden words have to be found in a grid of letters. The "
++"neutral cells in the grid (those with no word) are completed with characters "
++"chosen at random."
++msgstr ""
++"Sopa de lletres|Cal trobar les paraules amagades en una graella de lletres. "
++"Les caselles neutres de la graella (aquelles que no pertanyen a cap paraula) "
++"s'omplen amb caràcters seleccionats a l'atzar en cada jugada."
+--- /dev/null
++++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-author/AuthorMessages_ca@valencia.po
+@@ -0,0 +1,3489 @@
++msgid ""
++msgstr ""
++"Project-Id-Version: JClic 0.2.0.0\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2010-01-13 23:10+0200\n"
++"PO-Revision-Date: 2010-01-22 17:57+0000\n"
++"Last-Translator: Francesc Busquets <francesc@gmail.com>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2015-12-09 11:48+0000\n"
++"X-Generator: Launchpad (build 17865)\n"
++
++#. #JClic Author messages
++#: edit_act_description_block
++msgctxt "edit_act_description_block"
++msgid "Description"
++msgstr "Descripció"
++
++#: edit_act_name_tooltip
++msgid "Name of the activity"
++msgstr "Nom de l'activitat"
++
++#: edit_act_name
++msgctxt "edit_act_name"
++msgid "Name:"
++msgstr "Nom:"
++
++#: edit_act_description_tooltip
++msgid "Description of the activity"
++msgstr "Descripció de l'activitat"
++
++#: edit_act_reports_block
++msgctxt "edit_act_reports_block"
++msgid "Reports"
++msgstr "Informes"
++
++#: edit_act_includeInReports
++msgid "Include this activity in reports"
++msgstr "Inclou aquesta activitat als informes"
++
++#: edit_act_includeInReports_tooltip
++msgid "Include the results of this activity in users' reports"
++msgstr "Inclou els resultats d'aquesta activitat en els informes d'usuari"
++
++#: edit_act_code
++msgid "Code:"
++msgstr "Codi:"
++
++#: edit_act_code_tooltip
++msgid "Optional code used to group and search in the reports database."
++msgstr ""
++"Codi opcional utilitzat per agrupar i filtrar en la base de dades d'informes."
++
++#: edit_act_reportActions
++msgid "Report user actions"
++msgstr "Enregistra també les accions"
++
++#: edit_act_reportActions_tooltip
++msgid "Register the details of all the actions performed by users"
++msgstr "Enregistra els detalls de totes les accions efectuades pels usuaris."
++
++#: edit_act_counters_block
++msgctxt "edit_act_counters_block"
++msgid "Counters"
++msgstr "Comptadors"
++
++#: edit_act_timeCounter
++msgctxt "edit_act_timeCounter"
++msgid "Time counter"
++msgstr "Comptador de temps"
++
++#: edit_act_timeCounter_tooltip
++msgid "Show/hide the time conter"
++msgstr "Mostra o amaga el comptador de temps"
++
++#: edit_act_actionsCounter
++msgctxt "edit_act_actionsCounter"
++msgid "Tries counter"
++msgstr "Comptador d'intents"
++
++#: edit_act_actionsCounter_tooltip
++msgid "Show/hide the tries counter"
++msgstr "Mostra o amaga el comptador d'intents."
++
++#: edit_act_scoreCounter
++msgctxt "edit_act_scoreCounter"
++msgid "Score counter"
++msgstr "Comptador d'encerts"
++
++#: edit_act_scoreCounter_tooltip
++msgid "Show/hide the score counter."
++msgstr "Mostra o amaga el comptador d'encerts."
++
++#: edit_act_maxTime
++msgid "Max time:"
++msgstr "Temps màxim:"
++
++#: edit_act_maxTime_tooltip
++msgid ""
++"Maximum time to to solve the activity, in seconds, or 0 for unlimited time."
++msgstr ""
++"Temps màxim per a resoldre l'activitat, en segons. El zero significa temps "
++"il·limitat."
++
++#: edit_act_countdown
++msgid "Countdown"
++msgstr "Compte enrere"
++
++#: edit_act_countdown_tooltip
++msgid "The counter starts at máximum value, decreasing to 0."
++msgstr "El comptador comença al valor màxim, decreixent fins a zero."
++
++#: edit_act_maxActions
++msgid "Max tries:"
++msgstr "Intents màx.:"
++
++#: edit_act_maxActions_tooltip
++msgid "Maximum number of tries allowed, or 0 for unlimited tries."
++msgstr "Nombre màxim d'intents permesos, o zero per a il·limitat."
++
++#: edit_act_buttons_block
++msgctxt "edit_act_buttons_block"
++msgid "Buttons"
++msgstr "Botons"
++
++#: edit_act_helpBtn
++msgid "Help"
++msgstr "Ajuda"
++
++#: edit_act_helpBtn_tooltip
++msgid "Show/hide help button"
++msgstr "Mostra o amaga el botó d'ajuda"
++
++#: edit_act_helpBtn_solution
++msgid "Show solution"
++msgstr "Mostra la solució"
++
++#: edit_act_helpBtn_msg
++msgid "Show this message:"
++msgstr "Mostra aquest missatge:"
++
++#: edit_act_infoBtn
++msgid "Information"
++msgstr "Informació"
++
++#: edit_act_infoBtn_tooltip
++msgid "Show/Hide the button of information"
++msgstr "Mostrar o amagar el botó d'informació"
++
++#: edit_act_infoBtn_url
++msgid "Show this URL:"
++msgstr "Mostrar aquest URL:"
++
++#: edit_act_infoBtn_cmd
++msgid "Execute this command:"
++msgstr "Executa l'ordre:"
++
++#: edit_act_infoBtn_url_tooltip
++msgid "Web site address to show when click on the info button"
++msgstr ""
++"Adreça de la pàgina web que es mostrarà en fer clic al botó d'informació."
++
++#: edit_act_infoBtn_cmd_tooltip
++msgid "Command line to be executed on click to the info button."
++msgstr "Línia d'ordres que s'executarà en fer clic al botó d'informació."
++
++#: edit_act_mainWindow
++msgid "Main window:"
++msgstr "Finestra principal:"
++
++#: edit_act_gameWindow
++msgid "Game window:"
++msgstr "Finestra de joc:"
++
++#: edit_act_margin
++msgid "Margin:"
++msgstr "Marge:"
++
++#: edit_act_margin_tooltip
++msgid "Horizontal and vertical spacing between visual objects."
++msgstr "Espai horitzontal i vertical entre objectes visuals."
++
++#: edit_act_bgColor
++msgctxt "edit_act_bgColor"
++msgid "Background color:"
++msgstr "Color de fons:"
++
++#: edit_act_bgColor_tooltip
++msgid "Change the background color."
++msgstr "Canvia el color de fons."
++
++#: edit_gradient_startColor
++msgid "Start color:"
++msgstr "Color inicial:"
++
++#: edit_gradient_endColor
++msgid "End color:"
++msgstr "Color final:"
++
++#: edit_gradient_startColor_tooltip
++msgid "Selection of the start color"
++msgstr "Selecció del color inicial"
++
++#: edit_gradient_endColor_tooltip
++msgid "Selection of the end color"
++msgstr "Selecció del color final"
++
++#: edit_gradient_cycles
++msgid "Cycles:"
++msgstr "Cicles:"
++
++#: edit_gradient_cycles_tooltip
++msgid "Number of repetitions of the gradient over the paint surface"
++msgstr "Nombre de repeticions del degradat sobre la superfície a pintar"
++
++#: edit_gradient_orientation
++msgid "Orientation:"
++msgstr "Orientació:"
++
++#: edit_gradient_orientation_tooltip
++msgid "Gradient's orientation, measured in degrees over the horizontal"
++msgstr "Orientació del degradat, mesurada en graus sobre l'horitzontal"
++
++#: edit_act_gradient
++msgid "Gradient:"
++msgstr "Degradat:"
++
++#: edit_act_gradient_tooltip
++msgid "Use gradient of colours"
++msgstr "Utilitza un degradat de colors"
++
++#: edit_color_opacity
++msgid "Opacity"
++msgstr "Opacitat"
++
++#: edit_color_opacity_tooltip
++msgid "Set the color's alpha channel (opacity) value."
++msgstr "Ajusta el valor del canal alfa (opacitat) del color."
++
++#: edit_gradient_title
++msgctxt "edit_gradient_title"
++msgid "Gradient"
++msgstr "Degradat"
++
++#: edit_gradient_default
++msgid "Use default values (null gradient)"
++msgstr "Utilitza els valors per defecte (degradat nul)"
++
++#: edit_act_image
++msgid "Image:"
++msgstr "Imatge:"
++
++#: edit_act_descriptionTab
++msgctxt "edit_act_descriptionTab"
++msgid "Description"
++msgstr "Descripció"
++
++#: edit_act_descriptionTab_tooltip
++msgid "Name and description"
++msgstr "Nom i descripció"
++
++#: edit_act_tiledBgImg
++msgid "Tiled"
++msgstr "En mosaic"
++
++#: edit_act_tiledBgImg_tooltip
++msgid ""
++"Paint all the surface with the image, repeating it along the X and Y axis as "
++"needed."
++msgstr ""
++"Pinta tota la superfície amb la imatge, repetint-la al llarg dels eixos X i "
++"Y tantes vegades com calgui."
++
++#: edit_act_preview
++msgctxt "edit_act_preview"
++msgid "Preview:"
++msgstr "Vista preliminar:"
++
++#: edit_act_border
++msgctxt "edit_act_border"
++msgid "Border"
++msgstr "Vora"
++
++#: edit_act_border_tooltip
++msgid "Draw a line border arround the window"
++msgstr "Dibuixar una línia de vora al voltant de la finestra"
++
++#: edit_act_transparent
++msgid "Transparent"
++msgstr "Transparent"
++
++#: edit_act_transparent_tooltip
++msgid "Window has transparent background"
++msgstr "La finestra té el fons transparent"
++
++#: edit_act_width
++msgctxt "edit_act_width"
++msgid "Width:"
++msgstr "Amplada:"
++
++#: edit_act_height
++msgctxt "edit_act_height"
++msgid "Height:"
++msgstr "Alçada:"
++
++#: edit_act_width_tooltip
++msgid "Width of the object, measured in pixels"
++msgstr "Amplada de l'objecte, mesurada en pícsels"
++
++#: edit_act_height_tooltip
++msgid "Height of the object, measured in pixels"
++msgstr "Alçada de l'objecte, mesurada en pícsels"
++
++#: edit_act_centered
++msgctxt "edit_act_centered"
++msgid "Centered"
++msgstr "Centrada"
++
++#: edit_act_centered_tooltip
++msgid "The object will be centered over the main window"
++msgstr "L'objecte se situa centrat respecte a la finestra principal"
++
++#: edit_act_x
++msgctxt "edit_act_x"
++msgid "X:"
++msgstr "X:"
++
++#: edit_act_x_tooltip
++msgid "Absolute horizontal location"
++msgstr "Posició horitzontal absoluta"
++
++#: edit_act_y
++msgctxt "edit_act_y"
++msgid "Y:"
++msgstr "Y:"
++
++#: edit_act_y_tooltip
++msgid "Absolute vertical location"
++msgstr "Posició vertical absoluta"
++
++#: edit_act_ui_block
++msgctxt "edit_act_ui_block"
++msgid "User interface"
++msgstr "Interfície d'usuari"
++
++#: edit_act_image_tooltip
++msgid "Select an image"
++msgstr "Selecciona una imatge"
++
++#: edit_act_text
++msgid "Text:"
++msgstr "Text:"
++
++#: edit_act_text_tooltip
++msgid "Text to be shown inside this object"
++msgstr "Text que es mostrarà en aquest objecte"
++
++#: edit_font_face
++msgid "Typeface:"
++msgstr "Tipus:"
++
++#: edit_font_size
++msgid "Size:"
++msgstr "Mida:"
++
++#: edit_font_bold
++msgid "Bold"
++msgstr "Negreta"
++
++#: edit_font_italic
++msgid "Italic"
++msgstr "Cursiva"
++
++#: edit_font_underline
++msgid "Underline"
++msgstr "Subratllat"
++
++#: edit_font_style
++msgctxt "edit_font_style"
++msgid "Style:"
++msgstr "Estil:"
++
++#: edit_cell_title
++msgid "Cell contents"
++msgstr "Contingut de la casella"
++
++#: edit_act_messages
++msgctxt "edit_act_messages"
++msgid "Messages"
++msgstr "Missatges"
++
++#: edit_act_msg_initial
++msgid "Initial message:"
++msgstr "Missatge inicial:"
++
++#: edit_act_msg_final
++msgid "Final message:"
++msgstr "Missatge final:"
++
++#: edit_act_msg_prev
++msgid "Previous message:"
++msgstr "Missatge previ:"
++
++#: edit_act_msg_error
++msgid "Error message:"
++msgstr "Missatge d'error:"
++
++#: edit_act_msg_initial_tooltip
++msgid "Message to be shown when the activity starts"
++msgstr "Missatge que es mostra en iniciar-se l'activitat"
++
++#: edit_act_msg_final_tooltip
++msgid "Message to be shown when the activity is finished"
++msgstr "Missatge que es mostra en acabar l'activitat"
++
++#: edit_act_msg_error_tooltip
++msgid "Message to be shown when the activity ends with errors"
++msgstr "Missatge que es mostra quan l'activitat acaba amb errors"
++
++#: edit_act_msg_prev_tooltip
++msgid ""
++"Message to be shown prior to the start of the activity (only in certain "
++"types of activities)"
++msgstr ""
++"Missatge que es mostra abans de començar (només en alguns tipus d'activitats)"
++
++#: edit_align
++msgid "Align:"
++msgstr "Orientació:"
++
++#: edit_act_textColor
++msgid "Text color:"
++msgstr "Color del text:"
++
++#: edit_act_textColor_tooltip
++msgid "Color used to draw text"
++msgstr "Color emprat per dibuixar el text"
++
++#: edit_act_shadowColor
++msgid "Shadow color:"
++msgstr "Color de l'ombra:"
++
++#: edit_act_shadowColor_tooltip
++msgid "Color used for drawing the text's shadow, when appliable"
++msgstr "Color emprat en l'ombra del text, si n'hi ha."
++
++#: edit_act_shadow
++msgid "Shadow"
++msgstr "Ombra"
++
++#: edit_act_shadow_tooltip
++msgid "Draw text with shadow"
++msgstr "Dibuixa el text amb ombra"
++
++#: edit_act_borderColor
++msgid "Border color:"
++msgstr "Color de la vora:"
++
++#: edit_act_borderColor_tooltip
++msgid "Color used to draw the cell's border"
++msgstr "Color utilitzat per a dibuixar la vora de la casella"
++
++#: edit_act_inactiveColor
++msgid "Inactive state color:"
++msgstr "Color d'estat inactiu:"
++
++#: edit_act_inactiveColor_tooltip
++msgid "Color used when the cell is disabled"
++msgstr "Color emprat quan la casella es troba desactivada"
++
++#: edit_act_altColor
++msgid "Alternative color:"
++msgstr "Color alternatiu:"
++
++#: edit_act_altColor_tooltip
++msgid "Color used to draw the alternative content in solved cells."
++msgstr ""
++"Color amb què es mostra el contingut alternatiu de les caselles un cop "
++"solucionades."
++
++#: edit_cell_marked
++msgid "Marked"
++msgstr "Marcada"
++
++#: edit_cell_disabled
++msgid "Disabled"
++msgstr "Desactivada"
++
++#: edit_cell_alt
++msgid "Alternative"
++msgstr "Alternativa"
++
++#: edit_cell_textMargin
++msgid "Internal margin:"
++msgstr "Marge intern:"
++
++#: edit_cell_textMargin_tooltip
++msgid "Amount of space between cell's border and text."
++msgstr "Espai entre les vores de la cel·la i el text."
++
++#: edit_cell_borderWidth
++msgid "Border width:"
++msgstr "Gruix de la vora:"
++
++#: edit_cell_borderWidth_tooltip
++msgid "Width of the stroke used to draw the standard border"
++msgstr "Gruix del traç utilitzat per a dibuixar la vora."
++
++#: edit_cell_markerWidth
++msgid "Marker width:"
++msgstr "Gruix del marcador:"
++
++#: edit_cell_markerWidth_tooltip
++msgid ""
++"Width of the stroke used to draw the border when the cell is marked or "
++"selected"
++msgstr ""
++"Gruix del traç utilitzat per dibuixar la vora quan la casella es troba "
++"marcada o seleccionada"
++
++#: edit_cell_alt_tooltip
++msgid "Preview in \"alternative\" state"
++msgstr "Vista preliminar de la casella en estat \"alternatiu\""
++
++#: edit_cell_disabled_tooltip
++msgid "Preview in \"disabled\" state"
++msgstr "Vista preliminar en estat \"desactivat\""
++
++#: edit_cell_marked_tooltip
++msgid "Preview in \"marked\" state"
++msgstr "Vista preliminar en estat \"marcat\""
++
++#: edit_act_testAction
++msgid "Preview activity"
++msgstr "Mostra l'activitat"
++
++#: edit_act_testAction_tooltip
++msgid "Preview and test the activity"
++msgstr "Prova el funcionament de l'activitat"
++
++#: edit_act_panels_description
++msgctxt "edit_act_panels_description"
++msgid "Description"
++msgstr "Descripció"
++
++#: edit_act_panels_description_tooltip
++msgid "Title and description of the activity"
++msgstr "Títol i descripció de l'activitat"
++
++#: edit_act_panels_options
++msgid "Options"
++msgstr "Opcions"
++
++#: edit_act_panels_options_tooltip
++msgid "Options of the activity"
++msgstr "Opcions de l'activitat"
++
++#: edit_act_panels_frame
++msgctxt "edit_act_panels_frame"
++msgid "Window"
++msgstr "Finestra"
++
++#: edit_act_panels_frame_tooltip
++msgid "Aspect, size and position of the activity window"
++msgstr "Aspecte, mida i posició de la finestra on corre l'activitat."
++
++#: edit_act_panels_messages
++msgctxt "edit_act_panels_messages"
++msgid "Messages"
++msgstr "Missatges"
++
++#: edit_act_panels_messages_tooltip
++msgid "Content of the activity messages"
++msgstr "Contingut dels missatges de l'activitat"
++
++#: edit_act_panels_panel
++msgid "Panel"
++msgstr "Plafó"
++
++#: edit_act_panels_panel_tooltip
++msgid "Contents of the panel"
++msgstr "Contingut del plafó"
++
++#: edit_style_title
++msgctxt "edit_style_title"
++msgid "Style"
++msgstr "Estil"
++
++#: edit_style_tooltip
++msgid "Set the cells color, font and size"
++msgstr "Ajusta els colors, tipus i mida de lletra de les caselles"
++
++#: edit_act_style
++msgctxt "edit_act_style"
++msgid "Style:"
++msgstr "Estil:"
++
++#: edit_act_overlap
++msgid "Avoid text overlap image"
++msgstr "Evita la sobreposició imatge/text"
++
++#: edit_act_overlap_tooltip
++msgid "Try to avoid text overlapping over image"
++msgstr "Intenta evitar que el text trepitgi la imatge."
++
++#: edit_media_exists_1
++msgid "The file"
++msgstr "El fitxer"
++
++#: edit_media_exists_2
++msgid "already exists in the media library!"
++msgstr "ja es troba a la mediateca!"
++
++#: edit_act_shaper
++msgid "Shaper:"
++msgstr "Retallador:"
++
++#: edit_act_shaper_err
++msgid "Shaper error:"
++msgstr "Error del retallador:"
++
++#: edit_act_num_cols
++msgid "Columns:"
++msgstr "Columnes:"
++
++#: edit_act_num_rows
++msgid "Rows:"
++msgstr "Files:"
++
++#: edit_act_toothHeightFactor
++msgid "Tooth height:"
++msgstr "Alçada de les dents:"
++
++#: edit_act_toothWidthFactor
++msgid "Tooth width:"
++msgstr "Amplada de les dents:"
++
++#: edit_act_toothRandom
++msgid "Random distribution"
++msgstr "Distribució aleatòria"
++
++#: edit_act_shaper_properties
++msgid "Shaper properties"
++msgstr "Propietats del generador de formes"
++
++#: edit_act_panels_text
++msgid "Text"
++msgstr "Text"
++
++#: edit_act_panels_text_tooltip
++msgid "Text of the activity"
++msgstr "Text de l'activitat"
++
++#: action_saveFile_caption
++msgid "Save..."
++msgstr "Desa..."
++
++#: action_saveFile_keys
++msgctxt "action_saveFile_keys"
++msgid "SS"
++msgstr "DD"
++
++#: action_saveFile_tooltip
++msgid "Save the current project"
++msgstr "Desa el projecte"
++
++#: action_docTree_caption
++msgid "Document tree..."
++msgstr "Arbre del document..."
++
++#: action_docTree_keys
++msgid "T*"
++msgstr "A*"
++
++#: action_docTree_tooltip
++msgid "Show the project's document as a tree"
++msgstr "Mostra el document del projecte en forma d'arbre"
++
++#: edit_docTree_title
++msgid "Document tree"
++msgstr "Arbre del document"
++
++#: edit_media_referencedBy
++msgid "Referenced by:"
++msgstr "Referenciat per:"
++
++#: msg_prompt_loadReferences
++msgid ""
++"<html><font face=\"dialog\" size=\"2\"><B>Warning:</B><P>This project "
++"connects with other projects.<BR>Do you want to explore the links and to "
++"load all the related files?<P>(It's advisable to answer <B>YES</B> when "
++"importing Clic 3.0 activities)</font></html>"
++msgstr ""
++"<html><font face=\"dialog\" size=\"2\"><B>Atenció:</B><P>Aquest projecte "
++"enllaça amb altres projectes.<BR>Voleu que el JClic explori els enllaços i "
++"carregui tots els materials relacionats?<P>(Es recomana respondre <B>SI</B> "
++"si esteu important un paquet d'activitats Clic 3.0)</font></html>"
++
++#: edit_mc_type
++msgctxt "edit_mc_type"
++msgid "Type:"
++msgstr "Tipus:"
++
++#: edit_mc_type_unknown
++msgid "Unknown"
++msgstr "Desconegut"
++
++#: edit_mc_type_sound
++msgid "Play sound"
++msgstr "Interpreta so"
++
++#: edit_mc_type_video
++msgid "Play video"
++msgstr "Interpreta vídeo"
++
++#: edit_mc_type_midi
++msgid "Play MIDI"
++msgstr "Interpreta MIDI"
++
++#: edit_mc_type_cdaudio
++msgid "Play CD audio"
++msgstr "Interpreta CD àudio"
++
++#: edit_mc_type_record
++msgid "Record sound"
++msgstr "Enregistra so"
++
++#: edit_mc_type_play_recorded
++msgid "Play recorded sound"
++msgstr "Interpreta un enregistrament"
++
++#: edit_mc_type_run_activity
++msgid "Go to activity"
++msgstr "Vés a l'activitat"
++
++#: edit_mc_type_run_sequence
++msgid "Go to sequence"
++msgstr "Vés a la seqüència"
++
++#: edit_mc_type_run_external
++msgid "Run program"
++msgstr "Executa un programa"
++
++#: edit_mc_type_url
++msgid "Show URL"
++msgstr "Mostra l'URL"
++
++#: edit_mc_type_exit
++msgid "End"
++msgstr "Acaba"
++
++#: edit_mc_type_return
++msgctxt "edit_mc_type_return"
++msgid "Return"
++msgstr "Torna"
++
++#: edit_mc_level
++msgid "Priority level:"
++msgstr "Nivell de prioritat:"
++
++#: edit_mc_file
++msgid "File:"
++msgstr "Fitxer:"
++
++#: edit_mc_externalParam
++msgid "Parameters:"
++msgstr "Paràmetres:"
++
++#: edit_mc_from
++msgctxt "edit_mc_from"
++msgid "From:"
++msgstr "Des de:"
++
++#: edit_mc_to
++msgctxt "edit_mc_to"
++msgid "To:"
++msgstr "Fins a:"
++
++#: edit_mc_length
++msgctxt "edit_mc_length"
++msgid "Max. length:"
++msgstr "Durada màx.:"
++
++#: edit_mc_recBuffer
++msgid "Record tape:"
++msgstr "Cinta d'enregistrament:"
++
++#: edit_mc_stretch
++msgid "Stretch size"
++msgstr "Comprimeix-lo si no hi cap"
++
++#: edit_mc_location
++msgctxt "edit_mc_location"
++msgid "Location:"
++msgstr "Posició:"
++
++#: edit_mc_location_x
++msgctxt "edit_mc_location_x"
++msgid "X:"
++msgstr "X:"
++
++#: edit_mc_location_y
++msgctxt "edit_mc_location_y"
++msgid "Y:"
++msgstr "Y:"
++
++#: edit_mc_location_from
++msgctxt "edit_mc_location_from"
++msgid "From:"
++msgstr "Des de:"
++
++#: edit_mc_location_from_box
++msgid "Cell"
++msgstr "Cel·la"
++
++#: edit_mc_location_from_window
++msgctxt "edit_mc_location_from_window"
++msgid "Window"
++msgstr "Finestra"
++
++#: edit_mc_location_from_frame
++msgid "Frame"
++msgstr "Marc"
++
++#: edit_mc_loop
++msgid "Loop playback"
++msgstr "Repeteix indefinidament"
++
++#: edit_mc_autostart
++msgid "Auto start"
++msgstr "Engega automàticament"
++
++#: edit_mc_catchmouse
++msgid "Catch mouse"
++msgstr "Captura ratolí"
++
++#: edit_mc_title
++msgid "Multimedia and active content"
++msgstr "Contingut actiu i multimèdia"
++
++#: edit_mc_label
++msgid "Active content:"
++msgstr "Contingut actiu:"
++
++#: edit_media_dlg_title
++msgid "Multimedia object selection"
++msgstr "Selecció de l'objecte multimèdia"
++
++#: edit_media_title
++msgctxt "edit_media_title"
++msgid "Media library"
++msgstr "Biblioteca de recursos"
++
++#: edit_mc_pos_cell
++msgid "Centered over cell"
++msgstr "Centrat a la cel·la"
++
++#: edit_mc_pos_window
++msgid "Centered over window"
++msgstr "Centrat a la finestra"
++
++#: edit_mc_pos_absolute
++msgid "Specify position:"
++msgstr "Posició absoluta:"
++
++#: edit_tree_badFormat
++msgid "Incorrect tree structure or data!"
++msgstr "L'estructura o les dades de l'arbre són incorrectes!"
++
++#: edit_act_panels_controls
++msgid "Controls"
++msgstr "Controls"
++
++#: edit_act_panels_controls_tooltip
++msgid "Options for buttons and counters"
++msgstr "Opcions de botons i comptadors"
++
++#: edit_act_class
++msgctxt "edit_act_class"
++msgid "Type:"
++msgstr "Tipus:"
++
++#: edit_act_gridLayout
++msgid "Grid layout:"
++msgstr "Distribució dels plafons:"
++
++#: edit_act_gridLayout_tooltip
++msgid "Relative postion of the panels A and B."
++msgstr "Posició relativa dels plafons A i B."
++
++#: edit_act_inverseResolution
++msgid "Inverse resolution"
++msgstr "Resolució inversa"
++
++#: edit_act_inverseResolution_tooltip
++msgid ""
++"The activity is solved when all assigned elements of \"B\" are matched."
++msgstr ""
++"L'activitat es considerarà resolta quan tots els elements de \"B\" hagin "
++"estat aparellats."
++
++#: edit_act_showAllArrows
++msgid "Show all arrows"
++msgstr "Mostra totes les fletxes"
++
++#: edit_act_alt
++msgid "Alternative content:"
++msgstr "Contingut alternatiu:"
++
++#: edit_act_alt_tooltip
++msgid "Content shown in solved cells and non-assigned cells."
++msgstr "Contingut que es mostra en les caselles ja resoltes o no assignades."
++
++#: edit_act_alt_toggle
++msgid "ALT"
++msgstr "ALT"
++
++#: edit_act_alt_toggle_tooltip
++msgid "Edit the alternative content"
++msgstr "Edita el contingut alternatiu"
++
++#: edit_act_grid
++msgid "Grid"
++msgstr "Plafó"
++
++#: edit_act_grid_A
++msgid "Grid A"
++msgstr "Plafó A"
++
++#: edit_act_grid_B
++msgid "Grid B"
++msgstr "Plafó B"
++
++#: edit_act_grid_layout
++msgid "Layout"
++msgstr "Distribució"
++
++#: edit_act_grid_relationship
++msgid "Relationship"
++msgstr "Relacions"
++
++#: edit_seq_activity_header
++msgid "activity"
++msgstr "activitat"
++
++#: edit_seq_tag_header
++msgid "tag"
++msgstr "etiqueta"
++
++#: edit_seq_jump_header
++msgid "jump to"
++msgstr "saltar a"
++
++#: edit_seq_activity
++msgctxt "edit_seq_activity"
++msgid "Activity:"
++msgstr "Activitat:"
++
++#: edit_seq_tag
++msgctxt "edit_seq_tag"
++msgid "Label:"
++msgstr "Etiqueta:"
++
++#: edit_seq_description
++msgctxt "edit_seq_description"
++msgid "Description:"
++msgstr "Descripció:"
++
++#: edit_seq_auto
++msgid "Move on automatically"
++msgstr "Avanç automàtic"
++
++#: edit_seq_delay
++msgid "Delay:"
++msgstr "Retard:"
++
++#: edit_seq_action_fwd
++msgid "Go forward"
++msgstr "Avançar"
++
++#: edit_seq_action_back
++msgid "Go bak"
++msgstr "Retrocedir"
++
++#: edit_seq_action_jump
++msgid "Jump to..."
++msgstr "Saltar a..."
++
++#: edit_seq_action_stop
++msgid "Stop"
++msgstr "Aturar-se"
++
++#: edit_seq_action_return
++msgctxt "edit_seq_action_return"
++msgid "Return"
++msgstr "Tornar"
++
++#: edit_seq_action_exit
++msgid "Exit JClic"
++msgstr "Sortir del JClic"
++
++#: edit_seq_arrow_fwd
++msgid "Forward arrow:"
++msgstr "Fletxa endavant:"
++
++#: edit_seq_arrow_back
++msgid "Back arrow:"
++msgstr "Fletxa enrere:"
++
++#: edit_seq_action
++msgid "Action:"
++msgstr "Acció:"
++
++#: edit_seq_button_enabled
++msgid "Show button"
++msgstr "Mostra botó"
++
++#: edit_seq_project
++msgid "JClic Project:"
++msgstr "Projecte JClic:"
++
++#: edit_act_absolute
++msgid "Absolute position"
++msgstr "Posició absoluta"
++
++#: edit_act_absolute_tooltip
++msgid "The object will be placed at the specified X and Y co-ordinates"
++msgstr "L'objecte se situarà a les coordenades X i Y que especifiqueu"
++
++#: edit_act_location
++msgctxt "edit_act_location"
++msgid "Location:"
++msgstr "Posició:"
++
++#: edit_seq_newElement
++msgid "New sequence element..."
++msgstr "Nou element de seqüència..."
++
++#: edit_seq_newElement_tooltip
++msgid "Insert a new element into the activity sequence"
++msgstr "Insereix un nou element a la seqüència d'activitats"
++
++#: edit_seq_newElement_msg
++msgid "Please select an activity for the new sequence element."
++msgstr "Selecciona una activitat per al nou element de seqüència."
++
++#: edit_seq_newElement_error_noAct
++msgid "Cannot create a new sequence element without activity!"
++msgstr ""
++"No es pot crear un nou element de seqüència sense indicar l'activitat."
++
++#: edit_seq_newElement_error_emptyList
++msgid ""
++"This project has no activities! Unable to create sequence elements in an "
++"empty project."
++msgstr ""
++"En aquest projecte no hi ha cap activitat! No es poden crear elements de "
++"seqüència en un projecte buit."
++
++#: edit_seq_jump_msg
++msgid "Jump target:"
++msgstr "Destí del salt:"
++
++#: edit_seq_jump_title
++msgid "Jump target"
++msgstr "Destí del salt"
++
++#: edit_act_newActivity_tooltip
++msgid "Add a new activity to project"
++msgstr "Afegeix una nova activitat al projecte"
++
++#: edit_act_prompt_class
++msgid "Type of activity:"
++msgstr "Tipus d'activitat:"
++
++#: edit_act_prompt_name
++msgctxt "edit_act_prompt_name"
++msgid "Name:"
++msgstr "Nom:"
++
++#: edit_act_newActivity_msg
++msgid "Please select the type of activity to create and give it a name:"
++msgstr "Seleccioneu el tipus d'activitat que voleu crear i doneu-li un nom:"
++
++#: edit_act_newActivity_error_noAct
++msgid "You must select an activity type!"
++msgstr "Cal seleccionar un tipus d'activitat!"
++
++#: edit_act_newActivity_error_noName
++msgid "You must especify a name for the activity!"
++msgstr "Heu d'indicar un nom per l'activitat!"
++
++#: edit_act_newActivity_error_creating
++msgid "Unable to create activity!"
++msgstr "No s'ha pogut crear l'activitat!"
++
++#: edit_act_newActivity_class
++msgid "Java class name:"
++msgstr "Classe Java:"
++
++#: edit_text_act_format
++msgid "Format"
++msgstr "Format"
++
++#: edit_text_act_answer
++msgid "Answer"
++msgstr "Resposta"
++
++#: edit_text_act_popup
++msgid "Pop up"
++msgstr "Finestra emergent"
++
++#: edit_text_act_answer_label
++msgid "Valid answers:"
++msgstr "Respostes vàlides:"
++
++#: edit_list_newElement_tooltip
++msgid "Add a new list element"
++msgstr "Afegeix un nou element a la llista"
++
++#: edit_list_editElement_tooltip
++msgid "Edit the selected list element"
++msgstr "Modifica l'element seleccionat"
++
++#: edit_list_deleteElement_tooltip
++msgid "Delete the selected list element"
++msgstr "Elimina l'element seleccionat de la llista"
++
++#: edit_list_upBtn_tooltip
++msgid "Move up"
++msgstr "Mou amunt"
++
++#: edit_list_downBtn_tooltip
++msgid "Move down"
++msgstr "Mou avall"
++
++#: edit_list_newValue
++msgid "New text:"
++msgstr "Nou text:"
++
++#: edit_list_addElement
++msgid "Add new list element"
++msgstr "Afegeix un nou element de text"
++
++#: edit_list_modifyValue
++msgid "Modify selected text"
++msgstr "Modifica el text seleccionat"
++
++#: edit_text_act_target
++msgid "Target"
++msgstr "Incògnita"
++
++#: edit_text_act_maxLen
++msgctxt "edit_text_act_maxLen"
++msgid "Max. length:"
++msgstr "Longitud màxima:"
++
++#: edit_text_act_maxLen_tooltip
++msgid "Maximum amount of characters in the answer."
++msgstr "Nombre màxim de caràcters de la resposta."
++
++#: edit_text_act_fillingChar
++msgid "Filling character"
++msgstr "Caràcter de farciment"
++
++#: edit_text_act_fillingChar_tooltip
++msgid "Character used to indicate the blank"
++msgstr "Caràcter emprat per a indicar la incògnita"
++
++#: edit_text_act_iniLen
++msgid "Initial length:"
++msgstr "Longitud inicial:"
++
++#: edit_text_act_iniLen_tooltip
++msgid ""
++"Number of filling chars that will be displayed at the beginning of the "
++"activity."
++msgstr ""
++"Nombre de caràcters de farciment que es mostraran en iniciar-se l'activitat."
++
++#: edit_text_act_iniText
++msgid "Initial text:"
++msgstr "Text inicial:"
++
++#: edit_text_act_iniText_tooltip
++msgid "Text displayed in the blank at the beggining of the activity."
++msgstr "Text que es mostrarà a la incògnita en iniciar l'activitat."
++
++#: edit_text_act_list
++msgid "Show a list of options:"
++msgstr "Mostra una llista d'opcions:"
++
++#: edit_text_act_list_tooltip
++msgid "Display a list of options from which the user must select one."
++msgstr "L'usuari haurà de seleccionar una opció en una llista."
++
++#: edit_text_act_check_title
++msgid "Correction options"
++msgstr "Opcions d'avaluació"
++
++#: edit_text_act_popup_no
++msgid "No pop up"
++msgstr "Sense finestra emergent"
++
++#: edit_text_act_popup_always
++msgid "Pop up automatically"
++msgstr "Aparició automàtica"
++
++#: edit_text_act_popup_onError
++msgid "Pop up in errors"
++msgstr "Aparició en errors"
++
++#: edit_text_act_popup_onDemand
++msgid "Pop up with F1"
++msgstr "Aparició amb F1"
++
++#: edit_text_act_popup_type
++msgctxt "edit_text_act_popup_type"
++msgid "Type:"
++msgstr "Tipus:"
++
++#: edit_text_act_popup_delay
++msgid "Pop up delay:"
++msgstr "Retard d'aparició:"
++
++#: edit_text_act_popup_maxTime
++msgctxt "edit_text_act_popup_maxTime"
++msgid "Max. time:"
++msgstr "Temps màxim:"
++
++#: edit_text_act_popup_onlyPlay
++msgid "Sound only"
++msgstr "Només interpreta so"
++
++#: edit_text_act_err_noSelection
++msgid ""
++"You must select a fragment of text in order to create a new text target!"
++msgstr ""
++"Per crear una nova incògnita cal que seleccioneu un fragment de text!"
++
++#: edit_text_act_err_badCharInSelection
++msgid "Target text cannot include paragraph returns nor tabs."
++msgstr ""
++"El text de les incògnites no pot incloure retorns de paràgraf ni tabuladors."
++
++#: edit_text_act_err_nestedTargets
++msgid "Targets cannot nest!"
++msgstr "Les incògnites no es poden superposar!"
++
++#: edit_text_act_err_cellInTarget
++msgid "Targets cannot contain cells!"
++msgstr "Les incògnites no poden contenir cel·les!"
++
++#: edit_text_act_pageBgColor
++msgid "Paper colour:"
++msgstr "Color del paper:"
++
++#: edit_text_act_editStylesBtn
++msgid "Edit document styles..."
++msgstr "Edita els estils del document..."
++
++#: edit_text_act_mainStyle
++msgid "Main style:"
++msgstr "Estil principal:"
++
++#: edit_text_act_tabSpc
++msgid "Tab space:"
++msgstr "Amplada del tabulador:"
++
++#: edit_text_act_tabSize
++msgid "Spaces between tab marks:"
++msgstr "Espais entre marques de tabulador:"
++
++#: edit_text_act_colors
++msgid "Colors:"
++msgstr "Colors:"
++
++#: edit_text_act_targetStyle
++msgid "Target colors:"
++msgstr "Colors de les incògnites:"
++
++#: edit_text_act_errorStyle
++msgid "Error colors:"
++msgstr "Colors d'error:"
++
++#: edit_text_act_preview
++msgctxt "edit_text_act_preview"
++msgid "Preview:"
++msgstr "Visualització prèvia:"
++
++#: edit_text_act_styleSample_default_start
++msgid "Standard text"
++msgstr "Text normal"
++
++#: edit_text_act_styleSample_target
++msgid "target"
++msgstr "incògnita"
++
++#: edit_text_act_styleSample_error
++msgid "error"
++msgstr "error"
++
++#: edit_text_act_styleSample_default_fill
++msgid "standard text"
++msgstr "text normal"
++
++#: edit_text_act_styleSample_default_end
++msgid "standard text."
++msgstr "text normal."
++
++#: edit_text_act_warnDeleteTarget
++msgid ""
++"Warning: This action will supress the currently selected target. Do you want "
++"to proceed?"
++msgstr ""
++"Atenció: aquesta acció suprimirà la incògnita actualment seleccionada. Segur "
++"que vols fer-ho?"
++
++#: edit_text_act_prevScreen_title
++msgid "Previous screen..."
++msgstr "Finestra prèvia..."
++
++#: edit_text_act_prevScreen_no
++msgid "Don't display any text before starting the activity"
++msgstr "No mostris cap text abans d'iniciar l'activitat"
++
++#: edit_text_act_prevScreen_original
++msgid "Display the complete text of the exercise"
++msgstr "Mostra el text complet de l'exercici"
++
++#: edit_text_act_prevScreen_special
++msgid "Display this text:"
++msgstr "Mostra aquest text:"
++
++#: edit_text_act_prevScreen_time
++msgctxt "edit_text_act_prevScreen_time"
++msgid "Max. time:"
++msgstr "Temps màxim:"
++
++#: edit_text_act_edit_target
++msgid "Target..."
++msgstr "Incògnita..."
++
++#: edit_text_act_checkButton_show
++msgid "Show correction button"
++msgstr "Mostra el botó d'avaluació"
++
++#: edit_text_act_checkButtonText
++msgid "Button text:"
++msgstr "Text del botó:"
++
++#: edit_text_act_checkCase
++msgid "Match case"
++msgstr "Comprova majúscules / minúscules"
++
++#: edit_text_act_checkAccents
++msgid "Consider accents and special characters"
++msgstr "Considera accents i caràcters especials"
++
++#: edit_text_act_checkPunct
++msgid "Consider punctuation marks"
++msgstr "Considera els símbols de puntuació"
++
++#: edit_text_act_checkDoubleSpc
++msgid "Allow repeated spaces"
++msgstr "Permet espais repetits"
++
++#: edit_text_act_checkOptions
++msgid "Criteria"
++msgstr "Criteris"
++
++#: edit_text_act_checkAutoJump
++msgid "Move on to next target when filled in"
++msgstr "Salta automàticament a la següent incògnita"
++
++#: edit_text_act_checkForceOk
++msgid "Move only after correct guess"
++msgstr "Avança només si es respon correctament"
++
++#: edit_text_act_checkDetail
++msgid "Indicate mistakes letter by letter"
++msgstr "Indica la posició dels errors"
++
++#: edit_text_act_checkDetail_params
++msgid "Analysis algorithm parameters:"
++msgstr "Paràmetres de l'algorisme d'anàlisi:"
++
++#: edit_text_act_checkDetail_steps
++msgid "Steps:"
++msgstr "Passos:"
++
++#: edit_text_act_checkDetail_field
++msgid "Exploration field:"
++msgstr "Camp d'exploració:"
++
++#: edit_text_act_defaultCheckButtonText
++msgid "Check"
++msgstr "Avaluació"
++
++#: edit_text_act_advancedCorrectionOptions
++msgid "Answer analysis"
++msgstr "Anàlisi de les respostes"
++
++#: edit_text_act_check_bt
++msgid "Correction..."
++msgstr "Avaluació..."
++
++#: edit_text_act_checkButton
++msgid "Correction button"
++msgstr "Botó d'avaluació"
++
++#: edit_text_act_checkProgress
++msgid "Progress"
++msgstr "Progrés"
++
++#: edit_text_act_typeBtn
++msgid "Type..."
++msgstr "Tipus..."
++
++#: edit_text_act_orderParagraphs
++msgid "Order paragraphs"
++msgstr "Ordenar paràgrafs"
++
++#: edit_text_act_orderWords
++msgid "Order words"
++msgstr "Ordenar paraules"
++
++#: edit_text_act_order_amongstPar
++msgid "Shuffle words amongst paragraphs"
++msgstr "Barreja paraules entre paràgrafs"
++
++#: edit_text_act_type_title
++msgid "Activity type"
++msgstr "Tipus d'activitat"
++
++#: edit_text_act_warnChangeType
++msgid ""
++"This action will clear all the existing targets. Do you want to proceed?"
++msgstr ""
++"Aquesta acció suprimirà totes les incògnites actualment definides. Segur que "
++"vols fer-ho?"
++
++#: edit_text_act_identWords
++msgid "Identify words"
++msgstr "Identificar paraules"
++
++#: edit_text_act_identChars
++msgid "Identify characters"
++msgstr "Identificar caràcters"
++
++#: edit_media_change_name
++msgid "Change name..."
++msgstr "Canvia el nom..."
++
++#: edit_media_change_file
++msgid "Change file..."
++msgstr "Canvia el fitxer..."
++
++#: edit_media_includeInZip
++msgid "Save into ZIP file"
++msgstr "Desar-lo en el fitxer ZIP"
++
++#: edit_media_type
++msgid "Media type:"
++msgstr "Tipus de recurs:"
++
++#: edit_media_size
++msgid "File size:"
++msgstr "Mida del fitxer:"
++
++#: edit_media_show_type
++msgid "Files of type:"
++msgstr "Tipus de fitxers:"
++
++#: edit_media_preview
++msgid "Preview media"
++msgstr "Mostra l'objecte"
++
++#: edit_media_preview_tooltip
++msgid "Preview media resource"
++msgstr "Visualització del recurs"
++
++#: edit_media_rename
++msgid "Change resource name"
++msgstr "Canvi del nom del recurs"
++
++#: edit_media_rename_title
++msgid "Rename"
++msgstr "Canvi de nom"
++
++#: edit_media_rename_prompt
++msgid "New name:"
++msgstr "Nou nom:"
++
++#: edit_media_rename_invalid
++msgid "Invalid resource name!"
++msgstr "Nom de recurs no vàlid!"
++
++#: edit_media_rename_exists
++msgid ""
++"There is another resource with this name! Each resource must have a unique "
++"name."
++msgstr ""
++"Ja hi ha un altre recurs amb aquest nom! Cada recurs ha de tenir un nom únic "
++"en el projecte."
++
++#: edit_media_chfile_invalid
++msgid "Invalid file!"
++msgstr "Fitxer incorrecte!"
++
++#: err_media_chfile_different
++msgid "File must be of same type"
++msgstr "El fitxer ha de ser del mateix tipus"
++
++#: edit_media_font_error
++msgid "Unable to load font!"
++msgstr "No ha estat possible carregar el tipus de lletra!"
++
++#: edit_media_save_file
++msgid "Save file (extract from ZIP)"
++msgstr "Desa el fitxer (extreu-lo del ZIP)"
++
++#: edit_media_refresh_file
++msgid "Update media content from file"
++msgstr "Actualitza el contingut del recurs des del fitxer"
++
++#: edit_media_warn_zipFileNotExternal
++msgid ""
++"This is not a \"real\" file, but a object located into a ZIP container. In "
++"order to use this feature, a file with the same name must be present in the "
++"folder where the ZIP file is located."
++msgstr ""
++"Aquest no és un fitxer \"real\", sinó un objecte situat dins d'un contenidor "
++"ZIP. Per fer servir aquesta funció cal que hi hagi un fitxer amb el mateix "
++"nom a la carpeta on es troba el fitxer ZIP."
++
++#: edit_activities
++msgctxt "edit_activities"
++msgid "Activities"
++msgstr "Activitats"
++
++#: edit_sequences
++msgctxt "edit_sequences"
++msgid "Sequences"
++msgstr "Seqüències"
++
++#: edit_media
++msgctxt "edit_media"
++msgid "Media library"
++msgstr "Mediateca"
++
++#: edit_media_tooltip
++msgid "Manage images and other media files used in the project"
++msgstr "Gestió de les Imatges i altres recursos emprats en el projecte."
++
++#: edit_activities_tooltip
++msgid "Create and edit project activities"
++msgstr "Creació i modificació de les activitats del projecte"
++
++#: edit_sequences_tooltip
++msgid "Edit and create sequences of activities"
++msgstr "Creació i modificació de seqüències d'activitats"
++
++#: edit_project_title
++msgctxt "edit_project_title"
++msgid "Title:"
++msgstr "Títol:"
++
++#: edit_project_title_tooltip
++msgid "Project's title"
++msgstr "Títol del projecte"
++
++#: edit_project
++msgctxt "edit_project"
++msgid "Project"
++msgstr "Projecte"
++
++#: edit_project_tooltip
++msgid "Edit project properties"
++msgstr "Edició de les propietats del projecte"
++
++#: edit_project_description
++msgctxt "edit_project_description"
++msgid "Description:"
++msgstr "Descripció:"
++
++#: edit_project_description_tooltip
++msgid "General description of the project"
++msgstr "Descripció general del projecte"
++
++#: edit_project_area
++msgid "Areas:"
++msgstr "Àrees:"
++
++#: edit_project_area_tooltip
++msgid "Curricular areas of the project"
++msgstr "Àrees curriculars a les quals s'orienta el projecte"
++
++#: edit_project_level
++msgid "Levels:"
++msgstr "Nivells:"
++
++#: edit_project_level_tooltip
++msgid "Educational levels of the project"
++msgstr "Nivells i cicles educatius als quals s'adreça el projecte"
++
++#: edit_project_descriptors
++msgid "Descriptors:"
++msgstr "Descriptors:"
++
++#: edit_project_descriptors_tooltip
++msgid "Descriptors of the project (separed with comma)"
++msgstr "Descriptors del projecte (separats per comes)"
++
++#: edit_project_languages
++msgid "Languages:"
++msgstr "Idiomes:"
++
++#: edit_project_languages_tooltip
++msgid "Languages used in the project"
++msgstr "Idiomes emprats en el projecte"
++
++#: edit_project_languages_modify
++msgid "Change the selected language"
++msgstr "Canvia l'idioma seleccionat"
++
++#: edit_project_languages_add
++msgid "Add language"
++msgstr "Afegeix un idioma"
++
++#: edit_project_languages_select
++msgid "ISO-639 language codes:"
++msgstr "Codis d'idioma ISO-639:"
++
++#: edit_project_authors
++msgctxt "edit_project_authors"
++msgid "Authors:"
++msgstr "Autors/es:"
++
++#: edit_project_authors_tooltip
++msgid "People involved in the creation of the project"
++msgstr "Persones que han contribuït a la creació del projecte"
++
++#: edit_project_author_name
++msgctxt "edit_project_author_name"
++msgid "Name:"
++msgstr "Nom:"
++
++#: edit_project_author_mail
++msgctxt "edit_project_author_mail"
++msgid "e-mail:"
++msgstr "Correu electrònic:"
++
++#: edit_project_author_rol
++msgid "Rol:"
++msgstr "Rol:"
++
++#: edit_project_author_organization
++msgid "Organization:"
++msgstr "Organització:"
++
++#: edit_project_author_comments
++msgctxt "edit_project_author_comments"
++msgid "Comments:"
++msgstr "Comentaris:"
++
++#: edit_project_author_url
++msgctxt "edit_project_author_url"
++msgid "URL:"
++msgstr "URL:"
++
++#: edit_project_author_name_tooltip
++msgid "Author's name (required)"
++msgstr "Nom de l'autor/a (camp obligatori)"
++
++#: edit_project_author_mail_tooltip
++msgid "Author's e-mail (optional)"
++msgstr "Adreça de correu electrònic de l'autor/a (opcional)"
++
++#: edit_project_author_rol_tooltip
++msgid ""
++"Person's rol in the project: author, collaborator, drawings, sounds... "
++"(optional)"
++msgstr ""
++"Rol de la persona en el projecte: autor/a, col·laborador/a, dibuixos, "
++"sons... (camp opcional)"
++
++#: edit_project_author_organization_tooltip
++msgid "School, university, association... (optional)"
++msgstr "Escola, universitat, associació... (camp opcional)"
++
++#: edit_project_author_url_tooltip
++msgid "Personal web page (optional)"
++msgstr "Pàgina web personal (camp opcional)"
++
++#: edit_project_author_comments_tooltip
++msgid "Field for other information (optional)"
++msgstr "Altres característiques (camp opcional)"
++
++#: edit_project_author_info
++msgid "Author info:"
++msgstr "Dades de l'autor/a:"
++
++#: edit_project_author_add
++msgid "Add author to list"
++msgstr "Afegeix un autor a la llista"
++
++#: edit_project_author_edit
++msgid "Edit author info"
++msgstr "Modifica les dades de l'autor/a"
++
++#: edit_project_org_name
++msgctxt "edit_project_org_name"
++msgid "Name:"
++msgstr "Nom:"
++
++#: edit_project_org_name_tooltip
++msgid "School name"
++msgstr "Nom de l'escola"
++
++#: edit_project_org_mail
++msgctxt "edit_project_org_mail"
++msgid "e-mail:"
++msgstr "Correu electrònic:"
++
++#: edit_project_org_mail_tooltip
++msgid "e-mail address of the school"
++msgstr "Adreça de correu electrònic de l'escola"
++
++#: edit_project_org_url
++msgctxt "edit_project_org_url"
++msgid "URL:"
++msgstr "URL:"
++
++#: edit_project_org_url_tooltip
++msgid "School website"
++msgstr "Adreça web de l'escola"
++
++#: edit_project_org_address
++msgid "Address:"
++msgstr "Adreça:"
++
++#: edit_project_org_address_tooltip
++msgid "Snail-mail address"
++msgstr "Adreça postal de l'escola"
++
++#: edit_project_org_pc
++msgid "PC:"
++msgstr "CP:"
++
++#: edit_project_org_pc_tooltip
++msgid "Postal code"
++msgstr "Codi postal"
++
++#: edit_project_org_city
++msgid "City:"
++msgstr "Localitat:"
++
++#: edit_project_org_city_tooltip
++msgid "School city"
++msgstr "Localitat de l'escola"
++
++#: edit_project_org_country
++msgid "Country:"
++msgstr "País:"
++
++#: edit_project_org_state
++msgid "State:"
++msgstr "Estat:"
++
++#: edit_project_org_comments
++msgctxt "edit_project_org_comments"
++msgid "Comments:"
++msgstr "Comentaris:"
++
++#: edit_project_org
++msgid "School/s:"
++msgstr "Centre/s:"
++
++#: edit_project_org_tooltip
++msgid "School or other institution involved in the project"
++msgstr "Escoles i altres institucions que han participat en el projecte"
++
++#: edit_project_org_info
++msgid "Organization info:"
++msgstr "Dades de l'organització:"
++
++#: edit_project_org_add
++msgid "Add organization"
++msgstr "Afegir una nova organització"
++
++#: edit_project_org_edit
++msgid "Edit organization data"
++msgstr "Modificar les dades de l'organització"
++
++#: edit_project_org_country_tooltip
++msgid "Country, federation, union..."
++msgstr "Estat, país, federació..."
++
++#: edit_project_org_state_tooltip
++msgid "Federal state, community, region..."
++msgstr "Estat federal, nacionalitat, comunitat, regió..."
++
++#: edit_project_org_comments_tooltip
++msgid "Other info..."
++msgstr "Altres dades..."
++
++#: edit_project_rev_date
++msgid "Date:"
++msgstr "Data:"
++
++#: edit_project_rev_date_tooltip
++msgid "Date of the revision"
++msgstr "Data de la revisió"
++
++#: edit_project_rev_authors
++msgctxt "edit_project_rev_authors"
++msgid "Authors:"
++msgstr "Autors/es:"
++
++#: edit_project_rev_authors_tooltip
++msgid "Authors of the revision"
++msgstr "Autors/es de la revisió"
++
++#: edit_project_rev_description
++msgctxt "edit_project_rev_description"
++msgid "Description:"
++msgstr "Descripció:"
++
++#: edit_project_rev_description_tooltip
++msgid "Brief description of the changes made"
++msgstr "Breu descripció dels canvis realitzats"
++
++#: edit_project_rev_comments
++msgctxt "edit_project_rev_comments"
++msgid "Comments:"
++msgstr "Comentaris:"
++
++#: edit_project_rev_comments_tooltip
++msgid "Other relevant info"
++msgstr "Informació addicional"
++
++#: edit_project_rev
++msgid "Revisions:"
++msgstr "Revisions:"
++
++#: edit_project_rev_tooltip
++msgid "History of main modifications made to the project"
++msgstr "Historial de les principals modificacions realitzades al projecte"
++
++#: edit_project_rev_add
++msgid "Add revision record"
++msgstr "Afegir un registre de revisió"
++
++#: edit_project_rev_edit
++msgid "Edit revision record"
++msgstr "Modificació de les dades de la revisió"
++
++#: edit_project_rev_info
++msgid "Revision data"
++msgstr "Dades de la revisió"
++
++#: edit_media_objects
++msgid "objects"
++msgstr "objectes"
++
++#: edit_media_object
++msgid "object"
++msgstr "objecte"
++
++#: edit_evsounds_start
++msgid "Start of activity:"
++msgstr "Inici d'activitat:"
++
++#: edit_evsounds_click
++msgid "Click on object:"
++msgstr "Fer clic a un objecte:"
++
++#: edit_evsounds_actionError
++msgid "Erroneous action:"
++msgstr "Acció errònia:"
++
++#: edit_evsounds_actionOk
++msgid "Correct action:"
++msgstr "Acció correcta:"
++
++#: edit_evsounds_finishedError
++msgid "Activity finished with errors:"
++msgstr "Activitat acabada amb errors:"
++
++#: edit_evsounds_finishedOk
++msgid "Activity finished OK:"
++msgstr "Activitat acabada correctament:"
++
++#: edit_project_rev_err_nodesc
++msgid "Error: The description field cannot be leaved blank!"
++msgstr "Error: La descripció no es pot deixar en blanc"
++
++#: edit_evsounds_dlg_title
++msgid "Edit event sounds"
++msgstr "Edita els sons d'esdeveniment"
++
++#: edit_project_evsounds
++msgctxt "edit_project_evsounds"
++msgid "Event sounds:"
++msgstr "Sons d'esdeveniment:"
++
++#: edit_project_evsounds_tooltip
++msgctxt "edit_project_evsounds_tooltip"
++msgid "Set specific sounds for each JClic event"
++msgstr "Assigna sons específics per a cada esdeveniment del JClic"
++
++#: edit_act_evsounds
++msgctxt "edit_act_evsounds"
++msgid "Event sounds:"
++msgstr "Sons d'esdeveniment:"
++
++#: edit_act_evsounds_tooltip
++msgctxt "edit_act_evsounds_tooltip"
++msgid "Set specific sounds for each JClic event"
++msgstr "Assigna sons específics per a cada esdeveniment del JClic"
++
++#: edit_evsounds_default
++msgid "default sound"
++msgstr "so per defecte"
++
++#: edit_evsounds_disabled
++msgid "disabled"
++msgstr "desactivat"
++
++#: edit_evsounds_chk_tooltip
++msgid "Enable or disable the sound for this event"
++msgstr "Activa o desactiva el so per aquest esdeveniment"
++
++#: edit_evsounds_select_tooltip
++msgid ""
++"Click to select a sound for this event, or uncheck to use the default sound"
++msgstr ""
++"Cliqueu per a seleccionar un so per aquest esdeveniment, o desmarqueu per emprar el "
++"so per defecte"
++
++#: action_newProject_caption
++msgid "New project..."
++msgstr "Nou projecte..."
++
++#: action_newProject_keys
++msgid "NN"
++msgstr "NN"
++
++#: action_newProject_tooltip
++msgid "Create a new JClic project"
++msgstr "Crea un nou projecte JClic"
++
++#: edit_arith_op_from
++msgctxt "edit_arith_op_from"
++msgid "From:"
++msgstr "Des de:"
++
++#: edit_arith_op_from_tooltip
++msgid "Minimum value of the operator"
++msgstr "Valor mínim de l'operand"
++
++#: edit_arith_op_to
++msgctxt "edit_arith_op_to"
++msgid "To:"
++msgstr "Fins a:"
++
++#: edit_arith_op_to_tooltip
++msgid "Maximum value of the operator"
++msgstr "Valor màxim de l'operand"
++
++#: edit_arith_op_with
++msgid "With:"
++msgstr "Amb:"
++
++#: edit_arith_op_with_tooltip
++msgid "If checked, the operator can also have this value"
++msgstr "Si es marca, l'operand pot tenir també aquest valor"
++
++#: edit_arith_op_fromList
++msgid "One from the list:"
++msgstr "Un de la llista:"
++
++#: edit_arith_op_fromList_tooltip
++msgid "List of possible values for the operator"
++msgstr "Llista de possibles valors de l'operand"
++
++#: edit_arith_op_decimals
++msgid "Decimals:"
++msgstr "Decimals:"
++
++#: edit_arith_op_decimals_tooltip
++msgid "Number of decimals of the operand"
++msgstr "Nombre de decimals de l'operand"
++
++#: edit_arith_op_dec0
++msgid "# (integer)"
++msgstr "# (enter)"
++
++#: edit_arith_op_dec1
++msgid "#.#"
++msgstr "#,#"
++
++#: edit_arith_op_dec2
++msgid "#.##"
++msgstr "#,##"
++
++#: edit_arith_firstOp
++msgid "First operand"
++msgstr "Primer operand"
++
++#: edit_arith_secondOp
++msgid "Second operand"
++msgstr "Segon operand"
++
++#: edit_arith_title
++msgid "Arith2 for JClic"
++msgstr "Arith2 pel JClic"
++
++#: edit_arith_operations
++msgid "Operations:"
++msgstr "Operacions:"
++
++#: edit_arith_operations_tooltip
++msgid "Select the kind of operations to be performed"
++msgstr "Seleccioneu el tipus d'operacions a efectuar"
++
++#: edit_arith_operations_plus
++msgid "Plus"
++msgstr "Sumes"
++
++#: edit_arith_operations_minus
++msgid "Minus"
++msgstr "Restes"
++
++#: edit_arith_operations_multiply
++msgid "Multiply"
++msgstr "Multiplicacions"
++
++#: edit_arith_operations_divide
++msgid "Divide"
++msgstr "Divisions"
++
++#: edit_arith_unknown
++msgid "Unknown:"
++msgstr "Incògnita:"
++
++#: edit_arith_unknown_tooltip
++msgid "Select the item that will act as a unknown"
++msgstr "Seleccioneu l'element que farà d'incògnita"
++
++#: edit_arith_unknown_aobx
++msgid "The result is the unknown"
++msgstr "La incògnita és el resultat"
++
++#: edit_arith_unknown_aoxr
++msgid "The second operator is the unknown"
++msgstr "La incògnita és el segon operand"
++
++#: edit_arith_unknown_xobr
++msgid "The first operator is the unknown"
++msgstr "El primer operand és la incògnita"
++
++#: edit_arith_unknown_axbr
++msgid "The operation is the unknown"
++msgstr "L'operació és la incògnita"
++
++#: edit_arith_unknown_invert
++msgid "Write the result at the beggining of the expression"
++msgstr "Escriu l'expressió començant pel resultat"
++
++#: edit_arith_result
++msgid "Result:"
++msgstr "Resultat:"
++
++#: edit_arith_result_notCarry
++msgid "Do not carry"
++msgstr "Sense \"portar-ne\""
++
++#: edit_arith_result_random
++msgid "Random"
++msgstr "Aleatori"
++
++#: edit_arith_result_asc
++msgid "Ascending"
++msgstr "Ascendent"
++
++#: edit_arith_result_order
++msgid "Order by result:"
++msgstr "Ordena per resultat:"
++
++#: edit_arith_result_desc
++msgid "Descending"
++msgstr "Descendent"
++
++#: edit_arith_result_avoidDup
++msgid "Avoid duplicates"
++msgstr "Evitar duplicats"
++
++#: edit_arith_cond
++msgid "Conditions:"
++msgstr "Condicions:"
++
++#: edit_arith_cond_ind
++msgid "Indifferent"
++msgstr "Indiferent"
++
++#: edit_arith_cond_agb
++msgid "The first operator must be greather than the second one"
++msgstr "El primer operand ha de ser més gran que el segon"
++
++#: edit_arith_cond_alb
++msgid "The first operator must be lesser than the second one"
++msgstr "El primer operand ha de ser menor que el segon"
++
++#: edit_arith_cond_tooltip
++msgid "Other conditions"
++msgstr "Altres condicions"
++
++#: edit_autocp
++msgid "Automatic content generator:"
++msgstr "Generador automàtic de contingut:"
++
++#: edit_autocp_tooltip
++msgid "Select the type of automatic content generator for this activity."
++msgstr ""
++"Selecció del tipus de generador automàtic de contingut per aquesta activitat."
++
++#: edit_autocp_block
++msgid "Content generator"
++msgstr "Generador de contingut"
++
++#: edit_autocp_btn
++msgid "Settings..."
++msgstr "Configuració..."
++
++#: edit_autocp_btn_tooltip
++msgid "Configure the content provider settings"
++msgstr "Configura els paràmetres del generador de contingut"
++
++#: edit_data
++msgid "Edit data"
++msgstr "Edició de dades"
++
++#: edit_act
++msgid "Activity edit"
++msgstr "Edició de l'activitat"
++
++#: edit_acp
++msgid "Content provider edit"
++msgstr "Edició del generador de contingut"
++
++#: edit_acp_err_creating
++msgid "Error creating the content provider!"
++msgstr "Error en crear el generador automàtic de contingut!"
++
++#: edit_project_author_group
++msgid "Creation"
++msgstr "Creació"
++
++#: edit_project_description_block
++msgctxt "edit_project_description_block"
++msgid "Description"
++msgstr "Descripció"
++
++#: edit_project_ui_block
++msgctxt "edit_project_ui_block"
++msgid "User interface"
++msgstr "Interfície d'usuari"
++
++#: edit_act_description
++msgctxt "edit_act_description"
++msgid "Description:"
++msgstr "Descripció:"
++
++#: m_Edit
++msgid "Edit"
++msgstr "Edita"
++
++#: m_Edit_Mnemonic
++msgid "E"
++msgstr "E"
++
++#: edit_media_preview_keys
++msgid "P*"
++msgstr "V*"
++
++#: edit_act_newActivity
++msgid "New activity..."
++msgstr "Nova activitat..."
++
++#: edit_act_newActivity_keys
++msgid "A*"
++msgstr "A*"
++
++#: edit_act_testAction_keys
++msgid "P#10"
++msgstr "M#10"
++
++#: edit_seq_newElement_keys
++msgid "S*"
++msgstr "S*"
++
++#: m_Insert
++msgid "Insert"
++msgstr "Insereix"
++
++#: m_Insert_Mnemonic
++msgid "I"
++msgstr "I"
++
++#: m_View
++msgid "View"
++msgstr "Visualitza"
++
++#: m_View_Mnemonic
++msgid "V"
++msgstr "V"
++
++#: action_editProject_caption
++msgctxt "action_editProject_caption"
++msgid "Project"
++msgstr "Projecte"
++
++#: action_editProject_keys
++msgid "PP"
++msgstr "PP"
++
++#: action_editProject_tooltip
++msgid "Edit project settings"
++msgstr "Edita les propietats del projecte"
++
++#: action_editMedia_caption
++msgid "Media"
++msgstr "Mediateca"
++
++#: action_editMedia_keys
++msgid "MM"
++msgstr "MM"
++
++#: action_editMedia_tooltip
++msgid "Edit the project's multimedia library"
++msgstr "Edita la biblioteca de recursos multimèdia del projecte"
++
++#: action_editActivities_caption
++msgctxt "action_editActivities_caption"
++msgid "Activities"
++msgstr "Activitats"
++
++#: action_editActivities_keys
++msgctxt "action_editActivities_keys"
++msgid "AA"
++msgstr "AA"
++
++#: action_editActivities_tooltip
++msgid "Edit the activities"
++msgstr "Edita les activitats"
++
++#: action_editSeq_caption
++msgctxt "action_editSeq_caption"
++msgid "Sequences"
++msgstr "Seqüències"
++
++#: action_editSeq_keys
++msgctxt "action_editSeq_keys"
++msgid "SS"
++msgstr "SS"
++
++#: action_editSeq_tooltip
++msgid "Edit the sequences of activities"
++msgstr "Edita les seqüències d'activitats"
++
++#: warn_project_modified
++msgid "Current project has been modified. Do you want to save the changes?"
++msgstr "El projecte actual ha estat modificat. Voleu desar els canvis?"
++
++#: edit_project_descriptors_block
++msgid "Descriptors"
++msgstr "Descriptors"
++
++#: edit_media_new
++msgid "New media object..."
++msgstr "Nou objecte multimèdia..."
++
++#: edit_media_new_tooltip
++msgid "Add a new image or multimedia object to the library"
++msgstr "Afegeix una imatge o un objecte multimèdia a la mediateca"
++
++#: edit_media_new_keys
++msgid "M*"
++msgstr "M*"
++
++#: edit_seq_threshold
++msgid "Score threshold:"
++msgstr "Llindar de puntuació:"
++
++#: edit_seq_threshold_tooltip_up
++msgid "Take this way when the global score is equal to or higher than..."
++msgstr ""
++"Vés per aquest camí quan la puntuació global sigui igual o superior a..."
++
++#: edit_seq_time
++msgid "Time threshold:"
++msgstr "Llindar de temps:"
++
++#: edit_seq_time_tooltip_up
++msgid ""
++"In order to take this way, the time spent on the activities must be less "
++"than..."
++msgstr ""
++"Per seguir aquest camí cal haver realitzat les activitats en un temps "
++"inferior a..."
++
++#: edit_seq_threshold_tooltip_down
++msgid "Take this way when the global score is lower than..."
++msgstr ""
++"Segueix aquest camí sempre que la puntuació global sigui inferior a..."
++
++#: edit_seq_time_tooltip_down
++msgid "Take this way when the time spent on the activities is more than..."
++msgstr ""
++"Segueix aquest camí sempre que el temps emprat en les activitats sigui "
++"superior a..."
++
++#: edit_seq_condJump
++msgid "Conditional jumps"
++msgstr "Salts condicionals"
++
++#: edit_seq_condJump_tooltip
++msgid "Set special jumps to be executed only under specific condicions"
++msgstr ""
++"Especifica salts que seran executats només si es donen determinades "
++"condicions"
++
++#: edit_seq_condJump_upper_tooltip
++msgid "Set conditions to jump to an upper level"
++msgstr "Indica les condicions per saltar a un nivell superior"
++
++#: edit_seq_condJump_lower
++msgid "Lower jump:"
++msgstr "Salt inferior:"
++
++#: edit_seq_condJump_upper
++msgid "Upper jump:"
++msgstr "Salt superior:"
++
++#: edit_seq_condJump_lower_tooltip
++msgid "Set conditions to jump to an lower level"
++msgstr "Indica les condicions per saltar a un nivell inferior"
++
++#: edit_seq_action_tooltip_fw
++msgid "Action assigned to the \"next\" button"
++msgstr "Acció assignada al botó d'avançar"
++
++#: edit_seq_action_tooltip_bk
++msgid "Action assigned to the \"previous\" button"
++msgstr "Acció assignada al botó de retrocedir"
++
++#: edit_seq_jump_tooltip
++msgid "Set the jump target"
++msgstr "Indica el destí del salt"
++
++#: edit_seq_action_tooltip
++msgid "Action to be done"
++msgstr "Acció a realitzar"
++
++#: edit_seq_activity_tooltip
++msgid "Activity assigned to this sequence element"
++msgstr "Activitat associada a aquest element de seqüència"
++
++#: edit_seq_tag_tooltip
++msgid "Tag used to reference this sequence element (optional field)"
++msgstr ""
++"Etiqueta emprada per referir-se a aquest element de seqüència (camp opcional)"
++
++#: edit_seq_description_tooltip
++msgid "Description of the sequence element (optional field)"
++msgstr "Descripció de l'element de seqüència (camp opcional)"
++
++#: edit_seq_button_enabled_tooltip
++msgid "Enable or disable the arrow button"
++msgstr "Activa o desactiva el botó de pas d'activitat"
++
++#: edit_seq_auto_tooltip
++msgid "Move on automatically when the activity finishes"
++msgstr "Avançar automàticament en acabar l'activitat"
++
++#: edit_seq_delay_tooltip
++msgid "Seconds to wait before to do the automatic move"
++msgstr "Nombre de segons a esperar abans de realitzar el pas automàtic"
++
++#: edit_color_dlgTitle
++msgid "Select color"
++msgstr "Selecció del color"
++
++#: edit_media_renaming
++msgid "Please wait while the resource is being renamed..."
++msgstr "Si us plau, espereu mentre es canvia el nom del recurs..."
++
++#: edit_act_cell_width
++msgctxt "edit_act_cell_width"
++msgid "Width:"
++msgstr "Amplada:"
++
++#: edit_act_cell_width_tooltip
++msgid "Cell width (in pixels)"
++msgstr "Amplada de les cel·les (en píxels)"
++
++#: edit_act_cell_height
++msgctxt "edit_act_cell_height"
++msgid "Height:"
++msgstr "Alçada:"
++
++#: edit_act_cell_height_tooltip
++msgid "Cell height (in pixels)"
++msgstr "Alçada de les cel·les (en píxels)"
++
++#: edit_act_hiddenWords
++msgid "Hidden words:"
++msgstr "Paraules amagades:"
++
++#: edit_act_hiddenWords_tooltip
++msgid "List of the hidden words placed in the panel"
++msgstr "Llista de les paraules que s'han amagat al plafó"
++
++#: edit_act_wordSearch_panelB
++msgid "Use panel B"
++msgstr "Emprar el plafó B"
++
++#: edit_act_wordSearch_panelB_tooltip
++msgid "The contents of a second panel will be displayed as words are found"
++msgstr ""
++"Fes servir un segon plafó, que es mostrarà a mesura que es trobin les "
++"paraules"
++
++#: edit_act_shaper_tooltip
++msgid "Select the shaper type to be used in the panel"
++msgstr "Selecció del tipus de generador de formes del plafó"
++
++#: edit_act_num_cols_tooltip
++msgid "Number of columns of  the panel"
++msgstr "Nombre de columnes del plafó"
++
++#: edit_act_num_rows_tooltip
++msgid "Number of rows of  the panel"
++msgstr "Nombre de files del plafó"
++
++#: edit_act_wildTransparent
++msgid "Transparent delimiters"
++msgstr "Separadors transparents"
++
++#: edit_act_wildTransparent_tooltip
++msgid "Treat the delimiters (black boxes) as transparent holes"
++msgstr "Mostra els separadors (cel·les negres) com a forats transparents"
++
++#: edit_act_behavior_scramble_times
++msgid "Mixes\\:"
++msgstr "Barreges:"
++
++#: edit_act_behavior_scramble_times_tooltip
++msgid "Number of times to shuffle"
++msgstr "Nombre de vegades que es barrejaran les peces"
++
++#: edit_act_copy_title
++msgid "Copy attributtes to..."
++msgstr "Copia atributs a..."
++
++#: edit_act_copy_attributes
++msgid "Attributes"
++msgstr "Atributs"
++
++#: edit_act_copy_dest
++msgid "Apply to:"
++msgstr "Aplica a:"
++
++#: edit_act_copy_style_main
++msgid "Main window"
++msgstr "Finestra principal"
++
++#: edit_act_copy_style_play
++msgid "Play window"
++msgstr "Finestra de joc"
++
++#: edit_act_copy_activities
++msgid "Activities to be modified:"
++msgstr "Activitats a modificar:"
++
++#: edit_act_copyAttributes
++msgid "Copy attributes"
++msgstr "Copia atributs"
++
++#: edit_act_copyAttributes_keys
++msgid "T"
++msgstr "T"
++
++#: edit_act_copyAttributes_tooltip
++msgid "Copy current activity attributes to other activities"
++msgstr "Copia a altres activitats alguns dels atributs de l'activitat actual"
++
++#: edit_new_project_name
++msgid "Project name:"
++msgstr "Nom del projecte:"
++
++#: edit_new_project_name_tooltip
++msgid "Short, descriptive name of the project"
++msgstr "Nom curt i descriptiu del projecte"
++
++#: edit_new_project_filename
++msgctxt "edit_new_project_filename"
++msgid "File name:"
++msgstr "Nom del fitxer:"
++
++#: edit_new_project_filename_tooltip
++msgid "Name of the project file, without extension"
++msgstr "Nom del fitxer del projecte, sense extensió"
++
++#: edit_new_project_folder
++msgctxt "edit_new_project_folder"
++msgid "Folder:"
++msgstr "Carpeta:"
++
++#: edit_new_project_folder_tooltip
++msgid "Name of the folder where the project will be stored"
++msgstr "Nom de la carpeta on es guardarà el projecte"
++
++#: edit_new_project_folder_browse
++msgctxt "edit_new_project_folder_browse"
++msgid "Browse..."
++msgstr "Navega..."
++
++#: edit_new_project_title
++msgid "Create new JClic project"
++msgstr "Creació d'un nou projecte JClic"
++
++#: edit_new_project_err_empty
++msgid "Error: Project, file and folder must have valid, non-empty names."
++msgstr ""
++"Error: Tant el projecte com el fitxer i la carpeta han de tenir noms vàlids."
++
++#: edit_new_project_warning_noEmptyFolder
++msgid ""
++"This folder already contains another Clic 3.0 or JClic project. In order to "
++"avoid confusions, is preferable to maintain each project in a separate "
++"folder, but that isn't a strict rule. Do you really want to create the new "
++"project in this folder?"
++msgstr ""
++"En aquesta carpeta ja hi ha un altre projecte Clic3.0 o JClic. Per evitar "
++"confusions es recomana mantenir cada projecte en una carpeta independent, "
++"tot i que això no és un requisit imprescindible. Realment voleu crear el nou "
++"projecte en aquesta carpeta?"
++
++#: edit_new_project_err_folderCreation
++msgid "Error: Unable to create the specified folder!"
++msgstr "Error: Ha estat impossible crear la carpeta que heu indicat!"
++
++#: edit_act_copy_err_noSelection
++msgid ""
++"Error: No activity selected! In order to use this function you must select "
++"in the list the activity or activities to wich the indicated attributes will "
++"be applied."
++msgstr ""
++"No heu seleccionat cap activitat! Per fer servir aquesta funció cal "
++"seleccionar a la llista l'activitat o activitats a les quals s'aplicaran els "
++"atributs indicats."
++
++#: edit_act_copy_action_prefix
++msgid "Copying attributes to:"
++msgstr "Copiant atributs a:"
++
++#: edit_act_copy_margin
++msgid "Margin"
++msgstr "Marge"
++
++#: edit_act_copy_bgColor
++msgid "Background color"
++msgstr "Color de fons"
++
++#: edit_act_copy_gradient
++msgctxt "edit_act_copy_gradient"
++msgid "Gradient"
++msgstr "Degradat"
++
++#: edit_act_copy_bgImage
++msgid "Background image"
++msgstr "Imatge de fons"
++
++#: edit_act_copy_border
++msgctxt "edit_act_copy_border"
++msgid "Border"
++msgstr "Vora"
++
++#: edit_act_copy_transparentBg
++msgid "Transparent background"
++msgstr "Fons transparent"
++
++#: edit_act_copy_position
++msgid "Position"
++msgstr "Posició"
++
++#: edit_act_copy_messages
++msgctxt "edit_act_copy_messages"
++msgid "Messages"
++msgstr "Missatges"
++
++#: edit_act_copy_messages_ini
++msgid "Style of initial message"
++msgstr "Estil del missatge inicial"
++
++#: edit_act_copy_messages_end
++msgid "Style of end message"
++msgstr "Estil del missatge final"
++
++#: edit_act_copy_messages_err
++msgid "Style of error message"
++msgstr "Estil del missatge d'error"
++
++#: edit_act_copy_reports
++msgctxt "edit_act_copy_reports"
++msgid "Reports"
++msgstr "Informes"
++
++#: edit_act_copy_rep_include
++msgid "Include activity in reports"
++msgstr "Incloure l'activitat als informes"
++
++#: edit_act_copy_rep_actions
++msgid "Record actions"
++msgstr "Enregistrar accions"
++
++#: edit_act_copy_interface
++msgctxt "edit_act_copy_interface"
++msgid "User interface"
++msgstr "Interfície d'usuari"
++
++#: edit_act_copy_skin
++msgid "Skin"
++msgstr "Entorn visual"
++
++#: edit_act_copy_evSounds
++msgid "Event sounds"
++msgstr "Sons d'esdeveniment"
++
++#: edit_act_copy_counters
++msgctxt "edit_act_copy_counters"
++msgid "Counters"
++msgstr "Comptadors"
++
++#: edit_act_copy_cTime
++msgctxt "edit_act_copy_cTime"
++msgid "Time counter"
++msgstr "Comptador de temps"
++
++#: edit_act_copy_maxTime
++msgid "Max. time"
++msgstr "Temps màxim"
++
++#: edit_act_copy_cTries
++msgctxt "edit_act_copy_cTries"
++msgid "Tries counter"
++msgstr "Comptador d'intents"
++
++#: edit_act_copy_maxTries
++msgid "Max. tries"
++msgstr "Nombre màxim d'intents"
++
++#: edit_act_copy_cScore
++msgctxt "edit_act_copy_cScore"
++msgid "Score counter"
++msgstr "Comptador d'encerts"
++
++#: edit_act_copy_scramble
++msgid "Times to scramble"
++msgstr "Nombre de vegades que cal barrejar"
++
++#: edit_act_copy_buttons
++msgctxt "edit_act_copy_buttons"
++msgid "Buttons"
++msgstr "Botons"
++
++#: edit_act_copy_btnHelp
++msgid "Help button"
++msgstr "Botó d'ajuda"
++
++#: edit_act_copy_btnInfo
++msgid "Information button"
++msgstr "Botó d'informació"
++
++#: edit_act_copy_grids
++msgid "Grids"
++msgstr "Plafons"
++
++#: edit_act_copy_gridA
++msgid "Style of grid A"
++msgstr "Estil del plafó A"
++
++#: edit_act_copy_gridB
++msgid "Style of grid B"
++msgstr "Estil del plafó B"
++
++#: edit_act_copy_textGrid
++msgid "Style of text grids"
++msgstr "Estil dels plafons de text"
++
++#: edit_act_copy_text
++msgid "Text activities"
++msgstr "Activitats de text"
++
++#: edit_act_copy_fontFace
++msgid "Font face"
++msgstr "Tipus de lletra"
++
++#: edit_act_copy_fontSize
++msgid "Font size"
++msgstr "Mida de lletra"
++
++#: edit_act_copy_fontStyle
++msgid "Font style"
++msgstr "Estil de lletra"
++
++#: edit_act_copy_textColour
++msgid "Main text colour"
++msgstr "Color del text principal"
++
++#: edit_act_copy_textTargetColour
++msgctxt "edit_act_copy_textTargetColour"
++msgid "Select the JClic project of which the activities will be imported"
++msgstr "Color de les incògnites"
++
++#: edit_act_copy_textErrorColour
++msgid "Errors colour"
++msgstr "Color dels errors"
++
++#: edit_act_copy_tabSpace
++msgid "Tab space"
++msgstr "Espai entre tabuladors"
++
++#: edit_act_copy_messages_prev
++msgid "Style of previous message"
++msgstr "Estil del missatge previ"
++
++#: edit_act_changeType
++msgid "Change activity type"
++msgstr "Canvia el tipus d'activitat"
++
++#: edit_act_newActivity_class_tooltip
++msgid ""
++"Full name of the class to be used to build the activity (advanced users "
++"only!)"
++msgstr ""
++"Nom complet de la classe que es farà servir per construir l'activitat "
++"(usuaris avançats!)"
++
++#: edit_act_newActivity_other
++msgid "Other..."
++msgstr "Altres..."
++
++#: edit_act_newActivity_info
++msgid ""
++"Advanced users can also create unregistered types of JClic activities. Just "
++"write below the full class name, prefixed by the package (like "
++"\"com.acme.activities.FooActivity\"). Activity classes must extend "
++"<b>edu.xtec.jclic.Activity</b>, and must be accessibles to the JVM "
++"classloader."
++msgstr ""
++"Els usuaris/es avançats/es poden crear també altres tipus d'activitats JClic "
++"no registrades. Escriviu a sota el nom complet de la classe, precedida pel "
++"del paquet (per exemple: \"com.acme.activities.FooActivity\"). Les noves "
++"activitats han d'estendre edu.xtec.jclic.Activity, i han de ser accessibles "
++"al carregador de classes de la màquina virtual de Java."
++
++#: edit_act_newActivity_name
++msgid "Name of the activity:"
++msgstr "Nom de l'activitat:"
++
++#: edit_act_newActivity_name_tooltip
++msgid "Each activity must have a name unique in the project"
++msgstr "Cada activitat ha de tenir un nom únic en el projecte"
++
++#: edit_act_changeType_warning
++msgid ""
++"<html><p style=\"font-family:Helvetica; font-size:10px;\"><b>Warning:</b> "
++"Changing the type of activity can cause lost of some of the current activity "
++"attributes and objects. Use it with care!</p><p>&nbsp;</p></html>"
++msgstr ""
++"<html><p style=\"font-family:Helvetica; font-size:10px;\"><b>Atenció:</b> El "
++"canvi de tipus pot comportar la pèrdua d'alguns objectes i atributs de "
++"l'activitat que s'està editant. Feu servir aquesta funció amb "
++"cura!</p><p>&nbsp;</p></html>"
++
++#: applet_codebase
++msgid "Location of JClic code:"
++msgstr "Ubicació del codi JClic:"
++
++#: applet_codebase_tooltip
++msgid "URL pointing to a folder with the JClic program files and scripts"
++msgstr ""
++"URL que apunta a una carpeta on estiguin ubicats els fitxers de programa i "
++"els scripts del JClic"
++
++#: applet_prev_text
++msgid "HTML code before:"
++msgstr "Codi HTML previ:"
++
++#. #Text to be displayed below the applet. HTM code allowed.
++#: applet_prev_text_tooltip
++msgid "Text or HTML code to be placed before the applet"
++msgstr "Text o codi HTML que apareixerà abans de l'applet"
++
++#: applet_post_text
++msgid "HTML code after:"
++msgstr "Codi HTML posterior:"
++
++#: applet_post_text_tooltip
++msgid "Text or HTML code to be placed after the applet"
++msgstr "Text o codi HTML que apareixerà després de l'applet"
++
++#: applet_size
++msgid "Applet size:"
++msgstr "Mida de l'applet:"
++
++#: applet_size_tooltip
++msgid "Width and height of the applet, in absolute or percentage values."
++msgstr "Amplada i alçada de l'applet, en valor absolut o percentual."
++
++#: applet_page_title
++msgid "Page title:"
++msgstr "Títol de la pàgina:"
++
++#: applet_page_title_tooltip
++msgid "Text to be shown at the top of the browser window"
++msgstr "Text que es mostrarà a dalt de la finestra del navegador"
++
++#: applet_created_info
++msgid "The web page \"%s\" has been created successfully."
++msgstr "La pàgina web \"%s\" ha estat creada amb èxit."
++
++#: applet_created_prompt
++msgid "Do you want to open it now with the browser?"
++msgstr "Voleu obrir-la ara amb el navegador?"
++
++#: action_createHTML_caption
++msgid "Create web page..."
++msgstr "Crea una pàgina web..."
++
++#: applet_create_title
++msgid "Creation of an HTML page with a JClic applet"
++msgstr "Creació d'una pàgina HTML amb un applet JClic"
++
++#: action_createHTML_tooltip
++msgid "Create a HTML page with an applet containing the current project"
++msgstr "Crea una pàgina HTML amb un applet que contingui el projecte actual"
++
++#: applet_filename
++msgctxt "applet_filename"
++msgid "File name:"
++msgstr "Nom del fitxer:"
++
++#: applet_filename_tooltip
++msgid "Name of the HTML file to be created"
++msgstr "Nom del fitxer HTML que es crearà"
++
++#: action_createHTML_keys
++msgid "H*"
++msgstr "H*"
++
++#: settings_applet
++msgid "Applet"
++msgstr "Applet"
++
++#: settings_applet_tooltip
++msgid "Default values used in web page creation"
++msgstr "Valors per defecte emprats en la creació de pàgines web"
++
++#: applet_bgcolor
++msgctxt "applet_bgcolor"
++msgid "Background color:"
++msgstr "Color de fons:"
++
++#: applet_bgcolor_tooltip
++msgid "HTML page background color"
++msgstr "Color de fons de la pàgina web"
++
++#: applet_centered
++msgctxt "applet_centered"
++msgid "Centered"
++msgstr "Centrat"
++
++#: applet_centered_tooltip
++msgid "Place the applet horizontally centered"
++msgstr "Situa l'applet centrat horitzontalment"
++
++#: applet_width_tooltip
++msgid "Applet width (absolute or percentage)"
++msgstr "Amplada de l'applet (en valor absolut o percentual)"
++
++#: applet_height_tooltip
++msgid "Applet height (absolute or percentage)"
++msgstr "Alçada de l'applet (en valor absolut o percentual)"
++
++#: applet_exitUrl
++msgid "On exit, go to:"
++msgstr "En sortir, anar a:"
++
++#: applet_exitUrl_tooltip
++msgid "URL where to redirect the navigation on JClic exit"
++msgstr "URL cap on es redirigirà la navegació en sortir del JClic"
++
++#: applet_infoFrame
++msgid "Info frame name:"
++msgstr "Marc d'informació:"
++
++#: applet_infoFrame_tooltip
++msgid ""
++"Name of the frame used to show the content related to the \"info\" button"
++msgstr "Nom del marc emprat per mostrar el contingut lligat al botó \"informació\""
++
++#: action_createInstaller_caption
++msgid "Create project installer..."
++msgstr "Crea un instal·lador del projecte..."
++
++#: action_createInstaller_keys
++msgctxt "action_createInstaller_keys"
++msgid "I*"
++msgstr "I*"
++
++#: action_createInstaller_tooltip
++msgid "Create a project installer script for JClic player"
++msgstr "Crea un fitxer d'instal·lació del projecte per al JClic player"
++
++#: installer_caption
++msgid "Edit project installer script"
++msgstr "Edició del fitxer d'instal·lació del projecte"
++
++#: installer_title
++msgctxt "installer_title"
++msgid "Title:"
++msgstr "Títol:"
++
++#: installer_title_tooltip
++msgid "Project title, to be shown on the installer wizard"
++msgstr "Títol del projecte que es mostrarà a l'assistent d'instal·lació"
++
++#: installer_authors
++msgid "Autors:"
++msgstr "Autors/es:"
++
++#: installer_authors_tooltip
++msgid "Author/s of the project (short text)"
++msgstr "Autors/es del projecte (text curt)"
++
++#: installer_folder
++msgctxt "installer_folder"
++msgid "Folder:"
++msgstr "Carpeta:"
++
++#: installer_folder_tooltip
++msgid "Folder name to be suggested by the installer wizard"
++msgstr "Nom de carpeta que suggerirà l'assistent d'instal·lació"
++
++#: installer_files
++msgid "Files to be copied:"
++msgstr "Fitxers a copiar:"
++
++#: installer_files_tooltip
++msgid "Files to be copied by the installer"
++msgstr "Fitxers que es copiaran durant la instal·lació"
++
++#: installer_files_available
++msgid "Available files"
++msgstr "Fitxers disponibles"
++
++#: installer_files_selected
++msgid "Selected files"
++msgstr "Fitxers seleccionats"
++
++#: installer_files_add
++msgid ">> add >>"
++msgstr ">> afegeix >>"
++
++#: installer_files_add_tooltip
++msgid "Add selected file to the list"
++msgstr "Afegeix el fitxer seleccionat a la llista"
++
++#: installer_files_remove
++msgid "<< remove <<"
++msgstr "<< treu <<"
++
++#: installer_files_remove_tooltip
++msgid "Remove selected file from the list"
++msgstr "Treu el fitxer seleccionat de la llista"
++
++#: installer_button
++msgid "Launch button"
++msgstr "Botó d'activació"
++
++#: installer_button_tooltip
++msgid "Properties of the button to be shown in the project library"
++msgstr "Propietats del botó que es mostrarà a la biblioteca de projectes"
++
++#: installer_button_project
++msgid "Main project:"
++msgstr "Projecte principal:"
++
++#: installer_button_project_tooltip
++msgid "JClic project to be launched by the button"
++msgstr "Projecte JClic associat al botó"
++
++#: installer_button_text
++msgctxt "installer_button_text"
++msgid "Label:"
++msgstr "Etiqueta:"
++
++#: installer_button_text_tooltip
++msgid "Short text label, to be shown inside the button"
++msgstr "Breu etiqueta de text, que apareixerà dins del botó"
++
++#: installer_button_icon
++msgid "Icon:"
++msgstr "Icona:"
++
++#: installer_button_icon_tooltip
++msgid ""
++"Picture to be used as button icon. Leave blank to use the default JClic icon."
++msgstr ""
++"Imatge que mostrarà el botó. Deixeu-ho en blanc per mostrar la icona per "
++"defecte del JClic."
++
++#: installer_button_description
++msgctxt "installer_button_description"
++msgid "Description"
++msgstr "Descripció"
++
++#: installer_button_description_tooltip
++msgid "Tooltip to be shown by the button"
++msgstr "Text d'ajuda emergent que mostrarà el botó"
++
++#: installer_error_noTitle
++msgid "Error: Missing project title"
++msgstr "Error: Cal indicar el títol del projecte"
++
++#: installer_error_noBaseFolder
++msgid "Error: Missing folder name"
++msgstr "Error: Cal indicar el nom de la carpeta on s'instal·larà el projecte"
++
++#: installer_error_noFilesSelected
++msgid "Error: No files selected"
++msgstr "Error: No heu seleccionat cap fitxer"
++
++#: installer_error_noButtonText
++msgid "Error: Missing launch button text label"
++msgstr "Error: Cal indicar el text del botó d'activació"
++
++#: installer_error_projectNotInFiles
++msgid ""
++"Error: The project assigned to the launch button is not in the list of files "
++"to be copied"
++msgstr ""
++"Error: El projecte assignat al botó d'activació no es troba a la llista de "
++"fitxers a copiar"
++
++#: applet_page_full
++msgid "Full-page applet"
++msgstr "L'applet ocupa tota la pàgina"
++
++#: applet_page_mixed
++msgid "Applet with specific dimensions"
++msgstr "L'applet té unes dimensions específiques"
++
++#: edit_text_align_left
++msgid "Align text left"
++msgstr "Alinear el text a l'esquerra"
++
++#: edit_text_align_center
++msgid "Center text"
++msgstr "Text centrat"
++
++#: edit_text_align_right
++msgid "Align text right"
++msgstr "Alinear el text a la dreta"
++
++#: edit_text_act_target_toggle
++msgid "Create or remove target"
++msgstr "Crea una incògnita o suprimeix-la"
++
++#: edit_text_act_insertCell
++msgid "Insert a cell"
++msgstr "Insereix una cel·la"
++
++#: edit_text_act_content
++msgid "Content"
++msgstr "Contingut"
++
++#: edit_text_act_style
++msgctxt "edit_text_act_style"
++msgid "Style"
++msgstr "Estil"
++
++#: edit_cell_size
++msgid "Cell size:"
++msgstr "Dimensions:"
++
++#: edit_project_orphanActivities
++msgid ""
++"The following activities never appear in any of the project's activity "
++"sequences, so they never will be displayed:"
++msgstr ""
++"Les següents activitats mai no arribaran a executar-se, ja que no "
++"apareixen a cap seqüència d'activitats del projecte:"
++
++#: edit_project_orphanMedia
++msgid "The following media objects are not used directly in any activity:"
++msgstr ""
++"Els següents objectes de la mediateca no es fan servir directament en cap "
++"activitat:"
++
++#: edit_project_orphanActivities_prompt
++msgid "Do you want to add them at the end of the last activity sequence?"
++msgstr "Voleu afegir-les al final de la darrera sequència d'activitats?"
++
++#: edit_project_orphanMedia_prompt
++msgid "Do you want to remove them?"
++msgstr "Voleu eliminar-los?"
++
++#: edit_project_orphanMedia_title
++msgid "Removal of unused media objects"
++msgstr "Retirada d'objectes multimèdia no utilitzats"
++
++#: edit_project_orphanActivities_title
++msgid "Orphan activities"
++msgstr "Activitats òrfenes"
++
++#: edit_media_refreshAll
++msgid "Update all media content"
++msgstr "Actualitza el contingut de tots els recursos"
++
++#: edit_media_refreshAll_tooltip
++msgid "Update all media objects reloading its files"
++msgstr "Actualitza tots els recursos tornant a carregar els seus fitxers"
++
++#: edit_media_refreshAll_keys
++msgid "R*"
++msgstr "R*"
++
++#: edit_media_refreshAll_working
++msgid "Updating media..."
++msgstr "Actualitzant recursos..."
++
++#: edit_media_exportAll
++msgid "Export all media"
++msgstr "Exporta tots els recursos"
++
++#: edit_media_exportAll_tooltip
++msgid "Save to files the content of all media elements"
++msgstr "Enregistra en fitxers el contingut de tots els recursos"
++
++#: edit_media_exportAll_keys
++msgid "X*"
++msgstr "X*"
++
++#: edit_shape_select
++msgid "Select"
++msgstr "Selecciona"
++
++#: edit_shape_addPoint
++msgid "Add point"
++msgstr "Afegeix un punt"
++
++#: edit_shape_deletePoint
++msgid "Delete"
++msgstr "Elimina"
++
++#: edit_shape_drawRect
++msgid "Draw rectangle"
++msgstr "Dibuixa un rectangle"
++
++#: edit_shape_drawEllipse
++msgid "Draw ellipse"
++msgstr "Dibuixa una el·lipse"
++
++#: edit_shape_drawPoly
++msgid "Draw polygon"
++msgstr "Dibuixa un polígon"
++
++#: edit_shape_toLine
++msgid "Convert to line"
++msgstr "Converteix en línia"
++
++#: edit_shape_toBezier
++msgid "Convert to Bézier curve"
++msgstr "Converteix en corba de Bézier"
++
++#: edit_shape_toQuad
++msgid "Convert to quadratic curve"
++msgstr "Converteix en quàdrica"
++
++#: edit_shape_rLeft
++msgid "Rotate left"
++msgstr "Gira a l'esquerra"
++
++#: edit_shape_rRight
++msgid "Rotate right"
++msgstr "Gira a la dreta"
++
++#: edit_shape_expand
++msgid "Expand"
++msgstr "Expandeix"
++
++#: edit_shape_contract
++msgid "Contract"
++msgstr "Contreu"
++
++#: edit_shape_zoomIn
++msgid "Zoom in"
++msgstr "Apropa"
++
++#: edit_shape_zoomOut
++msgid "Zoom out"
++msgstr "Allunya"
++
++#: edit_shape_aproxPoints
++msgid "Join nearest points"
++msgstr "Ajunta punts propers"
++
++#: edit_shape_showPoints
++msgid "Show points"
++msgstr "Mostra punts"
++
++#: edit_shape_showPoints_tooltip
++msgid "Show/Hide the points"
++msgstr "Mostra/Amaga els punts"
++
++#: edit_shape_gridSize
++msgid "Grid size:"
++msgstr "Reixeta:"
++
++#: edit_shape_hideGrid
++msgid "Show / Hide grid"
++msgstr "Mostra o amaga la reixeta"
++
++#: edit_shape_magnetRadius
++msgid "Magnet radius:"
++msgstr "Radi de l'imant:"
++
++#: edit_shape_elements
++msgid "Defined elements"
++msgstr "Elements definits"
++
++#: edit_shape_elemName
++msgid "Name of the selected element"
++msgstr "Nom de l'element seleccionat"
++
++#: edit_shape_magnetRadius_tooltip
++msgid "Action radius of the magnet, when enabled"
++msgstr "Radi d'acció de l'imant quan es troba activat"
++
++#: edit_shape_gridSize_tooltip
++msgid "Size of the grid"
++msgstr "Mida de la reixeta"
++
++#: edit_mc_activity
++msgctxt "edit_mc_activity"
++msgid "Activity:"
++msgstr "Activitat:"
++
++#: edit_mc_sequence
++msgid "Sequence:"
++msgstr "Seqüència:"
++
++#: edit_mc_url
++msgctxt "edit_mc_url"
++msgid "URL:"
++msgstr "URL:"
++
++#: edit_mc_project
++msgid "Project:"
++msgstr "Projecte:"
++
++#: edit_mc_activity_selection
++msgid "Choose activity"
++msgstr "Selecció de l'activitat"
++
++#: edit_mc_sequence_selection
++msgid "Choose sequence"
++msgstr "Selecció de la seqüència"
++
++#: edit_mc_err_nullContent
++msgid "Insufficient data!"
++msgstr "Dades insuficients!"
++
++#: edit_act_arrowColor
++msgid "Arrow color:"
++msgstr "Color de les fletxes:"
++
++#: edit_act_arrowColor_tooltip
++msgid ""
++"Color used by the editor to draw the arrows (not exactly, because an XOR bit "
++"mask is used)"
++msgstr ""
++"Color emprat per l'editor per dibuixar les fletxes (no és exacte, ja que es "
++"fa servir una màscara XOR de bits)"
++
++#: edit_act_editActivity
++msgid "Edit..."
++msgstr "Edita..."
++
++#: edit_act_editActivity_tooltip
++msgid "Edit the selected activity"
++msgstr "Edita l'activitat seleccionada"
++
++#: action_saveFileAs_caption
++msgid "Save as..."
++msgstr "Anomena i desa..."
++
++#: action_saveFileAs_keys
++msgctxt "action_saveFileAs_keys"
++msgid "AA"
++msgstr "AA"
++
++#: action_saveFileAs_tooltip
++msgid "Save the current project with a different name"
++msgstr "Desa el projecte amb un nom diferent"
++
++#: edit_act_behavior_block
++msgctxt "edit_act_behavior_block"
++msgid "Behavior"
++msgstr "Comportament"
++
++#: edit_act_behavior
++msgctxt "edit_act_behavior"
++msgid "Behavior"
++msgstr "Comportament"
++
++#: edit_act_behavior_drag
++msgid "Drag objects"
++msgstr "Arrossega"
++
++#: edit_act_behavior_drag_tooltip
++msgid "Drag objects instead of use a connection line"
++msgstr "Arrossega els objectes en comptes d'unir-los amb una línia"
++
++#: edit_act_behavior_order
++msgid "Check solving order"
++msgstr "Comprova l'ordre de resolució"
++
++#: edit_act_behavior_order_tooltip
++msgid "Cells must be solved in order"
++msgstr "Les caselles s'han de resoldre ordenadament"
++
++#: edit_act_scramble
++msgid "Scramble"
++msgstr "Barreja"
++
++#: action_importActivities_caption
++msgid "Import activities..."
++msgstr "Importa activitats..."
++
++#: action_importActivities_keys
++msgctxt "action_importActivities_keys"
++msgid "I*"
++msgstr "I*"
++
++#: action_importActivities_tooltip
++msgid "Import activities from another project"
++msgstr "Importa activitats d'un altre projecte"
++
++#: import_warn_samefile
++msgid ""
++"The selected file corresponds to the current project. Activities can be "
++"imported only between different projects. Please select another project file."
++msgstr ""
++"El fitxer que heu seleccionat correspon al projecte actual. La importació "
++"d'activitats només es pot fer entre projectes diferents. Si us plau, "
++"seleccioneu un altre fitxer de projecte."
++
++#: import_selectActivities
++msgid "Select one or more activities to import into the current project\\:"
++msgstr ""
++"Seleccioneu una o més activitats per a importar-les al projecte actual:"
++
++#: import_importing
++msgid "Importing..."
++msgstr "S'està important..."
++
++#: import_checkdep
++msgid "Checking dependencies..."
++msgstr "S'estan comprovant les dependències..."
++
++#: import_impmedia
++msgid "Importing media\\:"
++msgstr "S'estan important recursos:"
++
++#: import_impact
++msgid "Importing activity\\:"
++msgstr "S'està important l'activitat:"
++
++#: import_selectProject
++msgctxt "import_selectProject"
++msgid "Select the JClic project of which the activities will be imported"
++msgstr "Seleccioneu el projecte JClic del qual desitgeu importar activitats"
++
++#: edit_tagRep_tags
++msgid "Tag marks"
++msgstr "Marques d'etiqueta"
++
++#: edit_tagRep_tagStart
++msgid "Start mark\\:"
++msgstr "Marca d'inici:"
++
++#: edit_tagRep_tagStart_tooltip
++msgid "Mark used at the beginning of tags"
++msgstr "Marca que indica inici d'etiqueta"
++
++#: edit_tagRep_tagEnd
++msgid "End mark\\:"
++msgstr "Marca d'acabament:"
++
++#: edit_tagRep_tagEnd_tooltip
++msgid "Mark used at the end of tags"
++msgstr "Marca que indica acabament d'etiqueta"
++
++#: edit_tagRep_file
++msgid "File"
++msgstr "Fitxer"
++
++#: edit_tagRep_fileName
++msgid "File or URL\\:"
++msgstr "Fitxer o URL:"
++
++#: edit_tagRep_fileName_tooltip
++msgid "Name or URL of the file containing the values that will replace tags"
++msgstr ""
++"Nom o URL del fitxer que conté els valors que substituiran les etiquetes"
++
++#: edit_tagRep_charset
++msgid "Charset\\:"
++msgstr "Codificació:"
++
++#: edit_tagRep_charset_tooltip
++msgid "Character encoding used in the file"
++msgstr "Tipus de codificació emprada en el fitxer"
++
++#: edit_tagRep_browseFile
++msgctxt "edit_tagRep_browseFile"
++msgid "Browse..."
++msgstr "Navega..."
++
++#: edit_tagRep_browseFile_tooltip
++msgid "Browse the filesystem"
++msgstr "Navega pel sistema de fitxers"
++
++#: edit_tagRep_title
++msgid "Tag replacing"
++msgstr "Substitució d'etiquetes"
++
++#: edit_text_act_clearStylesBtn
++msgid "Clear text styles..."
++msgstr "Neteja estils de text..."
++
++#: edit_text_act_clearStylesPrompt
++msgid ""
++"Warning\\: This action will clear the specific character attributes applied "
++"to the document, setting it back to its main style. This action cannot be "
++"undone. Do you want to do it?"
++msgstr ""
++"Atenció: Aquesta acció netejarà els atributs especials de caràcter aplicats "
++"al document, retornant-lo al seu estil principal. L'operació no es pot "
++"desfer. Voleu fer-ho?"
++
++#: img_max_size
++msgid "Maximum size of images:"
++msgstr "Mida màxima de les imatges:"
++
++#: img_max_width_tooltip
++msgid "Maximum width of images imported into the media library."
++msgstr "Amplada màxima de les imatges que s'importen a la mediateca."
++
++#: img_max_height_tooltip
++msgid "Maximum height of images imported into the media library."
++msgstr "Alçada màxima de les imatges que s'importen a la mediateca."
++
++#: img_resize_prompt
++msgid ""
++"The image \"%s\" has a size of %s pixels. This exceeds the maximum allowed "
++"by JClic Author (%s). Do you want to resize it?"
++msgstr ""
++"La imatge \"%s\" té unes dimensions de %s píxels, que excedeixen el màxim "
++"permès pel JClic Author (%s). Voleu redimensionar-la?"
+--- jclic-0.3.2.10.orig/i18n/fromLaunchpad/po/jclic-core/JClicMessages_ca@valencia.po
++++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-core/JClicMessages_ca@valencia.po
+@@ -8,14 +8,15 @@ msgstr ""
+ "Project-Id-Version: jclic\n"
+ "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+ "POT-Creation-Date: 2008-03-27 00:34+0200\n"
+-"PO-Revision-Date: 2011-08-19 12:27+0000\n"
++"PO-Revision-Date: 2019-03-15 13:35+0100\n"
+ "Last-Translator: Alfons Rovira <inclusa@gmail.com>\n"
+ "Language-Team: Catalan (Valencian) <ca@valencia@li.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "X-Launchpad-Export-Date: 2015-12-09 11:48+0000\n"
+-"X-Generator: Launchpad (build 17865)\n"
++"X-Generator: Poedit 2.0.6\n"
++"Language: ca@valencia\n"
+ 
+ #. #JClic main messages
+ #: label_time
+@@ -24,7 +25,7 @@ msgstr "temps"
+ 
+ #: label_actions
+ msgid "tries"
+-msgstr ""
++msgstr "intents"
+ 
+ #: label_score
+ msgid "score"
+@@ -85,7 +86,7 @@ msgstr "Quant a"
+ 
+ #: action_about_tooltip
+ msgid "User reports"
+-msgstr ""
++msgstr "Informes d'usuari"
+ 
+ #: about_window_lb_report
+ msgid "Report"
+@@ -101,7 +102,7 @@ msgstr "Activitats no registrades"
+ 
+ #: report_system_standard
+ msgid "Report not registered in any DB"
+-msgstr ""
++msgstr "L'informe no s'està enregistrant en cap base de dades"
+ 
+ #: report_lb_time
+ msgid "Time"
+@@ -109,7 +110,7 @@ msgstr "Temps"
+ 
+ #: msg_error_loading_sequence
+ msgid "Error loading sequence"
+-msgstr ""
++msgstr "Error en carregar la seqüència"
+ 
+ #: media_qt_error_initializing
+ msgid "Error initializing QuickTime!"
+@@ -117,7 +118,7 @@ msgstr "Error inicialitzant QuickTime"
+ 
+ #: media_check_url
+ msgid "messages/checkmedia.html"
+-msgstr ""
++msgstr "messages/checkmedia_ca.html"
+ 
+ #: filesystem_openURL
+ msgid "Open URL..."
+@@ -141,641 +142,645 @@ msgstr "Mou l'element seleccionat cap av
+ 
+ #: editor_moveUp_tooltip
+ msgid "Move the selected element up"
+-msgstr ""
++msgstr "Mou l'element seleccionat cap amunt"
+ 
+ #: editor_moveDown
+ msgid "Move down"
+-msgstr ""
++msgstr "Mou avall"
+ 
+ #: editor_moveUp
+ msgid "Move up"
+-msgstr ""
++msgstr "Mou amunt"
+ 
+ #: filefilter_all_images
+ msgid "Image files (*.gif, *.jpg, *.png, *.bmp, *.ico)"
+-msgstr ""
++msgstr "Imatges (*.gif, *.jpg, *.png, *.bmp, *.ico)"
+ 
+ #: filefilter_png
+ msgid "PNG images"
+-msgstr ""
++msgstr "Imatges PNG"
+ 
+ #: filefilter_jpg
+ msgid "JPG images"
+-msgstr ""
++msgstr "Imatges JPG"
+ 
+ #: filefilter_gif
+ msgid "GIF images"
+-msgstr ""
++msgstr "Imatges GIF"
+ 
+ #: filesystem_saveURLerror
+ msgid "URL-based files are read-only."
+-msgstr ""
++msgstr "Els fitxers obtinguts d'un URL són només de lectura."
+ 
+ #: filefilter_all_clic
+ msgid "Clic 3.0 packages (*.pac, *.pcc)"
+-msgstr ""
++msgstr "Paquets Clic 3.0 (*.pac, *.pcc)"
+ 
+ #: filefilter_all
+ msgid "All files"
+-msgstr ""
++msgstr "Tots els fitxers"
+ 
+ #: filefilter_all_jclic_clic
+ msgid "JClic and Clic 3.0 projects (*.jclic, *.jclic.zip, *.pac, *.pcc)"
+-msgstr ""
++msgstr "Projectes JClic i Clic 3.0 (*.jclic, *.jclic.zip, *.pac, *.pcc)"
+ 
+ #: filefilter_all_jclic
+ msgid "JClic projects (*.jclic, *.jclic.zip)"
+-msgstr ""
++msgstr "Projectes JClic (*.jclic, *.jclic.zip)"
+ 
+ #: filefilter_pcc
+ msgid "Clic 3.0 compact packages (*.pcc)"
+-msgstr ""
++msgstr "Paquets compactes Clic 3.0 (*.pcc)"
+ 
+ #: filefilter_pac
+ msgid "Clic 3.0 open packages (*.pac)"
+-msgstr ""
++msgstr "Paquets oberts Clic 3.0 (*.pac)"
+ 
+ #: filefilter_jclic_zip
+ msgid "JClic compressed projects (*.jclic.zip)"
+-msgstr ""
++msgstr "Projectes JClic comprimits (*.jclic.zip)"
+ 
+ #: filefilter_jclic
+ msgid "JClic projects (*.jclic)"
+-msgstr ""
++msgstr "Projectes JClic (*.jclic)"
+ 
+ #: about_window_lb_mediaSystem
+ msgid "Multimedia system"
+-msgstr ""
++msgstr "Sistema multimèdia"
+ 
+ #: about_window_lb_level
+ msgid "Level"
+-msgstr ""
++msgstr "Nivell"
+ 
+ #: about_window_lb_area
+ msgid "Area"
+-msgstr ""
++msgstr "Àrea"
+ 
+ #: report_num_actions
+ msgid "Actions done:"
+-msgstr ""
++msgstr "Accions fetes:"
+ 
+ #: report_project
+ msgid "Project:"
+-msgstr ""
++msgstr "Projecte:"
+ 
+ #: report_lb_totals
+ msgid "Total:"
+-msgstr ""
++msgstr "Totals:"
+ 
+ #: report_num_projects
+ msgid "Projects:"
+-msgstr ""
++msgstr "Projectes:"
+ 
+ #: report_session
+ msgid "Session:"
+-msgstr ""
++msgstr "Sessió:"
+ 
+ #: msg_warn_no_exec_in_applets
+ msgid ""
+ "For security reasons, execution of external programs is disabled in JClic "
+ "applets."
+ msgstr ""
++"Per raons de seguretat l'execució de programes externs està deshabilitada "
++"en \n"
++"els applets JClic."
+ 
+ #: msg_error_starting_activity
+ msgid "Error starting activity!"
+-msgstr ""
++msgstr "Error en iniciar l'activitat!"
+ 
+ #: msg_error_loading_project
+ msgid "Error loading project"
+-msgstr ""
++msgstr "Error en carregar el projecte"
+ 
+ #: msg_error_playing_media
+ msgid "Error playing media!"
+-msgstr ""
++msgstr "Error del recurs multimèdia!"
+ 
+ #: msg_activity_finished
+ msgid "Activity finished!"
+-msgstr ""
++msgstr "Activitat acabada!"
+ 
+ #: msg_playing_media
+ msgid "Playing media"
+-msgstr ""
++msgstr "Interpretant multimèdia"
+ 
+ #: msg_activity_running
+ msgid "Activity running"
+-msgstr ""
++msgstr "Activitat en marxa"
+ 
+ #: msg_activity_ready
+ msgid "Activity ready"
+-msgstr ""
++msgstr "Activitat preparada"
+ 
+ #: msg_initializing
+ msgid "Initializing..."
+-msgstr ""
++msgstr "Inicialitzant..."
+ 
+ #: msg_preparing_media
+ msgid "Preparing media"
+-msgstr ""
++msgstr "Preparant multimèdia"
+ 
+ #: msg_error_loading_activity
+ msgid "Error loading activity"
+-msgstr ""
++msgstr "rror en carregar l'activitat"
+ 
+ #: msg_loading_activity
+ msgid "Loading activity"
+-msgstr ""
++msgstr "Carregant l'activitat..."
+ 
+ #: msg_loading_project
+ msgid "Loading project..."
+-msgstr ""
++msgstr "Carregant el projecte..."
+ 
+ #: msg_ready
+ msgid "Ready"
+-msgstr ""
++msgstr "Fet"
+ 
+ #: err_reading_data
+ msgid "Error loading file"
+-msgstr ""
++msgstr "Error en llegir el fitxer"
+ 
+ #: err_file_save
+ msgid "Error saving file!"
+-msgstr ""
++msgstr "Error en desar el fitxer!"
+ 
+ #: err_file_open
+ msgid "Error opening file!"
+-msgstr ""
++msgstr "Error en obrir el fitxer!"
+ 
+ #: report_started
+ msgid "Session started:"
+-msgstr ""
++msgstr "Inici de sessió:"
+ 
+ #: report_lb_score
+ msgid "Score"
+-msgstr ""
++msgstr "Puntuació"
+ 
+ #: report_lb_actions
+ msgid "Actions"
+-msgstr ""
++msgstr "Accions"
+ 
+ #: report_lb_solved
+ msgid "Ok"
+-msgstr ""
++msgstr "Correcta"
+ 
+ #: report_lb_activity
+ msgctxt "report_lb_activity"
+ msgid "Activity"
+-msgstr ""
++msgstr "Activitat"
+ 
+ #: report_lb_sequence
+ msgid "Sequence"
+-msgstr ""
++msgstr "Seqüència"
+ 
+ #: report_global_score
+ msgid "Global score:"
+-msgstr ""
++msgstr "Puntuació global:"
+ 
+ #: report_total_time
+ msgid "Total time on activities:"
+-msgstr ""
++msgstr "Temps total en activitats:"
+ 
+ #: report_num_activities_solved
+ msgid "Activities ok:"
+-msgstr ""
++msgstr "Activitats correctes:"
+ 
+ #: report_num_activities
+ msgid "Activities done:"
+-msgstr ""
++msgstr "Activitats realitzades:"
+ 
+ #: report_num_sequences
+ msgid "Sequences:"
+-msgstr ""
++msgstr "Seqüències:"
+ 
+ #: report_system
+ msgid "Report system:"
+-msgstr ""
++msgstr "Sistema d'informes:"
+ 
+ #: report_user
+ msgid "User:"
+-msgstr ""
++msgstr "Usuari:"
+ 
+ #: report_not_finished
+ msgid "Activity not finished"
+-msgstr ""
++msgstr "Activitat encara no acabada"
+ 
+ #: action_info_tooltip
+ msgid "Additional information"
+-msgstr ""
++msgstr "Informació adicional"
+ 
+ #: action_help_caption
+ msgid "Help"
+-msgstr ""
++msgstr "Ajuda"
+ 
+ #: action_help_tooltip
+ msgid "Help about this activity"
+-msgstr ""
++msgstr "Ajuda sobre l'activitat"
+ 
+ #: action_audio_caption
+ msgid "Sounds"
+-msgstr ""
++msgstr "Sons"
+ 
+ #: action_audio_tooltip
+ msgid "Enable/disable sounds"
+-msgstr ""
++msgstr "Activar/desactivar els sons"
+ 
+ #: about_window_lb_system
+ msgid "System"
+-msgstr ""
++msgstr "Sistema"
+ 
+ #: about_window_lb_total_mem
+ msgid "Total memory"
+-msgstr ""
++msgstr "Memòria total"
+ 
+ #: about_window_lb_free_mem
+ msgid "Free memory"
+-msgstr ""
++msgstr "Memòria lliure"
+ 
+ #: about_window_lb_java_home
+ msgid "Java home"
+-msgstr ""
++msgstr "Ubicació de Java"
+ 
+ #: about_window_lb_java_vm
+ msgid "Java virtual machine"
+-msgstr ""
++msgstr "Màquina virtual Java"
+ 
+ #: about_window_lb_java_version
+ msgid "Java version"
+-msgstr ""
++msgstr "Versió de Java"
+ 
+ #: about_window_lb_os
+ msgid "Operating system"
+-msgstr ""
++msgstr "Sistema operatiu"
+ 
+ #: about_window_lb_version
+ msgid "Version"
+-msgstr ""
++msgstr "Versió"
+ 
+ #: about_window_lb_descriptors
+ msgid "Descriptors"
+-msgstr ""
++msgstr "Descriptors"
+ 
+ #: about_window_lb_description
+ msgid "Description"
+-msgstr ""
++msgstr "Descripció"
+ 
+ #: about_window_lb_history
+ msgid "History"
+-msgstr ""
++msgstr "Revisions"
+ 
+ #: about_window_lb_organizations
+ msgid "Organizations"
+-msgstr ""
++msgstr "Organitzacions"
+ 
+ #: about_window_lb_organization
+ msgid "Organization"
+-msgstr ""
++msgstr "Organització"
+ 
+ #: about_window_lb_authors
+ msgid "Authors"
+-msgstr ""
++msgstr "Autors/es"
+ 
+ #: about_window_lb_author
+ msgid "Author"
+-msgstr ""
++msgstr "Autor/a"
+ 
+ #: about_window_lb_activity
+ msgctxt "about_window_lb_activity"
+ msgid "Activity"
+-msgstr ""
++msgstr "Activitat"
+ 
+ #: help_window_close_button
+ msgid "Return to activity"
+-msgstr ""
++msgstr "Torna a l'activitat"
+ 
+ #: help_window_caption
+ msgid "Help window"
+-msgstr ""
++msgstr "Finestra d'ajuda"
+ 
+ #: action_about_caption
+ msgid "Reports"
+-msgstr ""
++msgstr "Informes"
+ 
+ #: action_about_keys
+ msgid "RR"
+-msgstr ""
++msgstr "II"
+ 
+ #: action_audio_keys
+ msgid "SS"
+-msgstr ""
++msgstr "OS"
+ 
+ #: action_help_keys
+ msgid "HH"
+-msgstr ""
++msgstr "JJ"
+ 
+ #: action_info_keys
+ msgid "II"
+-msgstr ""
++msgstr "NN"
+ 
+ #: action_next_keys
+ msgid "N*"
+-msgstr ""
++msgstr "S*"
+ 
+ #: action_prev_keys
+ msgid "P*"
+-msgstr ""
++msgstr "A*"
+ 
+ #: action_reset_keys
+ msgid "R*"
+-msgstr ""
++msgstr "R*"
+ 
+ #: filefilter_install
+ msgid "JClic project installers (*.jclic.inst)"
+-msgstr ""
++msgstr "Instal·ladors de projectes JClic (*.jclic.inst)"
+ 
+ #: report_err_no_users
+ msgid "No users defined in the reports database!"
+-msgstr ""
++msgstr "No hi ha cap usuari definit a la base de dades d'informes!"
+ 
+ #: report_err_no_users_in_group
+ msgid "No users defined for this group in the reports database!"
+ msgstr ""
++"No hi ha cap usuari definit en aquest grup a la base de dades d'informes!"
+ 
+ #: report_new_user
+ msgid "New user..."
+-msgstr ""
++msgstr "Usuari nou..."
+ 
+ #: report_new_user_tooltip
+ msgid "Create a new user in the reports database"
+-msgstr ""
++msgstr "Crea un nou usuari a la base de dades d'informes"
+ 
+ #: report_err_creating_user
+ msgid "Error creating new user!"
+-msgstr ""
++msgstr "Error en crear el nou usuari!"
+ 
+ #: report_select_user
+ msgid "User identification for the reports database"
+-msgstr ""
++msgstr "Identificació d'usuari per la base de dades d'informe"
+ 
+ #: report_userlist_title
+ msgid "Please select your name:"
+-msgstr ""
++msgstr "Seleccioneu el vostre nom:"
+ 
+ #: report_ident_user
+ msgid "User identification"
+-msgstr ""
++msgstr "Identificació d'usuari"
+ 
+ #: report_name_prompt
+ msgid "Name:"
+-msgstr ""
++msgstr "Nom:"
+ 
+ #: report_id_prompt
+ msgid "Login:"
+-msgstr ""
++msgstr "Identificador:"
+ 
+ #: report_pw_prompt
+ msgid "Password:"
+-msgstr ""
++msgstr "Contrasenya:"
+ 
+ #: report_pw_prompt_confirm
+ msgid "Confirm password:"
+-msgstr ""
++msgstr "Confirmació de la contrasenya:"
+ 
+ #: report_new_user_data
+ msgid "Creation of a new user:"
+-msgstr ""
++msgstr "Creació d'un nou usuari:"
+ 
+ #: report_err_bad_data
+ msgid "Incorrect data!"
+-msgstr ""
++msgstr "Dades incorrectes!"
+ 
+ #: report_generic_group_name
+ msgid "Generic"
+-msgstr ""
++msgstr "Genèric"
+ 
+ #: report_new_group
+ msgid "Create a new group..."
+-msgstr ""
++msgstr "Crea un nou grup..."
+ 
+ #: report_err_creating_group
+ msgid "Error creating the new group!"
+-msgstr ""
++msgstr "Error en crear el nou grup!"
+ 
+ #: report_grouplist_title
+ msgid "Please select your group:"
+-msgstr ""
++msgstr "Seleccioneu el vostre grup:"
+ 
+ #: report_new_group_data
+ msgid "Creation of a new users group:"
+-msgstr ""
++msgstr "Creació d'un nou grup d'usuaris:"
+ 
+ #: report_err_invalid_user
+ msgid "Missing user ID or incorrect password."
+-msgstr ""
++msgstr "Usuari inexistent o contrasenya incorrecta."
+ 
+ #: report_user_has_pwd
+ msgid "This account is password-protected."
+-msgstr ""
++msgstr "El compte d'aquest usuari està protegit per contrasenya."
+ 
+ #: report_err_init
+ msgid "Error initializing report system."
+-msgstr ""
++msgstr "Error en inicialitzar el sistema d'informes."
+ 
+ #: report_not_connected
+ msgid "not connected"
+-msgstr ""
++msgstr "no connectat"
+ 
+ #: report_err_creating
+ msgid "Error creating reports agent"
+-msgstr ""
++msgstr "Error en crear l'agent d'informes"
+ 
+ #: action_return_caption
+ msgctxt "action_return_caption"
+ msgid "Return"
+-msgstr ""
++msgstr "Torna"
+ 
+ #: action_return_tooltip
+ msgid "Return to the last menu"
+-msgstr ""
++msgstr "Torna al darrer menú"
+ 
+ #: action_return_keys
+ msgid "T*"
+-msgstr ""
++msgstr "T*"
+ 
+ #: filefilter_all_sounds
+ msgid "Sounds (*.wav, *.mp3, *.ogg, *.au, *.aiff)"
+-msgstr ""
++msgstr "Sons (*.wav, *.mp3, *.au, *.aiff)"
+ 
+ #: filefilter_midi
+ msgid "MIDI files (*.mid)"
+-msgstr ""
++msgstr "Fitxers MIDI (*.mid)"
+ 
+ #: filefilter_all_video
+ msgid "Video files (*.avi, *.mov, *.mpeg)"
+-msgstr ""
++msgstr "Vídeo (*.avi, *.mov, *.mpeg)"
+ 
+ #: filefilter_all_anim
+ msgid "Flash 2.0 files (*.swf)"
+-msgstr ""
++msgstr "Fitxers Flash 2.0 (*.swf)"
+ 
+ #: filefilter_skins
+ msgid "Skins (*.xml)"
+-msgstr ""
++msgstr "Entorns visuals (*.xml)"
+ 
+ #: filefilter_all_media
+ msgid "All media files"
+-msgstr ""
++msgstr "Tots els recursos"
+ 
+ #: filesystem_copyToRoot_1
+ msgid "The file"
+-msgstr ""
++msgstr "El fitxer"
+ 
+ #: filesystem_copyToRoot_2
+ msgid "is out of the current project's folder."
+-msgstr ""
++msgstr "es troba en una carpeta diferent de la de l'actual projecte."
+ 
+ #: filesystem_copyToRoot_3
+ msgid "It's advisable to have all the files in the same folder."
+-msgstr ""
++msgstr "Es recomana tenir tots els fitxers en la mateixa carpeta."
+ 
+ #: filesystem_copyToRoot_4
+ msgid "Do you want to copy the selected file to the project's folder?"
+-msgstr ""
++msgstr "Voleu copiar el fitxer seleccionat a la carpeta del projecte?"
+ 
+ #: filesystem_copyFile
+ msgid "Copying file"
+-msgstr ""
++msgstr "Copiant el fitxer"
+ 
+ #: msg_loading
+ msgid "Loading"
+-msgstr ""
++msgstr "Carregant"
+ 
+ #: report_err_bad_id
+ msgid "Bad identifier!"
+-msgstr ""
++msgstr "Identificador incorrecte!"
+ 
+ #: report_err_duplicate_id
+ msgid "This identifier already exists in the database!"
+-msgstr ""
++msgstr "L'identificador ja existeix a la base de dades"
+ 
+ #: report_err_bad_name
+ msgid "Bad name!"
+-msgstr ""
++msgstr "Nom incorrecte!"
+ 
+ #: report_err_bad_pw
+ msgid "Passwords don't match!"
+-msgstr ""
++msgstr "Les contrasenyes no coincideixen!"
+ 
+ #: report_err_connect
+ msgid "Error connecting to the reports database!"
+-msgstr ""
++msgstr "Error en conectar amb la base de dades d'informes!"
+ 
+ #: test_alert_exit
+ msgid "EXIT: At this point, the program will exit."
+-msgstr ""
++msgstr "EXIT: En aquest punt el JClic es tancaria."
+ 
+ #: test_alert_jump_to
+ msgid "At this point the program will jump to the project:"
+-msgstr ""
++msgstr "En aquest punt es produiria un salt al projecte:"
+ 
+ #: ftype_image
+ msgid "Image"
+-msgstr ""
++msgstr "Imatge"
+ 
+ #: ftype_audio
+ msgid "Digital audio"
+-msgstr ""
++msgstr "So digital"
+ 
+ #: ftype_midi
+ msgid "MIDI file"
+-msgstr ""
++msgstr "Fitxer MIDI"
+ 
+ #: ftype_xml
+ msgid "XML file"
+-msgstr ""
++msgstr "Fitxer XML"
+ 
+ #: ftype_anim
+ msgid "Animation"
+-msgstr ""
++msgstr "Animació"
+ 
+ #: ftype_video
+ msgid "Digital video"
+-msgstr ""
++msgstr "Vídeo digital"
+ 
+ #: ftype_font
+ msgid "TrueType font"
+-msgstr ""
++msgstr "Tipus de lletra TrueType"
+ 
+ #: ftype_jclic
+ msgid "JClic project"
+-msgstr ""
++msgstr "Projecte JClic"
+ 
+ #: ftype_inst
+ msgid "JClic project installer script"
+-msgstr ""
++msgstr "Seqüència d'instal·lació de projectes JClic"
+ 
+ #: ftype_unknown
+ msgid "Unknown"
+-msgstr ""
++msgstr "Desconegut"
+ 
+ #: ftype_animated
+ msgid "animated"
+-msgstr ""
++msgstr "animada"
+ 
+ #: filefilter_fonts
+ msgid "Fonts (*.ttf)"
+-msgstr ""
++msgstr "Tipus de lletra (*.ttf)"
+ 
+ #: editor_moveUp_keys
+ msgid "U#38"
+-msgstr ""
++msgstr "U#38"
+ 
+ #: editor_moveDown_keys
+ msgid "W#40"
+-msgstr ""
++msgstr "V#40"
+ 
+ #: filefilter_all_html
+ msgid "HTML documents (*.htm, *.html)"
+-msgstr ""
++msgstr "Documents HTML (*.htm, *.html)"
+ 
+ #: about_creditsDoc
+ msgid "about/credits.html"
+-msgstr ""
++msgstr "about/credits_ca.html"
+ 
+ #: about_licenseDoc
+ msgid "about/license.html"
+-msgstr ""
++msgstr "about/license_ca.html"
+ 
+ #: about_sponsorsCaption
+ msgid "With the support of:"
+-msgstr ""
++msgstr "Amb el suport de:"
+ 
+ #: about_window_systemInfo
+ msgid "System information"
+-msgstr ""
++msgstr "Informació del sistema"
+ 
+ #: about_window_projectInfo
+ msgid "Current project info"
+-msgstr ""
++msgstr "Informació del projecte actual"
+ 
+ #: about_window_reportInfo
+ msgid "Current session results"
+-msgstr ""
++msgstr "Resultats de la sessió actual"
+ 
+ #: about_otherCreditsCaption
+ msgid "This product includes software developed by:"
+-msgstr ""
++msgstr "Aquest producte inclou programari desenvolupat per:"
+ 
+ #: msg_saving_project
+ msgid "Saving project..."
+-msgstr ""
++msgstr "Guardant el projecte..."
+ 
+ #: filefilter_text
+ msgid "Text files (*.txt)"
+-msgstr ""
++msgstr "Fitxers de text (*.txt)"
+ 
+ #. #Translation credits displayed on the about window, in HTML format
+ #: html_translation_credits
+ msgid "English version, by The JClic team"
+-msgstr ""
++msgstr "versió en valencià, per l'Equip LliureX"
+ 
+ #. #Abstract of the GPL license, version 2.0, as shown on the About window
+ #: html_gpl_license
+@@ -789,3 +794,15 @@ msgid ""
+ "<a href\\=\"http\\://www.gnu.org/copyleft/gpl.html\">GNU General Public "
+ "License</a>  for more details."
+ msgstr ""
++"Aquest programa &eacute;s lliure. Podeu distribuir-lo i/o modificar-lo "
++"conforme a les disposicions de la Llic&egrave;ncia P&uacute;blica General de "
++"GNU (GPL), publicada per la Free Software Foundation, ja sigui la "
++"versi&oacute; 2 de la llic&egrave;ncia o qualsevol versi&oacute; posterior."
++"<br>&nbsp;<BR>Aquest programa es distribueix amb la intenci&oacute; de "
++"resultar &uacute;til, per&ograve; SENSE CAP GARANTIA, fins i tot sense la "
++"garantia impl&iacute;cita de COMERCIABILITAT o CONVENI&Egrave;NCIA PER A UN "
++"PROP&Ograve;SIT PARTICULAR. Per a m&eacute;s \n"
++"detalls, vegeu la <a \"href=\\\"http://www.gnu.org/copyleft/gpl.html\\"
++"\">Llic&egrave;ncia P&uacute;blica General de GNU</"
++"a>.                                                                                                                                                        \n"
++"                                                   "
+--- /dev/null
++++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-installer/installer_ca@valencia.po
+@@ -0,0 +1,73 @@
++msgid ""
++msgstr ""
++"Project-Id-Version: JClic installer 0.2.0.0\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2008-05-30 16:00+0000\n"
++"PO-Revision-Date: 2018-06-11 10:11+0000\n"
++"Last-Translator: Francesc Busquets <Unknown>\n"
++"Language-Team: \n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2015-12-09 11:48+0000\n"
++"X-Generator: Launchpad (build 17865)\n"
++
++#. #Translation language name
++msgid "English"
++msgstr "Català"
++
++#: javaNeeded
++msgid ""
++"JClic needs an updated Java engine, version 1.7 or higher. You can download "
++"it from http://www.java.com"
++msgstr ""
++"El JClic necessita un motor Java actualitzat, versió 1.7 o superior. El "
++"podeu descarregar gratuïtament des de http://www.java.com"
++
++#: oldJavaMsg
++msgid "There is an old version of Java installed on this computer."
++msgstr "El sistema Java d'aquest ordinador és antic."
++
++#: noJavaMsg
++msgid "It was impossible to find any Java system installed on this computer."
++msgstr "No s'ha pogut trobar cap sistema Java instal·lat a aquest ordinador."
++
++#. #Type of installation (standard, full, minimal)
++#: standardType
++msgid "Standard"
++msgstr "Estàndard"
++
++#. #Type of installation (standard, full, minimal)
++#: fullType
++msgid "Full"
++msgstr "Completa"
++
++#. #Type of installation (standard, full, minimal)
++#: liteType
++msgid "Lite"
++msgstr "Mínima"
++
++#: captionStr
++msgid "JClic ${PRODUCT_VERSION} offline setup"
++msgstr "Instal·lació del JClic ${PRODUCT_VERSION}"
++
++#. #Description of JClic Player
++#: JClicPlayerDesc
++msgid "Application to play JClic activities."
++msgstr "Aplicació per visualitzar i realitzar activitats JClic."
++
++#. #Description of JClic Author
++#: JClicAuthorDesc
++msgid "Application to create and edit JClic activities."
++msgstr "Aplicació per crear i modificar activitats JClic."
++
++#. #Description of JClic Applet components
++#: JClicAppletDesc
++msgid "Files needed only in a server with hosted JClic applets."
++msgstr ""
++"Fitxers que són necessaris només en un servidor que allotgi applets JClic."
++
++#. #Description of JClic Reports
++#: JClicReportsDesc
++msgid "Reports server."
++msgstr "Servidor d'informes."
+--- /dev/null
++++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-persistent/PersistentPathsMessages_ca@valencia.po
+@@ -0,0 +1,35 @@
++msgid ""
++msgstr ""
++"Project-Id-Version: JClic 0.2.0.0\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2008-02-04 19:15+0200\n"
++"PO-Revision-Date: 2008-02-11 17:50+0000\n"
++"Last-Translator: Francesc Busquets <francesc@gmail.com>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2015-12-09 11:48+0000\n"
++"X-Generator: Launchpad (build 17865)\n"
++
++#: cl_alert
++msgid ""
++"You are running \"$\" for first time in this computer.\n"
++"Please enter a folder name where to store\n"
++"the data files and program settings."
++msgstr ""
++"Esteu utilitzant el programa \"$\" per primera vegada en aquest ordinador.\n"
++"Si us plau, indiqueu la carpeta on desitgeu emmagatzemar els fitxers\n"
++"de configuració i les dades del programa."
++
++#: cl_err_unableToCreateDir
++msgid ""
++"Unable to create this folder!\n"
++"Please enter a valid location where you have administrative rights."
++msgstr ""
++"S'ha produit un error en intentar crear la carpeta!\n"
++"Si us plau, indiqueu una ubicació on tingueu drets d'administració."
++
++#: cl_prompt_title
++msgid "Installation directory"
++msgstr "Directori d'instal·lació"
+--- /dev/null
++++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-player/PlayerMessages_ca@valencia.po
+@@ -0,0 +1,833 @@
++msgid ""
++msgstr ""
++"Project-Id-Version: JClic 0.2.0.0\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2008-02-04 19:15+0200\n"
++"PO-Revision-Date: 2010-01-22 18:02+0000\n"
++"Last-Translator: Francesc Busquets <francesc@gmail.com>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2015-12-09 11:48+0000\n"
++"X-Generator: Launchpad (build 17865)\n"
++
++#. # JClic player messages
++#: m_File
++msgid "File"
++msgstr "Fitxers"
++
++#: settings_passwordRequired
++msgid "JClic admin password is required in order to perform this operation."
++msgstr ""
++"Per a efectuar aquesta operació cal introduir la contrasenya "
++"d'administració del JClic."
++
++#: m_Help
++msgid "Help"
++msgstr "Ajuda"
++
++#: m_Skin
++msgid "Skin"
++msgstr "Aparença"
++
++#: action_helpAbout_caption
++msgid "About..."
++msgstr "Quant a..."
++
++#: libraryManager_mainLibraryTitle
++msgid "Main library"
++msgstr "Biblioteca principal"
++
++#: library_badFormat
++msgid ""
++"This JClic file is not a project library!\n"
++"Libraries are a special type of JClic projects."
++msgstr ""
++"Aquest fitxer JClic no és del tipus \"biblioteca de projectes\".\n"
++"Les biblioteques són un tipus especial de fitxers JClic."
++
++#: library_mainMenu
++msgid "Main menu"
++msgstr "Menú principal"
++
++#: library_newLibraryName
++msgctxt "library_newLibraryName"
++msgid "New project library"
++msgstr "Nova biblioteca de projectes"
++
++#: libraryManager_new_prompt
++msgid "Do you want to create a new library or connect to a existing one?"
++msgstr ""
++"Voleu crear una nova biblioteca de projectes o connectar-vos a una llibreria "
++"existent?"
++
++#: libraryManager_connectToLibrary
++msgid "Connect"
++msgstr "Connectar-se a..."
++
++#: libraryManager_createNewLibrary
++msgctxt "libraryManager_createNewLibrary"
++msgid "New"
++msgstr "Nova"
++
++#: libraryManager_new_tooltip
++msgid "Create or connect to a new library"
++msgstr "Crea una nova biblioteca o connecta't a una existent"
++
++#: libraryManager_new_caption
++msgctxt "libraryManager_new_caption"
++msgid "New"
++msgstr "Nova"
++
++#: menuElement_dlg_icon_tooltip
++msgid "Button icon"
++msgstr "Imatge que es mostra al botó"
++
++#: menuElement_dlg_description_tooltip
++msgid "Description of the button, used as a tooltip text."
++msgstr ""
++"Text flotant que apareixerà quan es deixi el punter quiet sobre el botó."
++
++#: menuElement_dlg_description
++msgid "Description:"
++msgstr "Descripció:"
++
++#: edit_find_image
++msgid "Find image..."
++msgstr "Cerca imatge..."
++
++#: menuElement_dlg_icon
++msgid "Icon:"
++msgstr "Icona:"
++
++#: edit_find_file
++msgid "Find file..."
++msgstr "Cerca fitxer..."
++
++#: menuElement_dlg_project_tooltip
++msgid "Path to JClic project"
++msgstr "Ubicació del projecte JClic"
++
++#: menuElement_dlg_project
++msgid "Project:"
++msgstr "Projecte:"
++
++#: menuElement_dlg_text_tooltip
++msgid "Button text"
++msgstr "Text del botó"
++
++#: edit_text
++msgid "Text:"
++msgstr "Text:"
++
++#: menu_dlg_name_tooltip
++msgid "Folder name"
++msgstr "Nom de la carpeta"
++
++#: library_dlg_name_tooltip
++msgid "Library name"
++msgstr "Nom de la biblioteca"
++
++#: edit_name
++msgid "Name:"
++msgstr "Nom:"
++
++#: edit_title
++msgid "Title:"
++msgstr "Títol:"
++
++#: library_dlg_title
++msgid "Library properties"
++msgstr "Propietats de la biblioteca"
++
++#: menu_dlg_title
++msgid "Folder properties"
++msgstr "Propietats de la carpeta"
++
++#: menuElement_dlg_title
++msgid "Button properties"
++msgstr "Propietats del botó"
++
++#: menu_delete_tooltip
++msgid "Delete current menu"
++msgstr "Elimina el menú seleccionat"
++
++#: menu_delete_caption
++msgctxt "menu_delete_caption"
++msgid "Delete"
++msgstr "Elimina"
++
++#: menuElement_delete_tooltip
++msgid "Delete current menu element"
++msgstr "Elimina l'element de menú seleccionat"
++
++#: action_libraries_caption
++msgid "Libraries..."
++msgstr "Biblioteques..."
++
++#: dlg_save_title
++msgid "Save file..."
++msgstr "Desa el fitxer..."
++
++#: error_propertiesFile_beg
++msgid "Error opening \""
++msgstr "Error en obrir \""
++
++#: error_propertiesFile_end
++msgid "\". Defaults will be used."
++msgstr "\". S'utilitzaran els valors per defecte."
++
++#: menuElement_delete_caption
++msgctxt "menuElement_delete_caption"
++msgid "Delete"
++msgstr "Elimina"
++
++#: menu_newMenuElement_tooltip
++msgid "Create a new shortcut to a project"
++msgstr "Crea un nou botó de projecte"
++
++#: menu_newMenuName
++msgid "New folder"
++msgstr "Nova carpeta"
++
++#: menu_newMenu_tooltip
++msgid "Create a new folder for project buttons"
++msgstr "Crea una nova carpeta de botons de projecte"
++
++#: menu_newMenu_caption
++msgid "New button's folder"
++msgstr "Nova carpeta d'icones"
++
++#: menu_newMenuElement_caption
++msgid "New project button"
++msgstr "Nou botó de projecte"
++
++#: menu_newMenuElementName
++msgid "New button"
++msgstr "Nou botó"
++
++#: library_cancel_tooltip
++msgid "Cancel changes"
++msgstr "Cancel·la les modificacions"
++
++#: library_cancel_caption
++msgctxt "library_cancel_caption"
++msgid "Cancel"
++msgstr "Cancel·la"
++
++#: libraryManager_edit_tooltip
++msgid "Edit selected library"
++msgstr "Edita la biblioteca seleccionada"
++
++#: libraryManager_edit_caption
++msgid "Edit"
++msgstr "Edita"
++
++#: library_select_caption_ok_tooltip
++msgid "Save changes"
++msgstr "Desa els canvis"
++
++#: library_select_caption_tooltip
++msgid "Choose selected folder"
++msgstr "Escull la carpeta seleccionada"
++
++#: library_select_caption_ok
++msgid "Ok"
++msgstr "D'acord"
++
++#: library_select_caption
++msgctxt "library_select_caption"
++msgid "Select"
++msgstr "Selecciona"
++
++#: library_caption
++msgid "JClic projects library"
++msgstr "Biblioteca de projectes JClic"
++
++#: libraryManager_select_tooltip
++msgid "Open the selected library"
++msgstr "Obre la biblioteca seleccionada"
++
++#: libraryManager_cancel_tooltip
++msgctxt "libraryManager_cancel_tooltip"
++msgid "Cancel"
++msgstr "Cancel·la"
++
++#: libraryManager_cancel_caption
++msgctxt "libraryManager_cancel_caption"
++msgid "Cancel"
++msgstr "Cancel·la"
++
++#: libraryManager_select_caption
++msgctxt "libraryManager_select_caption"
++msgid "Select"
++msgstr "Selecciona"
++
++#: libraryManager_caption
++msgid "Select library"
++msgstr "Selecció de la biblioteca de projectes"
++
++#: library_error_reading
++msgid "Error reading project library!"
++msgstr "Error en llegir la biblioteca de projectes!"
++
++#: wizard_next
++msgid "Next >"
++msgstr "Endavant >"
++
++#: wizard_prev
++msgid "< Previous"
++msgstr "< Enrere"
++
++#: wizard_finish
++msgid "Finish"
++msgstr "Finalitza"
++
++#: library_error_creating_icons
++msgid "Error creating library icons!"
++msgstr "Error en crear la icona a la biblioteca!"
++
++#: install_title
++msgid "Installation of JClic projects"
++msgstr "Instal·lació de projectes JClic"
++
++#: install_info_description
++msgid "Installation of a new JClic project"
++msgstr "Instal·lació d'un nou projecte JClic"
++
++#: install_info_from
++msgid "From:"
++msgstr "Des de:"
++
++#: wizard_cancel
++msgctxt "wizard_cancel"
++msgid "Cancel"
++msgstr "Cancel·la"
++
++#: wizard_cancel_tooltip
++msgid "Cancel the operation"
++msgstr "Cancel·la l'operació"
++
++#: wizard_finish_tooltip
++msgid "Finish the operation"
++msgstr "Finalitza l'operació"
++
++#: wizard_next_tooltip
++msgid "Next step of the operation"
++msgstr "Pas següent de l'operació"
++
++#: wizard_prev_tooltip
++msgid "Previous step of the operation"
++msgstr "Pas anterior de l'operació"
++
++#: install_select_library
++msgid "Select the library where to install the project:"
++msgstr "Seleccioneu la biblioteca on s'instal·larà el projecte:"
++
++#: install_copy_files
++msgid "File copy"
++msgstr "Còpia de fitxers"
++
++#: install_source
++msgid "Source:"
++msgstr "Origen:"
++
++#: install_dest
++msgid "Destination:"
++msgstr "Destí:"
++
++#: install_status
++msgid "Status:"
++msgstr "Estat:"
++
++#: install_start
++msgid "Start the installation"
++msgstr "Inicia la instal·lació"
++
++#: install_start_tooltip
++msgid "Start the copy of files to your computer"
++msgstr "Inicia la còpia de fitxers al vostre ordinador"
++
++#: install_progress_tooltip
++msgid "Progress of the installation"
++msgstr "Progrés de la instal·lació"
++
++#: install_msg_waiting
++msgid "Waiting for confirmation."
++msgstr "Esperant confirmació."
++
++#: install_msg_creating_dirs
++msgid "Creating directories"
++msgstr "Creant carpetes"
++
++#: install_msg_copying
++msgid "Copying file"
++msgstr "Copiant el fitxer"
++
++#: install_msg_end
++msgid "Finished!"
++msgstr "Acabat!"
++
++#: install_msg_cleanup
++msgid "Performing cleanup..."
++msgstr "Fent neteja..."
++
++#: install_msg_cancel
++msgid "Installation cancelled!"
++msgstr "Instal·lació cancel·lada!"
++
++#: install_error
++msgid "Install error!"
++msgstr "S'ha produït un error durant la instal·lació!"
++
++#: install_select_folder
++msgid "Select the folder where to place the project icons:"
++msgstr "Seleccioneu la carpeta on es crearan les icones del projecte:"
++
++#: install_library_folders
++msgid "Library folders:"
++msgstr "Carpetes de la biblioteca:"
++
++#: install_success_1
++msgid "The project are now installed on your system!"
++msgstr "El projecte s'ha instal·lat correctament!"
++
++#: install_success_2
++msgid "In order to run it, select its"
++msgstr "Per a posar-lo en marxa seleccioneu la seva"
++
++#: install_success_3
++msgid "icon on the project library."
++msgstr "icona a la biblioteca de projectes."
++
++#: wizard_info
++msgid "Press \"Next\" to start."
++msgstr "Feu clic a \"Endavant\" per començar."
++
++#: install_step_1
++msgid "1. Selection of JClic library"
++msgstr "1. Selecció de la biblioteca"
++
++#: install_step_2
++msgid "2. Download files"
++msgstr "2. Descàrrega de fitxers"
++
++#: install_step_3
++msgid "3. Creation of icons"
++msgstr "3. Creació d'icones"
++
++#: install_step_4
++msgid "Installation finished!"
++msgstr "Instal·lació acabada!"
++
++#: install_info_info
++msgid "You request to install the project:"
++msgstr "Heu sol·licitat instal·lar el projecte:"
++
++#: settings_title
++msgid "Settings"
++msgstr "Configuració"
++
++#: library_error_clone
++msgid "Unable to clone library!"
++msgstr "No s'ha pogut clonar la biblioteca!"
++
++#: settings_security
++msgid "Security"
++msgstr "Seguretat"
++
++#: settings_password_protect
++msgid "Protect settings with password"
++msgstr "Protegeix els canvis de configuració amb contrasenya"
++
++#: settings_new_password
++msgid "New password:"
++msgstr "Nova contrasenya:"
++
++#: settings_new_password_confirm
++msgid "Confirm new password:"
++msgstr "Confirmació de la nova contrasenya:"
++
++#: settings_general
++msgid "General"
++msgstr "General"
++
++#: settings_look
++msgid "Look & Feel:"
++msgstr "Aspecte:"
++
++#: settings_skin
++msgid "Skin:"
++msgstr "Pell:"
++
++#: settings_language
++msgid "Language:"
++msgstr "Idioma:"
++
++#: settings_reports
++msgid "Reports"
++msgstr "Informes"
++
++#: settings_report_use
++msgid "Write scores to a database"
++msgstr "Enregistra els resultats de les activitats en una base de dades"
++
++#: settings_report_engine
++msgid "Reporter class:"
++msgstr "Classe:"
++
++#: settings_report_params
++msgid "Parameters:"
++msgstr "Paràmetres:"
++
++#: settings_media
++msgid "Multimedia"
++msgstr "Multimèdia"
++
++#: settings_media_enabled
++msgid "Multimedia enabled"
++msgstr "Multimèdia activat"
++
++#: settings_media_system
++msgid "Multimedia system:"
++msgstr "Sistema multimèdia:"
++
++#: settings_media_event_sounds
++msgid "Event sounds enabled"
++msgstr "Sons d'esdeveniment activats"
++
++#: settings_library
++msgid "Libraries"
++msgstr "Biblioteques"
++
++#: settings_library_autorun
++msgid "Automatically go to libraries when JClic starts"
++msgstr "Mostra automàticament la biblioteca a l'inici"
++
++#: m_Tools
++msgid "Tools"
++msgstr "Eines"
++
++#: m_File_Mnemonic
++msgid "F"
++msgstr "F"
++
++#: m_Tools_Mnemonic
++msgctxt "m_Tools_Mnemonic"
++msgid "T"
++msgstr "E"
++
++#: m_Help_Mnemonic
++msgid "H"
++msgstr "J"
++
++#: m_Activity
++msgid "Activity"
++msgstr "Activitat"
++
++#: m_Activity_Mnemonic
++msgid "A"
++msgstr "A"
++
++#: action_openFile_caption
++msgid "Open file..."
++msgstr "Obre el fitxer..."
++
++#: action_openFile_tooltip
++msgid "Open a JClic project file"
++msgstr "Obre un fitxer de projecte JClic"
++
++#: action_openFile_keys
++msgid "OO"
++msgstr "OO"
++
++#: action_openUrl_caption
++msgid "Open URL..."
++msgstr "Obre una ubicació web..."
++
++#: action_openUrl_tooltip
++msgid "Open a JClic project directly form Internet"
++msgstr "Obre un projecte JClic directament des d'Internet"
++
++#: action_openUrl_keys
++msgid "UU"
++msgstr "UU"
++
++#: action_exit_caption
++msgid "Exit"
++msgstr "Surt"
++
++#: action_exit_tooltip
++msgid "Close JClic"
++msgstr "Tanca el JClic"
++
++#: action_exit_keys
++msgid "XX"
++msgstr "RX"
++
++#: action_settings_caption
++msgid "Settings..."
++msgstr "Configuració..."
++
++#: action_settings_tooltip
++msgid "Adjust global program settings"
++msgstr "Ajusta les opcions globals del programa"
++
++#: action_settings_keys
++msgctxt "action_settings_keys"
++msgid "T"
++msgstr "C"
++
++#: action_libraries_tooltip
++msgid "Open or edit a JClic library."
++msgstr "Obre o modifica una biblioteca JClic."
++
++#: action_libraries_keys
++msgid "LL"
++msgstr "BB"
++
++#: action_helpAbout_tooltip
++msgid "Information about JClic"
++msgstr "Informació sobre el JClic"
++
++#: action_helpAbout_keys
++msgid "AA"
++msgstr "AA"
++
++#: menuElement_err_iconTooLarge
++msgid "This image is too large to be used as an icon!"
++msgstr "Aquesta imatge és massa gran per fer-la servir com a icona!"
++
++#: settings_report_tcp
++msgid "Connect to JClic report server:"
++msgstr "Connecta't a un servidor d'informes JClic:"
++
++#: settings_report_jdbc
++msgid "Direct JDBC connection:"
++msgstr "Connecta't directament a una base de dades JDBC:"
++
++#: settings_report_other
++msgid "Other:"
++msgstr "Altres:"
++
++#: settings_report_address
++msgid "Host:"
++msgstr "Servidor:"
++
++#: settings_report_port
++msgid "Port:"
++msgstr "Port:"
++
++#: settings_report_driver
++msgid "Driver:"
++msgstr "Controlador:"
++
++#: settings_report_url
++msgid "URL:"
++msgstr "URL:"
++
++#: settings_report_user
++msgid "User:"
++msgstr "Usuari:"
++
++#: settings_report_pwd
++msgid "Password:"
++msgstr "Contrasenya:"
++
++#: settings_report_options
++msgid "Reporter params::"
++msgstr "Paràmetres:"
++
++#: settings_report_err_server
++msgid "Bad report server name!"
++msgstr "El nom del servidor d'informes és incorrecte!"
++
++#: settings_report_err_port
++msgid "Incorrect port number! Please enter a value between 1000 and 65000."
++msgstr ""
++"Valor incorrecte del port en el sistema d'informes! Si us plau, indiqueu un "
++"valor entre 1000 i 65000."
++
++#: settings_report_err
++msgid "Incorrect report system data!"
++msgstr "Dades incorrectes per al sistema d'informes!"
++
++#: settings_report_type
++msgid "Reporting engine:"
++msgstr "Sistema d'informes:"
++
++#: settings_media_jmf
++msgid "Java Media Framework (JMF)"
++msgstr "Java Media Framework (JMF)"
++
++#: settings_media_qt
++msgid "QuickTime"
++msgstr "QuickTime"
++
++#: settings_media_default
++msgid "Auto-detect"
++msgstr "Detecció automàtica"
++
++#: settings_security_tooltip
++msgid "Security settings"
++msgstr "Opcions de seguretat"
++
++#: settings_report_tooltip
++msgid "Report system settings"
++msgstr "Configuració del sistema d'informes"
++
++#: settings_media_tooltip
++msgid "Multimedia system options"
++msgstr "Configuració del sistema multimèdia"
++
++#: settings_general_tooltip
++msgid "Language and aspect settings"
++msgstr "Opcions d'idioma i aspecte"
++
++#: settings_library_tooltip
++msgid "Library settings and editor"
++msgstr "Configuració i edició de biblioteques"
++
++#: settings_look_tooltip
++msgid "User interface look & feel"
++msgstr "Aspecte de la interfície d'usuari"
++
++#: settings_skin_tooltip
++msgid "Selection of the graphic aspect of JClic"
++msgstr "Selecció del disseny gràfic del JClic"
++
++#: settings_language_tooltip
++msgid "Language selection"
++msgstr "Selecció d'idioma"
++
++#: settings_report_use_tooltip
++msgid "Enables/disables the connection to a JClic reports database"
++msgstr "Activa o desactiva la connexió a una base de dades d'informes JClic"
++
++#: settings_report_tcp_tooltip
++msgid "Reporting engine based on a TCP/IP connection"
++msgstr "Motor d'informes basat en una connexió TCP/IP"
++
++#: settings_report_jdbc_tooltip
++msgid "Reporting engine based on a direct connection to a database"
++msgstr "Motor d'informes basat en una connexió directa a una base de dades"
++
++#: settings_report_other_tooltip
++msgid "Other reporting engines..."
++msgstr "Altres motors d'informes..."
++
++#: settings_report_address_tooltip
++msgid "Report server name or IP address"
++msgstr "Nom o adreça IP del servidor d'informes"
++
++#: settings_report_port_tooltip
++msgid "Port used for connection (default is 5510)"
++msgstr "Port utilitzat en la connexió (per defecte: 5510)"
++
++#: edit_file
++msgid "File:"
++msgstr "Fitxer:"
++
++#: error_launchLibrary
++msgid "Error launching library"
++msgstr "Error en obrir la biblioteca"
++
++#: install_toSourceFolder
++msgid "Installing to source folder!"
++msgstr "Instal·lant a la carpeta d'origen!"
++
++#: edit_find_media
++msgid "Find media file..."
++msgstr "Cerca recurs..."
++
++#: libraryManager_delete_caption
++msgctxt "libraryManager_delete_caption"
++msgid "Delete"
++msgstr "Suprimeix"
++
++#: libraryManager_delete_tooltip
++msgid "Delete the reference to the selected library"
++msgstr "Suprimeix la referència a la biblioteca seleccionada"
++
++#: libraryManager_delete_confirm
++msgid "Do you really want to delete the reference to the selected library?"
++msgstr "Realment voleu suprimir la referència a la biblioteca seleccionada?"
++
++#: libraryManager_new_exists
++msgid "This library is already linked to the system."
++msgstr "Aquesta biblioteca ja està connectada al sistema."
++
++#: edit_find_image_keys
++msgid "F*"
++msgstr "C*"
++
++#: menu_newMenuElement_caption_keys
++msgid "NN"
++msgstr "NN"
++
++#: menu_newMenu_caption_keys
++msgid "MM"
++msgstr "MM"
++
++#: edit_find_file_keys
++msgid "FF"
++msgstr "FF"
++
++#: libraryManager_newLibaryOption
++msgid "Create new project library"
++msgstr "Crea una nova biblioteca de projectes"
++
++#: libraryManager_connectToExistingOption
++msgid "Add a link to an exisiting project library"
++msgstr "Afegeix un enllaç a una biblioteca ja existent"
++
++#: libraryManager_fileOrUrlCaption
++msgid "File or URL\\:"
++msgstr "Fitxer o URL:"
++
++#: libraryManager_newLibraryTitle
++msgctxt "libraryManager_newLibraryTitle"
++msgid "New project library"
++msgstr "Nova biblioteca de projectes:"
++
++#: libraryManager_warnNoFileSelected
++msgid "Please enter thr URL or file name of the project library\\!"
++msgstr ""
++"Si us plau, escriviu l'URL o el nom de fitxer de la biblioteca de projectes "
++"a la qual voleu accedir\\!"
++
++#: install_launchProject
++msgid "Open the project now"
++msgstr "Obre ara el projecte"
++
++#: settings_browser
++msgid "Preferred browser\\:"
++msgstr "Navegador preferit:"
++
++#: settings_browser_tooltip
++msgid ""
++"Command used to launch the browser (firefox, iexplore, mozilla, opera...)"
++msgstr ""
++"Ordre emprada per a engegar el navegador (firefox, iexplore, mozilla, "
++"opera...)"
++
++#: settings_country
++msgid "Country code\\:"
++msgstr "Codi de país:"
++
++#: settings_country_tooltip
++msgid ""
++"Optional two-letter code corresponding to the country-specific variant of "
++"the language (ex.\\: BR for Brazilian Portuguese)"
++msgstr ""
++"Codi opcional de dues lletres corresponent a la variant dialectal d'un "
++"territori (ex.: BR per a portuguès del Brasil)"
++
++#: settings_variant
++msgid "Variant\\:"
++msgstr "Variant:"
++
++#: settings_variant_tooltip
++msgid "Optional variant code of the language"
++msgstr "Codi opcional de variant de l'idioma"
+--- /dev/null
++++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-reportServer/ReportServerMessages_ca@valencia.po
+@@ -0,0 +1,308 @@
++msgid ""
++msgstr ""
++"Project-Id-Version: JClic 0.2.0.0\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2008-02-04 19:15+0200\n"
++"PO-Revision-Date: 2010-01-22 18:04+0000\n"
++"Last-Translator: Francesc Busquets <francesc@gmail.com>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2015-12-09 11:48+0000\n"
++"X-Generator: Launchpad (build 17865)\n"
++
++#: error_serverCannotStart
++msgid "Unable to start server!"
++msgstr "No s'ha pogut posar en marxa el servidor!"
++
++#: error_incorrectData
++msgid "Incorrect data!"
++msgstr "Dades incorrectes!"
++
++#: column_IP_title
++msgid "IP"
++msgstr "IP"
++
++#: column_port_title
++msgid "Port"
++msgstr "Port"
++
++#: column_started_title
++msgid "Started"
++msgstr "Engegat"
++
++#: column_lastMessage_title
++msgid "Last message"
++msgstr "Darrer missatge"
++
++#: column_IP_tooltip
++msgid "Client IP address"
++msgstr "Adreça IP de l'ordinador client"
++
++#: column_port_tooltip
++msgid "Local port used in this connection"
++msgstr "Port local emprat per a aquesta connexió"
++
++#: column_started_tooltip
++msgid "Date and time at witch the connection was started"
++msgstr "Data i hora en què s'ha iniciat la connexió"
++
++#: column_lastMessage_tooltip
++msgid "Header of the last received message"
++msgstr "Capçalera del darrer missatge rebut"
++
++#: error_propertiesFile_beg
++msgid "Unable to load the properties file \""
++msgstr "No es pot obrir el fitxer de configuració \""
++
++#: error_propertiesFile_end
++msgid "\" Using default settings."
++msgstr "\". El programa utilitzarà els valors per defecte."
++
++#: form_title
++msgid "JClic reports server"
++msgstr "Servidor d'informes JClic"
++
++#: form_connections_title
++msgid "Connections:"
++msgstr "Connexions:"
++
++#: form_messages_title
++msgid "System messages:"
++msgstr "Missatges de sistema:"
++
++#: form_settings_title
++msgid "Settings:"
++msgstr "Configuració:"
++
++#: form_connections_close
++msgid "Close connection"
++msgstr "Tanca la connexió"
++
++#: form_connections_close_tooltip
++msgid "Close the selected connection"
++msgstr "Tanca la connexió seleccionada a la llista"
++
++#: form_settings_driver
++msgctxt "form_settings_driver"
++msgid "Driver:"
++msgstr "Controlador:"
++
++#: form_settings_driver_tooltip
++msgid "JDBC driver to use for connect to the database"
++msgstr "Controlador JDBC utilitzat per a connectar amb la base de dades"
++
++#: form_settings_database
++msgid "Database:"
++msgstr "Base de dades:"
++
++#: form_settings_database_tooltip
++msgid "Name of the reports database"
++msgstr "Nom de la base de dades d'informes"
++
++#: form_settings_port
++msgctxt "form_settings_port"
++msgid "Port:"
++msgstr "Port:"
++
++#: form_settings_port_tooltip
++msgid "TCP port where the server will listen for connections"
++msgstr "Port TCP on el servidor atendrà les connexions"
++
++#: form_settings_password_tooltip
++msgid "System DB password"
++msgstr "Contrasenya de l'usuari de sistema"
++
++#: form_settings_password
++msgctxt "form_settings_password"
++msgid "Password:"
++msgstr "Contrasenya:"
++
++#: form_settings_user_tooltip
++msgid "System DB user name"
++msgstr "Nom d'usuari de sistema de la base de dades"
++
++#: form_settings_user
++msgid "User:"
++msgstr "Usuari:"
++
++#: ERROR
++msgid "ERROR"
++msgstr "ERROR"
++
++#: form_settings_timeout
++msgctxt "form_settings_timeout"
++msgid "Timeout:"
++msgstr "Temps màxim d'espera:"
++
++#: form_settings_timeout_tooltip
++msgid "Maximum inactivity seconds allowed to connections"
++msgstr "Màxim nombre de segons d'inactivitat permès a les connexions"
++
++#: form_btn_start
++msgid "Start"
++msgstr "Engega"
++
++#: form_btn_stop
++msgid "Stop"
++msgstr "Atura"
++
++#: form_btn_exit
++msgid "Exit"
++msgstr "Surt"
++
++#: form_btn_exit_tooltip
++msgid "Stop server and shutdown program"
++msgstr "Atura el servidor i tancar el programa"
++
++#: form_btn_stop_tooltip
++msgid "Close all connections and stop server"
++msgstr "Tancar totes les connexions i atura el servidor"
++
++#: form_btn_start_tooltip
++msgid "Begin listening for clients"
++msgstr "Inicia l'atenció als clients"
++
++#: form_messages_verbose
++msgid "Verbose"
++msgstr "Mostra informació ampliada"
++
++#: form_messages_verbose_tooltip
++msgid "Display all messages"
++msgstr "Mostra tots els missatges entrants"
++
++#: form_messages_copy
++msgid "Copy to clipboard"
++msgstr "Copia"
++
++#: form_messages_copy_tooltip
++msgid "Copy the console output to clipboard"
++msgstr "Copia el contingut de la finestra a la carpeta de sistema"
++
++#: form_messages_clear
++msgid "Clear"
++msgstr "Esborra"
++
++#: form_messages_clear_tooltip
++msgid "Clears the console output"
++msgstr "Neteja la finestra de missatges"
++
++#: error_DB
++msgid "Requested action could not be completed"
++msgstr "L'acció sol·licitada no s'ha pogut completar"
++
++#: settings_title
++msgid "JClic reports server settings"
++msgstr "Configuració de servidor d'informes JClic"
++
++#: settings_options_title
++msgid "Options"
++msgstr "Opcions"
++
++#: settings_options_language
++msgid "Language:"
++msgstr "Idioma:"
++
++#: settings_options_look
++msgid "Look & feel:"
++msgstr "Aparença:"
++
++#: settings_db_title
++msgid "Database"
++msgstr "Base de dades"
++
++#: settings_db_driver
++msgctxt "settings_db_driver"
++msgid "Driver:"
++msgstr "Controlador:"
++
++#: settings_options_tooltips
++msgid "Tooltips"
++msgstr "Etiquetes d'ajuda"
++
++#: settings_db_url
++msgid "URL:"
++msgstr "URL:"
++
++#: settings_db_usr
++msgid "DB user:"
++msgstr "Usuari de la base de dades:"
++
++#: settings_db_pwd
++msgctxt "settings_db_pwd"
++msgid "Password:"
++msgstr "Contrasenya:"
++
++#: settings_server_title
++msgid "Reports server"
++msgstr "Servidor d'informes"
++
++#: settings_server_timeout
++msgctxt "settings_server_timeout"
++msgid "Timeout:"
++msgstr "Temps màxim d'espera:"
++
++#: settings_server_port
++msgctxt "settings_server_port"
++msgid "Port:"
++msgstr "Port:"
++
++#: settings_server_autostart
++msgid "Autostart"
++msgstr "Engegada automàtica"
++
++#: settings_web_title
++msgid "Web server"
++msgstr "Servidor web"
++
++#: settings_server_logFile
++msgid "Write logs to file:"
++msgstr "Escriure logs al fitxer:"
++
++#: settings_button
++msgid "Settings..."
++msgstr "Configuració..."
++
++#: error_writting_settings
++msgid "Error writting settings file!"
++msgstr "Error en escriure el fitxer de configuració!"
++
++#: form_btn_show
++msgid "launch browser..."
++msgstr "engega el navegador..."
++
++#: error_starting_browser
++msgid "Error launching browser!"
++msgstr "Error en executar el navegador!"
++
++#: error_opening_logs
++msgid "Error opening log files!"
++msgstr "Error en obrir els fitxers de registre!"
++
++#: settings_file
++msgid "File..."
++msgstr "Fitxer..."
++
++#: settings_tablePrefix
++msgid "Table names prefix:"
++msgstr "Prefix dels noms de les taules:"
++
++#: settings_createTables
++msgid "Create tables if not exist"
++msgstr "Crea taules si no existeixen"
++
++#: settings_session_lifetime
++msgid "Session lifetime (minutes)\\:"
++msgstr "Durada màxima d'una sessió inactiva (minuts):"
++
++#: settings_browser
++msgid "Preferred browser\\:"
++msgstr "Navegador preferit:"
++
++#: settings_browser_tooltip
++msgid ""
++"Command used to launch the browser (firefox, iexplore, mozilla, opera...)"
++msgstr ""
++"Ordre emprada per a engegar el navegador (firefox, iexplore, mozilla, "
++"opera...)"
+--- /dev/null
++++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-reportServlets/reportMessages_ca@valencia.po
+@@ -0,0 +1,597 @@
++msgid ""
++msgstr ""
++"Project-Id-Version: JClic 0.2.0.0\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2008-02-04 19:15+0200\n"
++"PO-Revision-Date: 2010-08-31 15:01+0000\n"
++"Last-Translator: David Planella <david.planella@ubuntu.com>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2015-12-09 11:48+0000\n"
++"X-Generator: Launchpad (build 17865)\n"
++
++#: login_pwd
++msgid "Password:"
++msgstr "Contrasenya:"
++
++#: login_desc
++msgid ""
++"You need to provide a valid password in order to access the reports database."
++msgstr ""
++"Heu d'escriure una contrasenya correcta per accedir a la base de dades "
++"d'informes."
++
++#: login_title
++msgid "Login"
++msgstr "Connexió a la base de dades"
++
++#: submit
++msgid "Submit..."
++msgstr "Envia dades..."
++
++#: login_incorrect
++msgid "Incorrect password!"
++msgstr "Contrasenya incorrecta!"
++
++#: main_title
++msgid "Main menu"
++msgstr "Menú principal"
++
++#: users_admin_title
++msgid "Users and groups admin"
++msgstr "Administració de grups i usuaris"
++
++#: group_report_title
++msgid "Group reports"
++msgstr "Informes de grup"
++
++#: user_report_title
++msgid "User reports"
++msgstr "Informes d'usuari/a"
++
++#: act_report_title
++msgid "Activity reports"
++msgstr "Informes d'activitat"
++
++#: db_admin_title
++msgid "Database admin"
++msgstr "Administració de la base de dades"
++
++#: db_admin_settings_error
++msgid "Unable to set the new database values!"
++msgstr "Ha estat impossible fixar els nous valors per a la base de dades!"
++
++#: db_admin_param_agc
++msgid "Allow users to create new groups"
++msgstr "Permetre als usuaris crear nous grups"
++
++#: db_admin_param_auc
++msgid "Allow users to create new users"
++msgstr "Permetre als usuaris la creació de nous usuaris"
++
++#: db_admin_param_shgl
++msgid "Select group in a list"
++msgstr "Seleccionar grup en una llista"
++
++#: db_admin_param_shul
++msgid "Select user name in a list"
++msgstr "Seleccionar el nom d'usuari/a en una llista"
++
++#: db_admin_param_ut
++msgid "Database has tables of users and groups"
++msgstr "La base de dades té taules d'usuaris i grups"
++
++#: db_admin_edit_btn
++msgid "Edit settings..."
++msgstr "Edita les propietats..."
++
++#: db_admin_pw_edit_btn
++msgid "Set password..."
++msgstr "Estableix la contrasenya..."
++
++#: title
++msgid "Title"
++msgstr "Títol"
++
++#: db_admin_edit_title
++msgid "Edit database settings"
++msgstr "Edita les propietats de la base de dades"
++
++#: db_admin_pw_edit_title
++msgid "Change system password"
++msgstr "Canvia la contrasenya del sistema"
++
++#: db_admin_pw_newPwd
++msgid "New password"
++msgstr "Nova contrasenya"
++
++#: db_admin_pw_verifyPwd
++msgid "Retype password"
++msgstr "Torna a escriure la contrasenya"
++
++#: db_admin_pw_noFit
++msgid "Password fields don't fit!"
++msgstr "Els dos texts no coincideixen!"
++
++#: report_group
++msgid "Group:"
++msgstr "Grup:"
++
++#: report_user
++msgid "User:"
++msgstr "Usuari:"
++
++#: report_project
++msgid "Project:"
++msgstr "Projecte:"
++
++#: report_all_projects
++msgid "All projects"
++msgstr "Tots els projectes"
++
++#: report_key
++msgid "Key:"
++msgstr "Clau:"
++
++#: report_code
++msgid "Code:"
++msgstr "Codi:"
++
++#: report_context
++msgid "Context:"
++msgstr "Context:"
++
++#: report_from
++msgid "From:"
++msgstr "Des de:"
++
++#: month_1
++msgid "january"
++msgstr "gener"
++
++#: month_2
++msgid "february"
++msgstr "febrer"
++
++#: month_3
++msgid "march"
++msgstr "març"
++
++#: month_4
++msgid "april"
++msgstr "abril"
++
++#: month_5
++msgid "may"
++msgstr "maig"
++
++#: month_6
++msgid "june"
++msgstr "juny"
++
++#: month_7
++msgid "july"
++msgstr "juliol"
++
++#: month_8
++msgid "august"
++msgstr "agost"
++
++#: month_9
++msgid "september"
++msgstr "setembre"
++
++#: month_10
++msgid "october"
++msgstr "octubre"
++
++#: month_11
++msgid "november"
++msgstr "novembre"
++
++#: month_12
++msgid "december"
++msgstr "desembre"
++
++#: report_to
++msgid "To:"
++msgstr "Fins a:"
++
++#: report_global_precision
++msgid "Global precision"
++msgstr "Precisió global"
++
++#: report_solved_activities
++msgid "Solved activities"
++msgstr "Activitats resoltes"
++
++#: report_user_evolution
++msgid "User evolution"
++msgstr "Evolució de l'usuari/a"
++
++#: report_group_evolution
++msgid "Group evolution"
++msgstr "Evolució del grup"
++
++#: report_project_evolution
++msgid "Project evolution"
++msgstr "Evolució del projecte"
++
++#: report_result_distribution
++msgid "Result distribution"
++msgstr "Distribució de resultats"
++
++#: report_no_data
++msgid "NO DATA"
++msgstr "SENSE DADES"
++
++#: report_users
++msgid "Users:"
++msgstr "Usuaris:"
++
++#: report_sessions
++msgctxt "report_sessions"
++msgid "Sessions:"
++msgstr "Sessions:"
++
++#: report_projects
++msgid "Projects:"
++msgstr "Projectes:"
++
++#: report_actDone
++msgid "Activities done:"
++msgstr "Activitats fetes:"
++
++#: report_actSolved
++msgid "Activities solved:"
++msgstr "Activitats resoltes:"
++
++#: report_totalTime
++msgid "Total time:"
++msgstr "Temps total:"
++
++#: report_globalPrec
++msgid "Global score:"
++msgstr "Precisió global:"
++
++#: report_globalSummary
++msgid "Global summary"
++msgstr "Resum global"
++
++#: report_header_date
++msgid "date"
++msgstr "data"
++
++#: report_session_list
++msgctxt "report_session_list"
++msgid "Sessions:"
++msgstr "Sessions realitzades:"
++
++#: report_header_user
++msgid "user"
++msgstr "usuari/a"
++
++#: report_header_project
++msgid "project"
++msgstr "projecte"
++
++#: report_header_numActs
++msgid "activities"
++msgstr "activitats"
++
++#: report_header_actsSolved
++msgid "acts. solved"
++msgstr "act. resoltes"
++
++#: report_header_time
++msgid "time"
++msgstr "temps"
++
++#: report_header_prec
++msgid "score"
++msgstr "precisió"
++
++#: report_session_detail_show
++msgid "show session details"
++msgstr "mostrar detalls de la sessió"
++
++#: report_session_detail_title
++msgid "Activities done in session"
++msgstr "Activitats realitzades a la sessió"
++
++#: report_header_activity
++msgid "activity"
++msgstr "activitat"
++
++#: report_header_actions
++msgid "actions"
++msgstr "accions"
++
++#: report_header_score
++msgid "corrects"
++msgstr "encerts"
++
++#: report_header_solved
++msgid "ok"
++msgstr "bé"
++
++#: Y
++msgctxt "Y"
++msgid "Y"
++msgstr "S"
++
++#: N
++msgctxt "N"
++msgid "N"
++msgstr "N"
++
++#: report_session_detail_hide
++msgid "hide session details"
++msgstr "amaga els detalls de la sessió"
++
++#: report_header_sessions
++msgid "sessions"
++msgstr "sessions"
++
++#: report_all_activities
++msgid "All activities"
++msgstr "Totes les activitats"
++
++#: report_activity
++msgid "Activity:"
++msgstr "Activitat:"
++
++#: report_many
++msgid "several"
++msgstr "diversos"
++
++#: report_n_users
++msgid "users"
++msgstr "usuaris"
++
++#: group_admin_title
++msgid "Groups administration"
++msgstr "Administració de grups"
++
++#: group_admin_new_button
++msgid "New group..."
++msgstr "Nou grup..."
++
++#: group_admin_groups
++msgid "Groups"
++msgstr "Grups"
++
++#: report_actions
++msgid "Actions"
++msgstr "Accions"
++
++#: group_admin_edit_button
++msgctxt "group_admin_edit_button"
++msgid "Edit..."
++msgstr "Modifica..."
++
++#: user_admin_title
++msgid "User admin"
++msgstr "Administració d'usuaris"
++
++#: group_admin_delete_button
++msgctxt "group_admin_delete_button"
++msgid "Delete..."
++msgstr "Elimina..."
++
++#: group_admin_clear_button
++msgctxt "group_admin_clear_button"
++msgid "Clear reports..."
++msgstr "Elimina informes..."
++
++#: group_admin_properties
++msgid "Group properties"
++msgstr "Propietats del grup"
++
++#: group_admin_name
++msgctxt "group_admin_name"
++msgid "Name:"
++msgstr "Nom:"
++
++#: group_admin_id
++msgctxt "group_admin_id"
++msgid "Identifier:"
++msgstr "Identificador:"
++
++#: group_admin_icon
++msgctxt "group_admin_icon"
++msgid "Icon:"
++msgstr "Icona:"
++
++#: error
++msgid "ERROR"
++msgstr "ERROR"
++
++#: return
++msgid "return..."
++msgstr "torna..."
++
++#: group_admin_users
++msgid "Users"
++msgstr "Usuaris"
++
++#: group_admin_no_users
++msgid "This group has no users."
++msgstr "Aquest grup no conté cap usuari/a."
++
++#: group_admin_create_user_button
++msgid "Create a new user..."
++msgstr "Crea un nou usuari/a..."
++
++#: cancel
++msgid "Cancel"
++msgstr "Cancel·la"
++
++#: group_admin_invalid_name
++msgid "Incorrect group name!"
++msgstr "El nom del grup és incorrecte!"
++
++#: group_admin_invalid_id
++msgid "Incorrect group identifier!"
++msgstr "L'identificador de grup és incorrecte!"
++
++#: group_admin_id_already_exists
++msgid "There is another group with the same identifier in the database!"
++msgstr ""
++"Ja hi ha un altre grup amb el mateix identificador a la base de dades!"
++
++#: group_admin_delete_group
++msgid "Delete group"
++msgstr "Elimina el grup"
++
++#: report_areyousure
++msgid "Are you sure?"
++msgstr "Segur que voleu realitzar aquesta operació?"
++
++#: YES
++msgid "Yes"
++msgstr "Sí"
++
++#: NOT
++msgid "Not"
++msgstr "No"
++
++#: group_admin_delete_group_explain
++msgid ""
++"This operation will also delete on the database all users of this group. All "
++"data of these users will be lost."
++msgstr ""
++"Aquesta operació també eliminarà de la base de dades a tots els usuaris "
++"d'aquest grup. Totes les seves dades es perdran."
++
++#: db_error
++msgid "Unable to complete the task."
++msgstr "No s'ha pogut realitzar l'operació."
++
++#: group_admin_clear_group
++msgid "Clear report data of group"
++msgstr "Esborra els informes del grup"
++
++#: group_admin_clear_group_explain
++msgid ""
++"This operation will clear all the reports of the activities done by the "
++"members of this group between the specified dates."
++msgstr ""
++"Aquesta operació esborrarà tots els informes de les activitats realitzades "
++"pels membres d'aquest grup entre les dates indicades."
++
++#: db_clear_reports_date
++msgid "Clear report data"
++msgstr "Esborra els informes"
++
++#: user_admin_invalid_name
++msgid "Invalid user name."
++msgstr "El nom d'usuari/a és incorrecte."
++
++#: user_admin_invalid_id
++msgid "Invalid user identifier"
++msgstr "L'identificador d'usuari/a és incorrecte!"
++
++#: user_admin_id_already_exists
++msgid "There is another user with the same identifier in the database!"
++msgstr ""
++"Ja hi ha un altre usuari/a amb aquest identificador a la base de dades. Els "
++"noms es poden repetir (en diferents grups), però els identificadors han de "
++"ser únics."
++
++#: user_admin_user_deleted
++msgid "The user was successfully deleted from the database."
++msgstr "L'usuari/a ha estat eliminat satisfactòriament de la base de dades."
++
++#: user_admin_id
++msgctxt "user_admin_id"
++msgid "Identifier:"
++msgstr "Identificador:"
++
++#: user_admin_name
++msgctxt "user_admin_name"
++msgid "Name:"
++msgstr "Nom:"
++
++#: user_admin_icon
++msgctxt "user_admin_icon"
++msgid "Icon:"
++msgstr "Icona:"
++
++#: user_admin_edit_button
++msgctxt "user_admin_edit_button"
++msgid "Edit..."
++msgstr "Edita..."
++
++#: user_admin_delete_button
++msgctxt "user_admin_delete_button"
++msgid "Delete..."
++msgstr "Elimina..."
++
++#: user_admin_clear_button
++msgctxt "user_admin_clear_button"
++msgid "Clear reports..."
++msgstr "Elimina informes..."
++
++#: user_admin_delete_user
++msgid "Delete user"
++msgstr "Elimina l'usuari/a"
++
++#: user_admin_delete_user_explain
++msgid ""
++"This operation will delete this user and his reports from the database."
++msgstr ""
++"Aquesta operació eliminarà aquest/a usuari/a i els seus informes de la base "
++"de dades."
++
++#: user_admin_clear_user
++msgid "Clear report data of user"
++msgstr "Elimina els informes de l'usuari/a"
++
++#: user_admin_clear_user_explain
++msgid ""
++"This operation will clear all the reports of the activities done by this "
++"user between the specified dates."
++msgstr ""
++"Aquesta operació eliminarà els informes de les activitats realitzades per "
++"aquest/a usuari/a en el període especificat."
++
++#: success
++msgid "Operation successful"
++msgstr "Operació realitzada amb èxit"
++
++#: bad_data
++msgid "Bad data!"
++msgstr "Dades incorrectes!"
++
++#: db_admin_param_lap
++msgid "Time between connections (seconds)\\:"
++msgstr "Temps entre connexions (segons):"
++
++#: jclic_reports
++msgid "JClic reports"
++msgstr "Informes JClic"
++
++#: YES_SHORT
++msgctxt "YES_SHORT"
++msgid "Y"
++msgstr "S"
++
++#: NOT_SHORT
++msgctxt "NOT_SHORT"
++msgid "N"
++msgstr "N"
++
++#: user_admin_pw_prompt
++msgid "Password\\:"
++msgstr "Contrasenya:"
++
++#: user_admin_pw_prompt_confirm
++msgid "Confirm password\\:"
++msgstr "Confirmació de la contrasenya:"
++
++#: user_admin_err_bad_pw
++msgid "Passwords don't match\\!"
++msgstr "Les contrasenyes no coincideixen\\!"
+--- /dev/null
++++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-shapers/listshapers_ca@valencia.po
+@@ -0,0 +1,33 @@
++msgid ""
++msgstr ""
++"Project-Id-Version: JClic 0.2.0.0\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2008-02-04 19:15+0200\n"
++"PO-Revision-Date: 2008-02-18 15:55+0000\n"
++"Last-Translator: Francesc Busquets <francesc@gmail.com>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2015-12-09 11:48+0000\n"
++"X-Generator: Launchpad (build 17865)\n"
++
++#: @Rectangular
++msgid "Rectangular|Standard rectangular shaper"
++msgstr "Rectangular|Retallador rectangular estàndard."
++
++#: @JigSaw
++msgid "Jigsaw with rectangular unions"
++msgstr "Encaixos amb unió rectangular"
++
++#: @TriangularJigSaw
++msgid "Jigsaw with triangular unions"
++msgstr "Encaixos amb unió triangular"
++
++#: @ClassicJigSaw
++msgid "Jigsaw with curved unions"
++msgstr "Encaixos amb unió ovalada"
++
++#: @Holes
++msgid "Cuts"
++msgstr "Retalls"
+--- /dev/null
++++ jclic-0.3.2.10/i18n/fromLaunchpad/po/jclic-utilities/BasicMessages_ca@valencia.po
+@@ -0,0 +1,335 @@
++msgid ""
++msgstr ""
++"Project-Id-Version: JClic 0.2.0.0\n"
++"Report-Msgid-Bugs-To: \n"
++"POT-Creation-Date: 2008-02-04 19:15+0200\n"
++"PO-Revision-Date: 2008-02-18 16:02+0000\n"
++"Last-Translator: Francesc Busquets <francesc@gmail.com>\n"
++"Language-Team: LANGUAGE <LL@li.org>\n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Launchpad-Export-Date: 2015-12-09 11:48+0000\n"
++"X-Generator: Launchpad (build 17865)\n"
++
++#: ERROR
++msgid "ERROR"
++msgstr "ERROR"
++
++#: OK
++msgid "OK"
++msgstr "D'acord"
++
++#: YES
++msgid "Yes"
++msgstr "Sí"
++
++#: NO
++msgid "No"
++msgstr "No"
++
++#: DELETE
++msgid "Delete"
++msgstr "Elimina"
++
++#: PASTE
++msgid "Paste"
++msgstr "Enganxa"
++
++#: CUT
++msgid "Cut"
++msgstr "Retalla"
++
++#: COPY
++msgid "Copy"
++msgstr "Copia"
++
++#: FILE_SAVE
++msgid "Save file"
++msgstr "Desa el fitxer"
++
++#: CONFIRM
++msgid "Please confirm"
++msgstr "Confirma l'operació"
++
++#: FILE_OPEN
++msgid "Open file"
++msgstr "Obre el fitxer"
++
++#: FILE_ERR_BEG_DIR
++msgid "Folder"
++msgstr "La carpeta"
++
++#: URL
++msgid "URL:"
++msgstr "URL:"
++
++#: PASSWORD
++msgid "Password:"
++msgstr "Contrasenya:"
++
++#: WARNING
++msgid "Warning!"
++msgstr "Atenció!"
++
++#: FILE_NOT_READABLE
++msgid "Cannot be read!"
++msgstr "No es pot llegir!"
++
++#: FILE_NOT_EXIST
++msgid "Does not exist!"
++msgstr "No existeix!"
++
++#: FILE_READONLY
++msgid "Is read-only. It cannot be overwritted!"
++msgstr "És de només lectura i no pot ser reemplaçat."
++
++#: FILE_OVERWRITE_DIR_PROMPT
++msgctxt "FILE_OVERWRITE_DIR_PROMPT"
++msgid "Do you want to overwrite it?"
++msgstr "Voleu reemplaçar-la?"
++
++#: FILE_OVERWRITE_PROMPT
++msgctxt "FILE_OVERWRITE_PROMPT"
++msgid "Do you want to overwrite it?"
++msgstr "Voleu reemplaçar-lo?"
++
++#: FILE_EXISTS
++msgid "already exists on your system."
++msgstr "ja es troba al vostre ordinador."
++
++#: FILE_DIR_BEG
++msgid "The folder"
++msgstr "La carpeta"
++
++#: FILE_BEG
++msgid "The file"
++msgstr "El fitxer"
++
++#: UNNAMED
++msgid "Unnamed"
++msgstr "Sense nom"
++
++#: FILE_ERR_READING
++msgid "Error reading file"
++msgstr "Error en llegir el fitxer"
++
++#: FILE_ERR_SAVING
++msgid "Error saving file"
++msgstr "Error en desar el fitxer"
++
++#: FILE_FIND
++msgid "Find file"
++msgstr "Cerca d'un fitxer"
++
++#: FILE_ERR_READONLY
++msgid "is read-only."
++msgstr "és de només lectura."
++
++#: FILE_ERR_EXISTS
++msgid "exists. Do you want to overwrite it?"
++msgstr "ja existeix. Voleu sobreescriure'l?"
++
++#: FILE_ERR_UNREADABLE
++msgid "is unreadable."
++msgstr "no es pot llegir."
++
++#: FILE_ERR_BEG
++msgid "File"
++msgstr "El fitxer"
++
++#: LOADING
++msgid "loading..."
++msgstr "carregant el programa..."
++
++#: FALSE
++msgid "false"
++msgstr "fals"
++
++#: CHECK_SIGNATURE_URL
++msgid "messages/checksignature.html"
++msgstr "messages/checksignature_ca.html"
++
++#: URL_LAUNCH_ERROR
++msgid "Error launching URL"
++msgstr "Error en invocar l'URL!"
++
++#: URL_ERROR
++msgid "Error building URL!"
++msgstr "Error en construir l'URL!"
++
++#: QUESTION
++msgid "Question"
++msgstr "Pregunta"
++
++#: PASSWORD_INCORRECT
++msgid "Incorrect password!"
++msgstr "Contrasenya incorrecta!"
++
++#: TRUE
++msgid "true"
++msgstr "cert"
++
++#: CANCEL
++msgid "Cancel"
++msgstr "Cancel·la"
++
++#: FILE_ERR_DELETING
++msgid "Error deleting file"
++msgstr "Error en esborrar el fitxer"
++
++#: URL_OPEN
++msgid "Open URL"
++msgstr "Obre URL"
++
++#: FILE_ERR_RESTORING
++msgid "Error restoring file"
++msgstr "Error en restaurar el fitxer"
++
++#: WRITING_FILE
++msgid "Writing file..."
++msgstr "Escrivint fitxer..."
++
++#: XML_ATTRIBUTE
++msgid "Attribute"
++msgstr "Atribut"
++
++#: XML_VALUE
++msgid "Value"
++msgstr "Valor"
++
++#: XML_NOT_EDITABLE
++msgid "This field is not editable!"
++msgstr "Aquest camp no és editable!"
++
++#: XML_TEXT
++msgid "text"
++msgstr "text"
++
++#: XML_NEW_ATTRIBUTE
++msgid "Add attribute"
++msgstr "Afegeix un nou atribut"
++
++#: WORKING
++msgid "Working..."
++msgstr "Treballant..."
++
++#: LOADING_FILE
++msgid "Loading file"
++msgstr "Llegint el fitxer"
++
++#: XML_DEL_ATTRIBUTE
++msgid "Delete attribute"
++msgstr "Suprimeix l'atribut"
++
++#: XML_ELEMENT
++msgid "Element"
++msgstr "Element"
++
++#: XML_NEW_ELEMENT
++msgid "New element"
++msgstr "Nou element"
++
++#: XML_DEL_ELEMENT
++msgid "Delete element"
++msgstr "Elimina l'element"
++
++#: XML_NAME
++msgid "Name"
++msgstr "Nom"
++
++#: RETRY
++msgid "Retry"
++msgstr "Reintenta"
++
++#: IGNORE
++msgid "Ignore"
++msgstr "Ignora"
++
++#: DATE_INCORRECT
++msgid "Date incorrect!"
++msgstr "Data incorrecta!"
++
++#: BAD_NUMBER
++msgid "Incorrect number!"
++msgstr "Nombre incorrecte!"
++
++#: NONE
++msgid "None"
++msgstr "Cap"
++
++#: COPY_keys
++msgid "CC"
++msgstr "CC"
++
++#: CUT_keys
++msgid "TX"
++msgstr "TX"
++
++#: PASTE_keys
++msgid "PV"
++msgstr "NV"
++
++#: DELETE_keys
++msgid "D#127"
++msgstr "E#127"
++
++#: SELECT_ALL
++msgid "Select all"
++msgstr "Selecciona-ho tot"
++
++#: SELECT_NONE
++msgid "Clear selection"
++msgstr "Desfés la selecció"
++
++#: WIDTH
++msgid "Width:"
++msgstr "Amplada:"
++
++#: HEIGHT
++msgid "Height:"
++msgstr "Alçada:"
++
++#: BROWSE_FILES
++msgid "Browse files..."
++msgstr "Cerca el fitxer..."
++
++#: VERSION
++msgid "version"
++msgstr "versió"
++
++#: ABOUT
++msgid "About..."
++msgstr "Quant a..."
++
++#: YES_TO_ALL
++msgid "Yes to all"
++msgstr "Sí a tots"
++
++#: NO_TO_ALL
++msgid "No to all"
++msgstr "No a tots"
++
++#: SAVE
++msgid "Save"
++msgstr "Desa"
++
++#: OPEN
++msgid "Open"
++msgstr "Obre"
++
++#: FILE_OPEN_TOOLTIP
++msgid "Open the selected file"
++msgstr "Obre el fitxer seleccionat"
++
++#: FILE_SAVE_TOOLTIP
++msgid "Save the specified file"
++msgstr "Desa el fitxer especificat"
++
++#: SAVING
++msgid "saving..."
++msgstr "desant..."
++
++#: SAVING_FILE
++msgid "Saving file"
++msgstr "Desant el fitxer"

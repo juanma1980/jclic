@@ -1,0 +1,75 @@
+From: =?utf-8?b?Ikpvc8OpIEwuIFJlZHJlam8gUm9kcsOtZ3VleiI=?=
+ <jredrejo@debian.org>
+Date: Thu, 11 Oct 2018 12:52:28 +0200
+Subject: jclic_properties
+
+===================================================================
+---
+ src/core/edu/xtec/jclic/PlayerSettings.java |  2 +-
+ src/report/jclicReports.properties          | 21 +++++++++++++++++----
+ 2 files changed, 18 insertions(+), 5 deletions(-)
+
+diff --git a/src/core/edu/xtec/jclic/PlayerSettings.java b/src/core/edu/xtec/jclic/PlayerSettings.java
+index 1b7a43b..47224ab 100644
+--- a/src/core/edu/xtec/jclic/PlayerSettings.java
++++ b/src/core/edu/xtec/jclic/PlayerSettings.java
+@@ -63,7 +63,7 @@ public class PlayerSettings extends Object implements Cloneable, edu.xtec.jclic.
+   public boolean readOnly;
+   protected static String defaultCfgFile = null;
+   public static final String PROJECTS_PATH = "projects", CFG_FILE = "jclic.cfg", DEFAULT_SKIN = "@default.xml",
+-      DEFAULT_REPORTER = "TCPReporter", DEFAULT_REPORTER_PARAMS = "path=localhost:9000";
++      DEFAULT_REPORTER = "TCPReporter", DEFAULT_REPORTER_PARAMS = "path=server:9000";
+   public boolean fressaEnabled;
+ 
+   /** Creates new PlayerSettings */
+diff --git a/src/report/jclicReports.properties b/src/report/jclicReports.properties
+index 8570f10..7acf036 100644
+--- a/src/report/jclicReports.properties
++++ b/src/report/jclicReports.properties
+@@ -10,7 +10,10 @@
+ #            PointBase: com.pointbase.jdbc.jdbcUniversalDriver
+ #            Oracle: oracle.jdbc.driver.OracleDriver
+ #--------------------------------------------------------------------------
+-dbDriver=sun.jdbc.odbc.JdbcOdbcDriver
++# ---Lliurex 02.05.2013 ---
++dbDriver=com.mysql.jdbc.Driver
++# ---Lliurex 02.05.2013 ---
++#dbDriver=sun.jdbc.odbc.JdbcOdbcDriver
+ 
+ 
+ #--------------------------------------------------------------------------
+@@ -21,14 +24,21 @@ dbDriver=sun.jdbc.odbc.JdbcOdbcDriver
+ #            PointBase: jdbc:pointbase:jclic
+ #            Oracle: jdbc:oracle:thin:@server.domain.com:1521:database
+ #--------------------------------------------------------------------------
+-dbServer=jdbc:odbc:JClic
++# ---Lliurex 02.05.2013 ---
++#dbServer=jdbc:odbc:JClic
++# ---Lliurex 02.05.2013 ---
++dbServer=jdbc:mysql://127.0.0.1/JClicReports?autoReconnect=true&relaxAutoCommit=true
+ 
+ 
+ #--------------------------------------------------------------------------
+ # DB system username and password (not mandatory in some DBMS)
+ #--------------------------------------------------------------------------
+-dbLogin=clic_user
+-dbPassword=clic_pwd
++#dbLogin=clic_user
++#dbPassword=clic_pwd
++# ---Lliurex 02.05.2013 ---
++dbLogin=jclic_user
++dbPassword=jclic_pwd
++# ---Lliurex 02.05.2013 ---
+ 
+ 
+ #--------------------------------------------------------------------------
+@@ -110,6 +120,9 @@ graph_width=440
+ graph_dist_width=192
+ graph_height=155
+ graph_header_height=25
++# ---Lliurex 02.05.2013 ---
++browser=firefox
++# ---Lliurex 02.05.2013 ---
+ graph_margin=8
+ graph_color_bg=F0F8FF
+ graph_color_text=000000

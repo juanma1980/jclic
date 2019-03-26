@@ -1,0 +1,55 @@
+From: =?utf-8?b?Ikpvc8OpIEwuIFJlZHJlam8gUm9kcsOtZ3VleiI=?=
+ <jredrejo@debian.org>
+Date: Thu, 11 Oct 2018 12:52:28 +0200
+Subject: fix_close
+
+===================================================================
+---
+ src/core/edu/xtec/jclic/SingleInstanceJFrame.java | 27 ++++++++++++++---------
+ 1 file changed, 16 insertions(+), 11 deletions(-)
+
+diff --git a/src/core/edu/xtec/jclic/SingleInstanceJFrame.java b/src/core/edu/xtec/jclic/SingleInstanceJFrame.java
+index 868e99a..5a1f8a2 100644
+--- a/src/core/edu/xtec/jclic/SingleInstanceJFrame.java
++++ b/src/core/edu/xtec/jclic/SingleInstanceJFrame.java
+@@ -94,6 +94,7 @@ public class SingleInstanceJFrame extends javax.swing.JFrame implements Constant
+           result = arg;
+       }
+     }
++	options.needViaHack();
+     return result;
+   }
+ 
+@@ -223,17 +224,21 @@ public class SingleInstanceJFrame extends javax.swing.JFrame implements Constant
+ 
+   /** Exit the Application */
+   private void exitForm(java.awt.event.WindowEvent evt) {
+-    if (socketThread != null)
+-      socketThread.stopSocketThread();
+-    if (rc != null) {
+-      rc.end();
+-      rc = null;
+-    }
+-    while (socketThread != null) {
+-      Thread.yield();
+-    }
+-    System.exit(0);
+-  }
++	try
++        {
++            if(socketThread!=null)
++                socketThread.stopSocketThread();
++            if(rc!=null){
++                rc.end();
++                rc=null;
++            }
++            while(socketThread!=null){
++                Thread.currentThread().yield();
++            }
++       }catch(Exception ex){
++            System.exit(0);
++       }
++     }
+ 
+   protected boolean checkOtherInstance(int port) {
+     boolean result = false;

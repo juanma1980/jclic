@@ -1,0 +1,487 @@
+From: =?utf-8?b?Ikpvc8OpIEwuIFJlZHJlam8gUm9kcsOtZ3VleiI=?=
+ <jredrejo@debian.org>
+Date: Thu, 11 Oct 2018 12:52:28 +0200
+Subject: audio_VIA_soundcards
+
+===================================================================
+---
+ src/core/edu/xtec/jclic/media/FalseClip.java       |   9 +-
+ .../jclic/media/JavaSoundActiveMediaPlayer.java    |  20 +-
+ .../edu/xtec/jclic/media/JavaSoundAudioBuffer.java |  11 +-
+ .../edu/xtec/jclic/media/JavaSoundAudioPlayer.java | 209 +++++++++++++++++++--
+ src/core/edu/xtec/util/Options.java                |  23 +++
+ 5 files changed, 244 insertions(+), 28 deletions(-)
+
+diff --git a/src/core/edu/xtec/jclic/media/FalseClip.java b/src/core/edu/xtec/jclic/media/FalseClip.java
+index 4fd3ada..650e46a 100644
+--- a/src/core/edu/xtec/jclic/media/FalseClip.java
++++ b/src/core/edu/xtec/jclic/media/FalseClip.java
+@@ -27,6 +27,7 @@ import javax.sound.sampled.AudioInputStream;
+ import javax.sound.sampled.AudioSystem;
+ import javax.sound.sampled.DataLine;
+ import javax.sound.sampled.SourceDataLine;
++import edu.xtec.util.Options;
+ 
+ /**
+  * @author Francesc Busquets (fbusquets@xtec.cat)
+@@ -132,9 +133,10 @@ public class FalseClip implements PseudoClip {
+       running = false;
+       getAudioInputStream();
+       DataLine.Info info = new DataLine.Info(SourceDataLine.class, af);
+-      line = (SourceDataLine) AudioSystem.getLine(info);
++      if (Options.CLOSE_STREAMS.booleanValue()) line = (SourceDataLine)AudioSystem.getSourceDataLine(af, AudioSystem.getMixer(null).getMixerInfo());
++      else line = (SourceDataLine)AudioSystem.getLine(info);
+       if (line != null)
+-        line.open(af);
++        if (!Options.CLOSE_STREAMS.booleanValue()) line.open(af);
+     }
+ 
+     @Override
+@@ -143,6 +145,7 @@ public class FalseClip implements PseudoClip {
+         running = true;
+         int nBytesRead = 0;
+         try {
++          if (Options.CLOSE_STREAMS.booleanValue()) line.open(af);
+           line.start();
+           while (running && nBytesRead >= 0) {
+             nBytesRead = ais.read(buf, 0, buf.length);
+@@ -155,6 +158,8 @@ public class FalseClip implements PseudoClip {
+             line.drain();
+           else
+             line.stop();
++        } catch(javax.sound.sampled.LineUnavailableException ex){
++          System.err.println("JavaSound playing error:\n"+ex);
+         } catch (Exception ex) {
+           System.err.println("JavaSound playing error:\n" + ex);
+         }
+diff --git a/src/core/edu/xtec/jclic/media/JavaSoundActiveMediaPlayer.java b/src/core/edu/xtec/jclic/media/JavaSoundActiveMediaPlayer.java
+index 8992542..5e7aea2 100644
+--- a/src/core/edu/xtec/jclic/media/JavaSoundActiveMediaPlayer.java
++++ b/src/core/edu/xtec/jclic/media/JavaSoundActiveMediaPlayer.java
+@@ -30,6 +30,7 @@ import java.io.InputStream;
+ import javax.sound.midi.MidiSystem;
+ import javax.sound.sampled.*;
+ import javax.swing.Timer;
++import edu.xtec.util.Options;
+ 
+ /** @author Francesc Busquets (fbusquets@xtec.cat) */
+ public class JavaSoundActiveMediaPlayer extends ActiveMediaPlayer {
+@@ -107,8 +108,10 @@ public class JavaSoundActiveMediaPlayer extends ActiveMediaPlayer {
+           if (sequencer == null)
+             sequencer = MidiSystem.getSequencer();
+         } else {
+-          if (clip != null && !clip.isOpen()) {
+-            clip.open();
++          if (!Options.CLOSE_STREAMS.booleanValue()) {
++            if (clip != null && !clip.isOpen()) {
++              clip.open();
++            }
+           }
+         }
+       } catch (Exception e) {
+@@ -138,8 +141,17 @@ public class JavaSoundActiveMediaPlayer extends ActiveMediaPlayer {
+             sequencer.start();
+           }
+         } else if (clip != null) {
+-          if (!clip.isOpen())
+-            realize();
++          if (Options.CLOSE_STREAMS.booleanValue()) {
++            //System.out.println("JavaSoundActiveMediaPlayer: open clip");
++            clip.stop();
++            if(clip!=null) {
++              if(!clip.isOpen())
++                clip.open();
++            }
++          } else {
++            if(!clip.isOpen())
++               realize();
++          }
+           setTimeRanges();
+           attachVisualComponent();
+           if (mc.loop) {
+diff --git a/src/core/edu/xtec/jclic/media/JavaSoundAudioBuffer.java b/src/core/edu/xtec/jclic/media/JavaSoundAudioBuffer.java
+index 39a364a..2c2b2bb 100644
+--- a/src/core/edu/xtec/jclic/media/JavaSoundAudioBuffer.java
++++ b/src/core/edu/xtec/jclic/media/JavaSoundAudioBuffer.java
+@@ -25,6 +25,7 @@ import java.io.ByteArrayOutputStream;
+ import java.util.ArrayList;
+ import java.util.Timer;
+ import java.util.TimerTask;
++import edu.xtec.util.Options;
+ import javax.sound.sampled.AudioFormat;
+ import javax.sound.sampled.AudioSystem;
+ import javax.sound.sampled.Line.Info;
+@@ -151,8 +152,13 @@ public class JavaSoundAudioBuffer extends AudioBuffer {
+ 
+     // build m_sourceLine
+     dli = new javax.sound.sampled.DataLine.Info(SourceDataLine.class, m_targetLine.getFormat());
+-    m_sourceLine = (SourceDataLine) AudioSystem.getLine(dli);
+-    m_sourceLine.open();
++    if (Options.CLOSE_STREAMS.booleanValue()) {
++      //System.out.println("JavaSoundAudioBuffer: Default mixer " + (SourceDataLine)AudioSystem.getSourceDataLine(m_targetLine.getFormat(), AudioSystem.getMixer(null).     getMixerInfo()));
++      m_sourceLine=(SourceDataLine)AudioSystem.getSourceDataLine(m_targetLine.getFormat(), AudioSystem.getMixer(null).getMixerInfo());
++    } else {
++      m_sourceLine=(SourceDataLine)AudioSystem.getLine(dli);
++    }
++	m_sourceLine.open();
+     initialized = true;
+   }
+ 
+@@ -255,6 +261,7 @@ public class JavaSoundAudioBuffer extends AudioBuffer {
+       }
+       m_sourceLine.drain();
+       m_sourceLine.stop();
++      if (Options.CLOSE_STREAMS.booleanValue()) m_sourceLine.close();
+       playThread = null;
+       running = false;
+     }
+diff --git a/src/core/edu/xtec/jclic/media/JavaSoundAudioPlayer.java b/src/core/edu/xtec/jclic/media/JavaSoundAudioPlayer.java
+index 1420d78..ecbcbc5 100644
+--- a/src/core/edu/xtec/jclic/media/JavaSoundAudioPlayer.java
++++ b/src/core/edu/xtec/jclic/media/JavaSoundAudioPlayer.java
+@@ -22,6 +22,7 @@
+ package edu.xtec.jclic.media;
+ 
+ import edu.xtec.jclic.bags.MediaBag;
++import edu.xtec.util.ResourceManager;
+ import edu.xtec.util.ExtendedByteArrayInputStream;
+ import edu.xtec.util.StreamIO;
+ import java.io.ByteArrayInputStream;
+@@ -33,10 +34,14 @@ import javax.sound.sampled.AudioInputStream;
+ import javax.sound.sampled.AudioSystem;
+ import javax.sound.sampled.Clip;
+ import javax.sound.sampled.DataLine;
++import javax.sound.sampled.Line;
++import javax.sound.sampled.LineListener;
++import javax.sound.sampled.LineEvent;
+ import javax.sound.sampled.SourceDataLine;
+ import javax.sound.sampled.UnsupportedAudioFileException;
+ import org.tritonus.applet.AppletMpegSPIWorkaround;
+ import org.tritonus.applet.AppletVorbisSPIWorkaround;
++import edu.xtec.util.Options;
+ 
+ /**
+  * @author Francesc Busquets (fbusquets@xtec.cat)
+@@ -45,11 +50,17 @@ import org.tritonus.applet.AppletVorbisSPIWorkaround;
+ public class JavaSoundAudioPlayer implements AudioPlayer {
+ 
+   private Clip clip;
+-  protected AudioInputStream ais;
++  protected AudioInputStream ais=null;
+   protected boolean isMpeg;
+   protected boolean isOgg;
+   protected boolean isWav;
+ 
++
++  private MediaBag mb;
++  private String mediaFileName;
++  private Options options;
++  private PlayThread playThread;
++
+   static final int INTERNAL_BUFFER_SIZE = 1024;
+   static final int CHECK_BUFFER_SIZE = 0x60;
+   static final int BIT_SAMPLE_SIZE = 16;
+@@ -61,16 +72,20 @@ public class JavaSoundAudioPlayer implements AudioPlayer {
+ 
+   public boolean setDataSource(Object source) throws Exception {
+ 
++    this.options = options;
+     close();
+ 
+     InputStream is = null;
+     javax.sound.sampled.AudioFileFormat m_audioFileFormat = null;
+ 
+     if (source instanceof ExtendedByteArrayInputStream) {
++      this.mediaFileName=((ExtendedByteArrayInputStream)source).getName();
+       is = checkInputStream((InputStream) source, ((ExtendedByteArrayInputStream) source).getName());
+     } else if (source instanceof InputStream) {
+-      is = checkInputStream((InputStream) source, null);
++      this.mediaFileName=null;
++      is=checkInputStream((InputStream)source, this.mediaFileName);
+     } else if (source instanceof File) {
++      this.mediaFileName=((File)source).getName();
+       is = checkInputStream(new java.io.FileInputStream((File) source), ((File) source).getName());
+     } else {
+       java.net.URL url = null;
+@@ -80,6 +95,7 @@ public class JavaSoundAudioPlayer implements AudioPlayer {
+         url = new java.net.URL((String) source);
+       }
+       if (url != null) {
++        this.mediaFileName=source.toString();
+         is = checkInputStream(url.openStream(), source.toString());
+       }
+     }
+@@ -133,18 +149,63 @@ public class JavaSoundAudioPlayer implements AudioPlayer {
+     return ais != null;
+   }
+ 
++  private void getAudioInputStream() throws Exception{
++    if(ais==null){
++      //System.out.println("getAudioInputStream: " + mediaFileName + " mb " + mb);
++      JavaSoundAudioPlayer jsap=new JavaSoundAudioPlayer();
++      jsap.setDataSource(ResourceManager.getResourceAsByteArray(mediaFileName));
++      ais=jsap.ais;
++      if(ais==null)
++        throw new Exception("Unable to open audio data!");
++     }
++  }
++
+   public Clip getClip() throws Exception {
+-    if (clip == null && ais != null) {
+-      clip = (Clip) AudioSystem.getLine(new DataLine.Info(Clip.class, ais.getFormat(), INTERNAL_BUFFER_SIZE));
++    if (!Options.CLOSE_STREAMS.booleanValue()) {
++      if(clip==null && ais!=null){
++        clip = (Clip)AudioSystem.getLine(new DataLine.Info(Clip.class, ais.getFormat(), INTERNAL_BUFFER_SIZE));
++      }
++      return clip;
++   } else {
++   //System.out.println("getClip() with closestreams " + Options.CLOSE_STREAMS.booleanValue());
++     if (ais !=null) close();
++       if (ais == null) getAudioInputStream();
++     else return null;
++     DataLine.Info info = new DataLine.Info(Clip.class, ais.getFormat(), INTERNAL_BUFFER_SIZE);
++     if((clip==null && ais!=null)){
++       clip = (Clip)AudioSystem.getLine(info);
++       clip.addLineListener(new LineListener(){
++       public void update(LineEvent event){
++         //System.out.println("LineListener " + event.getType() );
++         if(event.getType() == LineEvent.Type.CLOSE){
++         }
++         if(event.getType() == LineEvent.Type.STOP){
++           clip.stop();
++           close();
++         }
++         if(event.getType() == LineEvent.Type.OPEN){
++           if(clip!=null && clip.isRunning()) {
++             clip.stop();
++               }
++             }
++          }
++         });
++       return clip;
++       }
+     }
+-    return clip;
++    return null;
+   }
+ 
+   public void realize(String fileName, MediaBag mediaBag) throws Exception {
+-    if (fileName != null)
++    if (fileName != null) {
+       setDataSource(mediaBag.getMediaDataSource(fileName));
+-    if (ais != null && getClip() != null) {
+-      clip.open(ais);
++      this.mediaFileName=fileName;
++	}
++    this.mb=mediaBag;
++    if (!Options.CLOSE_STREAMS.booleanValue()) {
++      if(ais!=null && getClip()!=null){
++        clip.open(ais);
++      }
+     }
+   }
+ 
+@@ -152,21 +213,43 @@ public class JavaSoundAudioPlayer implements AudioPlayer {
+   // "IllegalStateException: line already closed"
+   // launched by org.classpath.icedtea.pulseaudio.PulseAudioClip.close
+   public void close() {
+-    if (clip != null && clip.isOpen()) {
+-      if (clip.isRunning())
+-        clip.stop();
+-      clip.close();
++    if (!Options.CLOSE_STREAMS.booleanValue()) {
++      if(clip!=null){
++        clip.close();
++        clip=null;
++      }
++      ais=null;
++    } else {
++      try {
++        if(clip!=null){
++          //System.out.println("close() clip");
++          clip.close();
++          clip=null;
++        }
++        if(ais!=null){
++          //System.out.println("close() ais");
++          ais.close();
++          ais=null;
++        }
++      } catch(java.io.IOException ex){
++        System.err.println("close(): close error");
++      }
+     }
+-    clip = null;
+-    ais = null;
+   }
+ 
+   public void play() {
+     try {
+-      stop();
+-      if (getClip() != null) {
+-        clip.setFramePosition(0);
+-        clip.start();
++      if (!Options.CLOSE_STREAMS.booleanValue()) {
++        stop();
++        if(getClip()!=null){
++          clip.setFramePosition(0);
++          clip.start();
++        }
++      } else {
++        if(playThread==null){
++          playThread=new PlayThread();
++          playThread.start();
++        }
+       }
+     } catch (Exception ex) {
+       System.err.println("Error playing sound:\n" + ex);
+@@ -174,8 +257,21 @@ public class JavaSoundAudioPlayer implements AudioPlayer {
+   }
+ 
+   public void stop() {
+-    if (clip != null && clip.isActive())
+-      clip.stop();
++    if (!Options.CLOSE_STREAMS.booleanValue()) {
++      if(clip!=null && clip.isActive())
++        clip.stop();
++    } else {
++      if(playThread!=null){
++        if(playThread.isAlive()){
++          playThread.running=false;
++          while(playThread!=null){
++            Thread.currentThread().yield();
++          }
++        } else{
++          playThread=null;
++        }
++      }
++    }
+   }
+ 
+   protected InputStream checkInputStream(InputStream is, String name) throws Exception {
+@@ -215,4 +311,77 @@ public class JavaSoundAudioPlayer implements AudioPlayer {
+     }
+     return is;
+   }
++
++  class PlayThread extends Thread {
++
++       public boolean running;
++       private Clip clip2 = null;
++
++       public PlayThread() throws Exception{
++  	     //System.out.println("PlayThread() with closestreams " + Options.CLOSE_STREAMS.booleanValue());
++           if (ais !=null) close();
++           if (ais == null) getAudioInputStream();
++
++           DataLine.Info info = new DataLine.Info(Clip.class, ais.getFormat(), INTERNAL_BUFFER_SIZE);
++           if((clip2==null && ais!=null)){
++       	    clip2 = (Clip)AudioSystem.getLine(info);
++              clip2.addLineListener(new LineListener(){
++          	    public void update(LineEvent event){
++              	    //System.out.println("LineListener " +event.getType() );
++                      if(event.getType() == LineEvent.Type.CLOSE){
++                      }
++                      if(event.getType() == LineEvent.Type.STOP){
++                         clip2.stop();
++                         close2();
++                         playThread=null;
++                         running=false;
++                      }
++                      if(event.getType() == LineEvent.Type.OPEN){
++                          if(clip2!=null && clip2.isRunning()) {
++                              clip2.stop();
++                          }
++                      }
++                  }
++              });
++          }
++     }
++
++  public void close2(){
++  	try {
++      	if(clip2!=null){
++          	//System.out.println("close2() clip");
++              clip2.close();
++              clip2=null;
++          }
++          if(ais!=null){
++              //System.out.println("close2() ais");
++              ais.close();
++              ais=null;
++           }
++      } catch(java.io.IOException ex){
++          System.err.println("close2(): close error");
++      }
++  }
++
++  public void run(){
++      try{
++          if(clip2!=null) {
++             running=true;
++             clip2.stop();
++
++             if (!clip2.isOpen()) {
++                 if(ais!=null){
++                     clip2.open(ais);
++                                     }
++                 }
++             clip2.setFramePosition(0);
++             clip2.start();
++             Thread.currentThread().yield();
++         }
++     } catch(Exception ex){
++         System.err.println("Error playing sound:\n"+ex);
++     }
++  }
++  }
++
+ }
+diff --git a/src/core/edu/xtec/util/Options.java b/src/core/edu/xtec/util/Options.java
+index c40922d..be76ef5 100644
+--- a/src/core/edu/xtec/util/Options.java
++++ b/src/core/edu/xtec/util/Options.java
+@@ -28,6 +28,8 @@ import java.util.HashMap;
+ import java.util.Iterator;
+ import java.util.Map;
+ import java.util.Properties;
++import javax.sound.sampled.AudioSystem;
++import javax.sound.sampled.Mixer;
+ 
+ /**
+  * @author Francesc Busquets (fbusquets@xtec.cat)
+@@ -35,6 +37,8 @@ import java.util.Properties;
+  */
+ public class Options extends HashMap<String, Object> {
+ 
++  public static Boolean CLOSE_STREAMS=null;
++  public static String CLOSESTREAMS="closestreams";
+   public static final String TRUE = "true", FALSE = "false";
+   public static final Boolean BTRUE = true, BFALSE = false;
+   public static final String MAC = "Mac", WIN = "Windows", JAVA131 = "java131", JAVA14 = "java14", JAVA141 = "java141",
+@@ -49,6 +53,25 @@ public class Options extends HashMap<String, Object> {
+     init();
+   }
+ 
++  public void needViaHack(){
++    if (CLOSE_STREAMS == null) {
++        if (containsKey(CLOSESTREAMS)) CLOSE_STREAMS=new Boolean(getBoolean(CLOSESTREAMS));
++        else {
++            put(CLOSESTREAMS, "false");
++            Mixer.Info[] mixers = AudioSystem.getMixerInfo();
++            for(int i = 0; i < mixers.length; ++i) {
++                //System.out.println(mixers[i].getDescription());
++                if (mixers[i].getDescription().indexOf("8237") > 0 || mixers[i].getDescription().indexOf("8235") > 0 || mixers[i].getDescription().indexOf("VT1708")  > 0 || mixers[i].getDescription().indexOf("8233") > 0) {
++                   put(CLOSESTREAMS, "true");
++                   break;
++               }
++           }
++           CLOSE_STREAMS=new Boolean(getBoolean(CLOSESTREAMS));
++       }
++    }
++    //if (CLOSE_STREAMS.booleanValue()) System.out.println("Options: CLOSESTREAMS="+ CLOSE_STREAMS);
++  }
++
+   public Options(Map<String, Object> t) {
+     super(t);
+     init();

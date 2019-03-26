@@ -1,0 +1,43 @@
+From: =?utf-8?b?Ikpvc8OpIEwuIFJlZHJlam8gUm9kcsOtZ3VleiI=?=
+ <jredrejo@debian.org>
+Date: Thu, 11 Oct 2018 12:52:28 +0200
+Subject: jclicreports_lliurex
+
+---
+ jclicreports | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+ create mode 100644 jclicreports
+
+diff --git a/jclicreports b/jclicreports
+new file mode 100644
+index 0000000..619ec98
+--- /dev/null
++++ b/jclicreports
+@@ -0,0 +1,27 @@
++#!/bin/sh
++
++# jclicreports wrapper script
++# code for java detection borrowed from tuxguitar
++
++if [ ! -e /etc/.jclic.conf ] ; then
++        zenity --error --text "Per a executar el servidor d’informes heu de configurar-lo.\nAneu a\nAplicacions / Administració de Lliurex / Centre de control de LliureX / Programari /      Configuració del servidor d’informes"
++        exit 0
++fi
++
++export JAVA=${JAVA:=java}
++
++JAVA=$JAVA                                                                                                                                                                                   
++if [ -d "/usr/lib/jvm/java-7-oracle" ]; then
++       JAVA_HOME="/usr/lib/jvm/java-7-oracle"
++       JAVA=${JAVA_HOME}/jre/bin/java
++ fi
++
++USER_LANG=$(echo $LANG|cut -d "_" -f1)
++
++export JAVA=${JAVA:=java}
++export LANG=es_ES.utf8
++
++exec $JAVA -jar /usr/share/java/jclicreports.jar 
++
++exit 0
++

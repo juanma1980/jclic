@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+#Testear los directorios de las posibles máquinas java para crear enlaces al driver de mysql
+LISTA=$(ls /usr/lib/jvm)
+for elemento in $LISTA
+	do
+		if [ ! -h /usr/lib/jvm/$elemento ]; then
+			if [ -d /usr/lib/jvm/$elemento/jre/lib/ext ]; then   
+				ln -s /usr/share/java/mysql-connector-java.jar /usr/lib/jvm/$elemento/jre/lib/ext/mysql-connector-java.jar
+			fi
+		fi
+done
+
+if [ -x /usr/bin/update-menus ] ; then update-menus ; fi
+
+#DEBHELPER#
+
+exit 0

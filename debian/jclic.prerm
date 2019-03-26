@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+#Testear los directorios de las posibles máquinas java para borrar enlaces al driver de mysql
+LISTA=$(ls /usr/lib/jvm)
+for elemento in $LISTA
+	do
+		if [ ! -h /usr/lib/jvm/$elemento ]; then
+			if [ -d /usr/lib/jvm/$elemento/jre/lib/ext ]; then   
+				rm -rf /usr/lib/jvm/$elemento/jre/lib/ext/mysql-connector-java.jar
+			fi
+		fi
+done
+
+#DEBHELPER#
+
+exit 0

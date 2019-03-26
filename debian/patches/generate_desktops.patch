@@ -1,0 +1,156 @@
+From: =?utf-8?b?Ikpvc8OpIEwuIFJlZHJlam8gUm9kcsOtZ3VleiI=?=
+ <jredrejo@debian.org>
+Date: Thu, 11 Oct 2018 13:29:07 +0200
+Subject: generate_desktops
+
+===================================================================
+---
+ jclic.desktop        | 26 ++++++++++++++++++++++++++
+ jclicauthor          | 20 ++++++++++++++++++++
+ jclicauthor.desktop  | 21 +++++++++++++++++++++
+ jclicreports.desktop | 21 +++++++++++++++++++++
+ 4 files changed, 88 insertions(+)
+ create mode 100644 jclic.desktop
+ create mode 100644 jclicauthor
+ create mode 100644 jclicauthor.desktop
+ create mode 100644 jclicreports.desktop
+
+Index: jclic/jclic.desktop
+===================================================================
+--- /dev/null
++++ jclic/jclic.desktop
+@@ -0,0 +1,26 @@
++#!/bin/sh
++
++# jclicplayer wrapper script
++# code for java detection based on tuxguitar code
++# but adding detection of alternatives for jclic
++
++
++RC=0
++echo $LANG | grep "ca_ES" 1>/dev/null || RC=1
++if [ $RC=0  ]; then
++	export LC_ALL=ca_ES.UTF-8
++fi
++
++export JAVA=${JAVA:=java}
++
++JAVA=$JAVA
++if [ -d "/usr/lib/jvm/java-8-openjdk-amd64" ]; then
++	JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
++	JAVA=${JAVA_HOME}/jre/bin/java
++elif [ -d "/usr/lib/jvm/java-8-openjdk-i386" ]; then
++	JAVA_HOME="/usr/lib/jvm/java-8-openjdk-i386"
++	JAVA=${JAVA_HOME}/jre/bin/java
++fi
++
++exec $JAVA -jar /usr/share/java/jclic.jar "$@" &>/dev/null
++
+Index: jclic/jclicauthor
+===================================================================
+--- /dev/null
++++ jclic/jclicauthor
+@@ -0,0 +1,20 @@
++#!/bin/sh
++
++# jclicplayer wrapper script
++# code for java detection based on tuxguitar code
++# but adding detection of alternatives for jclic
++
++
++export JAVA=${JAVA:=java}
++
++JAVA=$JAVA
++if [ -d "/usr/lib/jvm/java-8-openjdk-amd64" ]; then
++	JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
++	JAVA=${JAVA_HOME}/jre/bin/java
++elif [ -d "/usr/lib/jvm/java-8-openjdk-i386" ]; then
++	JAVA_HOME="/usr/lib/jvm/java-8-openjdk-i386"
++	JAVA=${JAVA_HOME}/jre/bin/java
++fi
++
++exec $JAVA -jar /usr/share/java/jclicauthor.jar "$@" &>/dev/null
++
+Index: jclic/jclicauthor.desktop
+===================================================================
+--- /dev/null
++++ jclic/jclicauthor.desktop
+@@ -0,0 +1,21 @@
++[Desktop Entry]
++Encoding=UTF-8
++Name=JClic Author
++Name[ca]=JClicAuthor, creador d'activitats JClic
++Name[es]=JClicAuthor, creador de actividades JClic
++Name[qcv]=JClicAuthor, creador d'activitats JClic
++Name[ca_ES.UTF-8@valencia]=JClicAuthor, creador d'activitats JClic
++Name[ca_ES]=JClicAuthor, creador d'activitats JClic
++Comment=Tool to create and modify JClic projects
++Comment[ca]=Eina per crear i modificar projectes JClic
++Comment[es]=Herramienta para crear y modificar proyectos JClic
++Comment[qcv]=Ferramenta per a crear i modificar projectes JClic
++Comment[ca_ES.UTF-8@valencia]=Ferramenta per a crear i modificar projectes JClic
++Comment[ca_ES]=Ferramenta per a crear i modificar projectes JClic
++Icon=jclicauthor
++Exec=jclicauthor
++TryExec=/usr/bin/jclicauthor
++Terminal=false
++Type=Application
++Categories=ODE-Creation;
++StartupNotify=false
+Index: jclic/jclicreports.desktop
+===================================================================
+--- /dev/null
++++ jclic/jclicreports.desktop
+@@ -0,0 +1,21 @@
++[Desktop Entry]
++Encoding=UTF-8
++Name=JClic Report Server
++Name[ca]=Servidor d'informes JClic
++Name[es]=Servidor de informes JClic
++Name[qcv]=Servidor d'informes JClic
++Name[ca_ES]=Servidor d'informes JClic
++Name[ca_ES@valencia]=Servidor d'informes JClic
++Comment=Management of a database in which the results obtained by the students when carrying out the activities of the JClic projects are compiled
++Comment[ca]=Gestiona una base de dades en què es recullen els resultats obtinguts per l'alumnat en les activitats dels projectes JClic
++Comment[es]=Gestionar una base de datos en la que se recopilarán los resultados obtenidos por los alumnos al realizar las actividades de los proyectos JClic
++Comment[ca_ES]=Gestiona una base de dades en què es recullen els resultats obtinguts per l'alumnat en les activitats dels projectes JClic
++Comment[ca_ES@valencia]=Gestiona una base de dades en què es recullen els resultats obtinguts per l'alumnat en les activitats dels projectes JClic
++Comment[qcv]=Gestiona una base de dades en què es recullen els resultats obtinguts per l'alumnat en les activitats dels projectes JClic
++Icon=jclicreports.png
++Exec=jclicreports
++Terminal=false
++Type=Application
++Categories=Application;Education
++StartupNotify=true
++TryExec=java
+Index: jclic/jclic
+===================================================================
+--- /dev/null
++++ jclic/jclic
+@@ -0,0 +1,26 @@
++#!/bin/sh
++
++# jclicplayer wrapper script
++# code for java detection based on tuxguitar code
++# but adding detection of alternatives for jclic
++
++
++RC=0
++echo $LANG | grep "ca_ES" 1>/dev/null || RC=1
++if [ $RC=0  ]; then
++	export LC_ALL=ca_ES.UTF-8
++fi
++
++export JAVA=${JAVA:=java}
++
++JAVA=$JAVA
++if [ -d "/usr/lib/jvm/java-8-openjdk-amd64" ]; then
++	JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
++	JAVA=${JAVA_HOME}/jre/bin/java
++elif [ -d "/usr/lib/jvm/java-8-openjdk-i386" ]; then
++	JAVA_HOME="/usr/lib/jvm/java-8-openjdk-i386"
++	JAVA=${JAVA_HOME}/jre/bin/java
++fi
++
++exec $JAVA -jar /usr/share/java/jclic.jar "$@" &>/dev/null
++

@@ -1,0 +1,3323 @@
+From: =?utf-8?b?Ikpvc8OpIEwuIFJlZHJlam8gUm9kcsOtZ3VleiI=?=
+ <jredrejo@debian.org>
+Date: Thu, 11 Oct 2018 10:11:52 +0200
+Subject: ca_ES_valencia_translations
+
+===================================================================
+---
+ .../AuthorMessages_ca_ES_valencia.properties       | 1601 ++++++++++++++++++++
+ .../resources/about/credits_ca_ES_valencia.html    |    8 +
+ .../resources/about/license_ca_ES_valencia.html    |   17 +
+ .../messages/JClicMessages_ca_ES_valencia.java     |    4 +
+ .../JClicMessages_ca_ES_valencia.properties        |  388 +++++
+ .../messages/checkmedia_ca_ES_valencia.html        |   39 +
+ .../listactivities_ca_ES_valencia.properties       |   47 +
+ .../contentproviders_ca_ES_valencia.properties     |   19 +
+ .../shapers/listshapers_ca_ES_valencia.properties  |   25 +
+ .../PlayerMessages_ca_ES_valencia.properties       |  400 +++++
+ .../ReportServerMessages_ca_ES_valencia.properties |  149 ++
+ .../reportMessages_ca_ES_valencia.properties       |  279 ++++
+ .../messages/BasicMessages_ca_ES_valencia.java     |    4 +
+ .../BasicMessages_ca_ES_valencia.properties        |  167 ++
+ ...rsistentPathsMessages_ca_ES_valencia.properties |   13 +
+ .../messages/checksignature_ca_ES_valencia.html    |   26 +
+ 16 files changed, 3186 insertions(+)
+ create mode 100644 src/author/edu/xtec/resources/messages/AuthorMessages_ca_ES_valencia.properties
+ create mode 100644 src/core/edu/xtec/resources/about/credits_ca_ES_valencia.html
+ create mode 100644 src/core/edu/xtec/resources/about/license_ca_ES_valencia.html
+ create mode 100644 src/core/edu/xtec/resources/messages/JClicMessages_ca_ES_valencia.java
+ create mode 100644 src/core/edu/xtec/resources/messages/JClicMessages_ca_ES_valencia.properties
+ create mode 100644 src/core/edu/xtec/resources/messages/checkmedia_ca_ES_valencia.html
+ create mode 100644 src/extra/edu/xtec/resources/activities/listactivities_ca_ES_valencia.properties
+ create mode 100644 src/extra/edu/xtec/resources/automation/contentproviders_ca_ES_valencia.properties
+ create mode 100644 src/extra/edu/xtec/resources/shapers/listshapers_ca_ES_valencia.properties
+ create mode 100644 src/player/edu/xtec/resources/messages/PlayerMessages_ca_ES_valencia.properties
+ create mode 100644 src/report/reportServer/edu/xtec/resources/messages/ReportServerMessages_ca_ES_valencia.properties
+ create mode 100644 src/report/reportServlets/edu/xtec/resources/messages/reportMessages_ca_ES_valencia.properties
+ create mode 100644 src/utilities/edu/xtec/resources/messages/BasicMessages_ca_ES_valencia.java
+ create mode 100644 src/utilities/edu/xtec/resources/messages/BasicMessages_ca_ES_valencia.properties
+ create mode 100644 src/utilities/edu/xtec/resources/messages/PersistentPathsMessages_ca_ES_valencia.properties
+ create mode 100644 src/utilities/edu/xtec/resources/messages/checksignature_ca_ES_valencia.html
+
+diff --git a/src/author/edu/xtec/resources/messages/AuthorMessages_ca_ES_valencia.properties b/src/author/edu/xtec/resources/messages/AuthorMessages_ca_ES_valencia.properties
+new file mode 100644
+index 0000000..e0ac05a
+--- /dev/null
++++ b/src/author/edu/xtec/resources/messages/AuthorMessages_ca_ES_valencia.properties
+@@ -0,0 +1,1601 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++!=Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2008-06-30 12:04+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset\=UTF-8\nContent-Transfer-Encoding: 8bit\n
++
++# JClic Author messages
++edit_act_description_block=Descripci\u00f3
++
++edit_act_name_tooltip=Nom de l'activitat
++
++edit_act_name=Nom:
++
++edit_act_description_tooltip=Descripci\u00f3 de l'activitat
++
++edit_act_reports_block=Informes
++
++edit_act_includeInReports=Inclou esta activitat als informes
++
++edit_act_includeInReports_tooltip=Inclou els resultats d'esta activitat en els informes d'usuari
++
++edit_act_code=Codi:
++
++edit_act_code_tooltip=Codi opcional utilitzat per a agrupar i filtrar en la base de dades d'informes.
++
++edit_act_reportActions=Grava tamb\u00e9 les accions
++
++edit_act_reportActions_tooltip=Grava els detalls de totes les accions efectuades pels usuaris.
++
++edit_act_counters_block=Comptadors
++
++edit_act_timeCounter=Comptador de temps
++
++edit_act_timeCounter_tooltip=Mostra o amaga el comptador de temps
++
++edit_act_actionsCounter=Comptador d'intents
++
++edit_act_actionsCounter_tooltip=Mostra o amaga el comptador d'intents.
++
++edit_act_scoreCounter=Comptador d'encerts
++
++edit_act_scoreCounter_tooltip=Mostra o amaga el comptador d'encerts.
++
++edit_act_maxTime=Temps m\u00e0xim:
++
++edit_act_maxTime_tooltip=Temps m\u00e0xim per a resoldre l'activitat, en segons. El zero significa temps il\u00b7limitat.
++
++edit_act_countdown=Compte arrere
++
++edit_act_countdown_tooltip=El comptador comen\u00e7a al valor m\u00e0xim, i decreix fins a zero.
++
++edit_act_maxActions=Intents m\u00e0x.:
++
++edit_act_maxActions_tooltip=Nombre m\u00e0xim d'intents permesos, o zero per a il\u00b7limitat.
++
++edit_act_buttons_block=Botons
++
++edit_act_helpBtn=Ajuda
++
++edit_act_helpBtn_tooltip=Mostra o amaga el bot\u00f3 d'ajuda
++
++edit_act_helpBtn_solution=Mostra la soluci\u00f3
++
++edit_act_helpBtn_msg=Mostra este missatge:
++
++edit_act_infoBtn=Informaci\u00f3
++
++edit_act_infoBtn_tooltip=Mostra o amaga el bot\u00f3 d'informaci\u00f3
++
++edit_act_infoBtn_url=Mostra este URL:
++
++edit_act_infoBtn_cmd=Executa l'orde:
++
++edit_act_infoBtn_url_tooltip=Adre\u00e7a de la p\u00e0gina web que es mostrar\u00e0 en fer clic al bot\u00f3 d'informaci\u00f3.
++
++edit_act_infoBtn_cmd_tooltip=L\u00ednia d'ordes que s'executar\u00e0 en fer clic al bot\u00f3 d'informaci\u00f3.
++
++edit_act_mainWindow=Finestra principal:
++
++edit_act_gameWindow=Finestra de joc:
++
++edit_act_margin=Marge:
++
++edit_act_margin_tooltip=Espai horitzontal i vertical entre objectes visuals.
++
++edit_act_bgColor=Color de fons:
++
++edit_act_bgColor_tooltip=Canvia el color de fons.
++
++edit_gradient_startColor=Color inicial:
++
++edit_gradient_endColor=Color final:
++
++edit_gradient_startColor_tooltip=Selecci\u00f3 del color inicial
++
++edit_gradient_endColor_tooltip=Selecci\u00f3 del color final
++
++edit_gradient_cycles=Cicles:
++
++edit_gradient_cycles_tooltip=Nombre de repeticions del degradat sobre la superf\u00edcie a pintar
++
++edit_gradient_orientation=Orientaci\u00f3:
++
++edit_gradient_orientation_tooltip=Orientaci\u00f3 del degradat, mesurada en graus sobre la horitzontal
++
++edit_act_gradient=Degradat:
++
++edit_act_gradient_tooltip=Utilitza un degradat de colors
++
++edit_color_opacity=Opacitat
++
++edit_color_opacity_tooltip=Ajusta el valor del canal alfa (opacitat) del color.
++
++edit_gradient_title=Degradat
++
++edit_gradient_default=Utilitza els valors per defecte (degradat nul)
++
++edit_act_image=Imatge:
++
++edit_act_descriptionTab=Descripci\u00f3
++
++edit_act_descriptionTab_tooltip=Nom i descripci\u00f3
++
++edit_act_tiledBgImg=En mosaic
++
++edit_act_tiledBgImg_tooltip=Pinta tota la superf\u00edcie amb la imatge, repetint-la al llarg dels eixos X i Y tantes vegades com calga.
++
++edit_act_preview=Vista preliminar:
++
++edit_act_border=Vora
++
++edit_act_border_tooltip=Dibuixa una l\u00ednia de vora al voltant de la finestra
++
++edit_act_transparent=Transparent
++
++edit_act_transparent_tooltip=La finestra t\u00e9 el fons transparent
++
++edit_act_width=Ampl\u00e0ria:
++
++edit_act_height=Al\u00e7\u00e0ria:
++
++edit_act_width_tooltip=Ampl\u00e0ria de l'objecte, mesurada en p\u00edxels
++
++edit_act_height_tooltip=Al\u00e7\u00e0ria de l'objecte, mesurada en p\u00edxels
++
++edit_act_centered=Centrada
++
++edit_act_centered_tooltip=L'objecte se situa centrat respecte a la finestra principal
++
++edit_act_x=X:
++
++edit_act_x_tooltip=Posici\u00f3 horitzontal absoluta
++
++edit_act_y=Y:
++
++edit_act_y_tooltip=Posici\u00f3 vertical absoluta
++
++edit_act_ui_block=Interf\u00edcie d'usuari
++
++edit_act_image_tooltip=Selecciona una imatge
++
++edit_act_text=Text:
++
++edit_act_text_tooltip=Text que es mostrar\u00e0 en este objecte
++
++edit_font_face=Tipus:
++
++edit_font_size=Mida:
++
++edit_font_bold=Negreta
++
++edit_font_italic=Cursiva
++
++edit_font_underline=Subratllat
++
++edit_font_style=Estil:
++
++edit_cell_title=Contingut de la casella
++
++edit_act_messages=Missatges
++
++edit_act_msg_initial=Missatge inicial:
++
++edit_act_msg_final=Missatge final:
++
++edit_act_msg_prev=Missatge previ:
++
++edit_act_msg_error=Missatge d'error:
++
++edit_act_msg_initial_tooltip=Missatge que es mostra en iniciar l'activitat
++
++edit_act_msg_final_tooltip=Missatge que es mostra en acabar l'activitat
++
++edit_act_msg_error_tooltip=Missatge que es mostra quan l'activitat acaba amb errors
++
++edit_act_msg_prev_tooltip=Missatge que es mostra abans de comen\u00e7ar (nom\u00e9s en alguns tipus d'activitats)
++
++edit_align=Orientaci\u00f3:
++
++edit_act_textColor=Color del text:
++
++edit_act_textColor_tooltip=Color emprat per a dibuixar el text
++
++edit_act_shadowColor=Color de l'ombra:
++
++edit_act_shadowColor_tooltip=Color emprat en l'ombra del text, si n'hi ha.
++
++edit_act_shadow=Ombra
++
++edit_act_shadow_tooltip=Dibuixa el text amb ombra
++
++edit_act_borderColor=Color de la vora:
++
++edit_act_borderColor_tooltip=Color utilitzat per a dibuixar la vora de la casella
++
++edit_act_inactiveColor=Color d'estat inactiu:
++
++edit_act_inactiveColor_tooltip=Color emprat quan la casella es troba desactivada
++
++edit_act_altColor=Color alternatiu:
++
++edit_act_altColor_tooltip=Color amb qu\u00e8 es mostra el contingut alternatiu de les caselles un colp solucionades.
++
++edit_cell_marked=Marcada
++
++edit_cell_disabled=Desactivada
++
++edit_cell_alt=Alternativa
++
++edit_cell_textMargin=Marge intern:
++
++edit_cell_textMargin_tooltip=Espai entre les vores de la cel\u00b7la i el text.
++
++edit_cell_borderWidth=Gruix de la vora:
++
++edit_cell_borderWidth_tooltip=Gross\u00e0ria del tra\u00e7 utilitzat per a dibuixar la vora.
++
++edit_cell_markerWidth=Gruix del marcador:
++
++edit_cell_markerWidth_tooltip=Gross\u00e0ria del tra\u00e7 utilitzat per a dibuixar la vora quan la casella es troba marcada o seleccionada
++
++edit_cell_alt_tooltip=Vista preliminar de la casella en estat \u00abalternatiu\u00bb
++
++edit_cell_disabled_tooltip=Vista preliminar en estat \u00abdesactivat\u00bb
++
++edit_cell_marked_tooltip=Vista preliminar en estat \u00abmarcat\u00bb
++
++edit_act_testAction=Mostra l'activitat
++
++edit_act_testAction_tooltip=Prova el funcionament de l'activitat
++
++edit_act_panels_description=Descripci\u00f3
++
++edit_act_panels_description_tooltip=T\u00edtol i descripci\u00f3 de l'activitat
++
++edit_act_panels_options=Opcions
++
++edit_act_panels_options_tooltip=Opcions de l'activitat
++
++edit_act_panels_frame=Finestra
++
++edit_act_panels_frame_tooltip=Aspecte, mida i posici\u00f3 de la finestra on corre l'activitat.
++
++edit_act_panels_messages=Missatges
++
++edit_act_panels_messages_tooltip=Contingut dels missatges de l'activitat
++
++edit_act_panels_panel=Plaf\u00f3
++
++edit_act_panels_panel_tooltip=Contingut del plaf\u00f3
++
++edit_style_title=Estil
++
++edit_style_tooltip=Ajusta els colors, tipus i mida de lletra de les caselles
++
++edit_act_style=Estil:
++
++edit_act_overlap=Evita la sobreposici\u00f3 imatge/text
++
++edit_act_overlap_tooltip=Intenta evitar que el text xafe la imatge.
++
++edit_media_exists_1=El fitxer
++
++edit_media_exists_2=ja es troba a la mediateca!
++
++edit_act_shaper=Retallador:
++
++edit_act_shaper_err=Error del retallador:
++
++edit_act_num_cols=Columnes:
++
++edit_act_num_rows=Files:
++
++edit_act_toothHeightFactor=Al\u00e7\u00e0ria de les dents:
++
++edit_act_toothWidthFactor=Ampl\u00e0ria de les dents:
++
++edit_act_toothRandom=Distribuci\u00f3 aleat\u00f2ria
++
++edit_act_shaper_properties=Propietats del generador de formes
++
++edit_act_panels_text=Text
++
++edit_act_panels_text_tooltip=Text de l'activitat
++
++action_saveFile_caption=Guarda...
++
++action_saveFile_keys=DD
++
++action_saveFile_tooltip=Guarda el projecte
++
++action_docTree_caption=Arbre del document...
++
++action_docTree_keys=A*
++
++action_docTree_tooltip=Mostra el document del projecte en forma d'arbre
++
++edit_docTree_title=Arbre del document
++
++edit_media_referencedBy=Referenciat per:
++
++msg_prompt_loadReferences=<html><font face\="dialog" size\="2"><B>Atenci\u00f3:</B><P>Este projecte enlla\u00e7a amb altres projectes.<BR>Voleu que el JClic explore els enlla\u00e7os i carregue tots els materials relacionats?<P>(Es recomana respondre <B>S\u00cd</B> si esteu important un paquet d'activitats Clic 3.0)</font></html>
++
++edit_mc_type=Tipus:
++
++edit_mc_type_unknown=Desconegut
++
++edit_mc_type_sound=Interpreta so
++
++edit_mc_type_video=Interpreta v\u00eddeo
++
++edit_mc_type_midi=Interpreta MIDI
++
++edit_mc_type_cdaudio=Interpreta CD \u00e0udio
++
++edit_mc_type_record=Grava so
++
++edit_mc_type_play_recorded=Interpreta una gravaci\u00f3
++
++edit_mc_type_run_activity=V\u00e9s a l'activitat
++
++edit_mc_type_run_sequence=V\u00e9s a la seq\u00fc\u00e8ncia
++
++edit_mc_type_run_external=Executa un programa
++
++edit_mc_type_url=Mostra l'URL
++
++edit_mc_type_exit=Acaba
++
++edit_mc_type_return=Torna
++
++edit_mc_level=Nivell de prioritat:
++
++edit_mc_file=Fitxer:
++
++edit_mc_externalParam=Par\u00e0metres:
++
++edit_mc_from=Des de:
++
++edit_mc_to=Fins a:
++
++edit_mc_length=Duraci\u00f3 m\u00e0x.:
++
++edit_mc_recBuffer=Cinta de gravaci\u00f3:
++
++edit_mc_stretch=Comprimix-lo si no hi cap
++
++edit_mc_location=Posici\u00f3:
++
++edit_mc_location_x=X:
++
++edit_mc_location_y=Y:
++
++edit_mc_location_from=Des de:
++
++edit_mc_location_from_box=Cel\u00b7la
++
++edit_mc_location_from_window=Finestra
++
++edit_mc_location_from_frame=Marc
++
++edit_mc_loop=Repetix indefinidament
++
++edit_mc_autostart=Posa en funcionament autom\u00e0ticament
++
++edit_mc_catchmouse=Captura ratol\u00ed
++
++edit_mc_title=Contingut actiu i multim\u00e8dia
++
++edit_mc_label=Contingut actiu:
++
++edit_media_dlg_title=Selecci\u00f3 de l'objecte multim\u00e8dia
++
++edit_media_title=Biblioteca de recursos
++
++edit_mc_pos_cell=Centrat a la cel\u00b7la
++
++edit_mc_pos_window=Centrat a la finestra
++
++edit_mc_pos_absolute=Posici\u00f3 absoluta:
++
++edit_tree_badFormat=L'estructura o les dades de l'arbre s\u00f3n incorrectes!
++
++edit_act_panels_controls=Controls
++
++edit_act_panels_controls_tooltip=Opcions de botons i comptadors
++
++edit_act_class=Tipus:
++
++edit_act_gridLayout=Distribuci\u00f3 dels plafons:
++
++edit_act_gridLayout_tooltip=Posici\u00f3 relativa dels plafons A i B.
++
++edit_act_inverseResolution=Resoluci\u00f3 inversa
++
++edit_act_inverseResolution_tooltip=L'activitat es considerar\u00e0 resolta quan tots els elements de \u00abB\u00bb s'hagen aparellat.
++
++edit_act_showAllArrows=Mostra totes les fletxes
++
++edit_act_alt=Contingut alternatiu:
++
++edit_act_alt_tooltip=Contingut que es mostra en les caselles ja resoltes o no assignades.
++
++edit_act_alt_toggle=ALT
++
++edit_act_alt_toggle_tooltip=Edita el contingut alternatiu
++
++edit_act_grid=Plaf\u00f3
++
++edit_act_grid_A=Plaf\u00f3 A
++
++edit_act_grid_B=Plaf\u00f3 B
++
++edit_act_grid_layout=Distribuci\u00f3
++
++edit_act_grid_relationship=Relacions
++
++edit_seq_activity_header=activitat
++
++edit_seq_tag_header=etiqueta
++
++edit_seq_jump_header=saltar a
++
++edit_seq_activity=Activitat:
++
++edit_seq_tag=Etiqueta:
++
++edit_seq_description=Descripci\u00f3:
++
++edit_seq_auto=Avan\u00e7 autom\u00e0tic
++
++edit_seq_delay=Retard:
++
++edit_seq_action_fwd=Avan\u00e7a
++
++edit_seq_action_back=Retrocedix
++
++edit_seq_action_jump=Salta a...
++
++edit_seq_action_stop=Es para
++
++edit_seq_action_return=Torna
++
++edit_seq_action_exit=Ix del JClic
++
++edit_seq_arrow_fwd=Fletxa avant:
++
++edit_seq_arrow_back=Fletxa arrere:
++
++edit_seq_action=Acci\u00f3:
++
++edit_seq_button_enabled=Mostra bot\u00f3
++
++edit_seq_project=Projecte JClic:
++
++edit_act_absolute=Posici\u00f3 absoluta
++
++edit_act_absolute_tooltip=L'objecte se situar\u00e0 a les coordenades X i Y que especifiqueu
++
++edit_act_location=Posici\u00f3:
++
++edit_seq_newElement=Nou element de seq\u00fc\u00e8ncia...
++
++edit_seq_newElement_tooltip=Inserix un nou element a la seq\u00fc\u00e8ncia d'activitats
++
++edit_seq_newElement_msg=Seleccioneu una activitat per al nou element de seq\u00fc\u00e8ncia.
++
++edit_seq_newElement_error_noAct=No es pot crear un nou element de seq\u00fc\u00e8ncia sense indicar l'activitat.
++
++edit_seq_newElement_error_emptyList=En este projecte no hi ha cap activitat! No es poden crear elements de seq\u00fc\u00e8ncia en un projecte buit.
++
++edit_seq_jump_msg=Dest\u00ed del salt:
++
++edit_seq_jump_title=Dest\u00ed del salt
++
++edit_act_newActivity_tooltip=Afegix una nova activitat al projecte
++
++edit_act_prompt_class=Tipus d'activitat:
++
++edit_act_prompt_name=Nom:
++
++edit_act_newActivity_msg=Seleccioneu el tipus d'activitat que voleu crear i doneu-li un nom:
++
++edit_act_newActivity_error_noAct=Cal seleccionar un tipus d'activitat!
++
++edit_act_newActivity_error_noName=Heu d'indicar un nom per l'activitat!
++
++edit_act_newActivity_error_creating=No s'ha pogut crear l'activitat!
++
++edit_act_newActivity_class=Classe Java:
++
++edit_text_act_format=Format
++
++edit_text_act_answer=Resposta
++
++edit_text_act_popup=Finestra emergent
++
++edit_text_act_answer_label=Respostes v\u00e0lides:
++
++edit_list_newElement_tooltip=Afegix un nou element a la llista
++
++edit_list_editElement_tooltip=Modifica l'element seleccionat
++
++edit_list_deleteElement_tooltip=Elimina l'element seleccionat de la llista
++
++edit_list_upBtn_tooltip=Mou cap amunt
++
++edit_list_downBtn_tooltip=Mou cap avall
++
++edit_list_newValue=Nou text:
++
++edit_list_addElement=Afegix un nou element de text
++
++edit_list_modifyValue=Modifica el text seleccionat
++
++edit_text_act_target=Inc\u00f2gnita
++
++edit_text_act_maxLen=Longitud m\u00e0xima:
++
++edit_text_act_maxLen_tooltip=Nombre m\u00e0xim de car\u00e0cters de la resposta
++
++edit_text_act_fillingChar=Car\u00e0cter de farciment
++
++edit_text_act_fillingChar_tooltip=Car\u00e0cter emprat per a indicar la inc\u00f2gnita
++
++edit_text_act_iniLen=Longitud inicial:
++
++edit_text_act_iniLen_tooltip=Nombre de car\u00e0cters de farciment que es mostraran en iniciar-se l'activitat.
++
++edit_text_act_iniText=Text inicial:
++
++edit_text_act_iniText_tooltip=Tetx que es mostrar\u00e0 a la inc\u00f2gnita en iniciar l'activitat.
++
++edit_text_act_list=Mostra una llista d'opcions:
++
++edit_text_act_list_tooltip=L'usuari haur\u00e0 de seleccionar una opci\u00f3 en una llista.
++
++edit_text_act_check_title=Opcions d'avaluaci\u00f3
++
++edit_text_act_popup_no=Sense finestra emergent
++
++edit_text_act_popup_always=Aparici\u00f3 autom\u00e0tica
++
++edit_text_act_popup_onError=Aparici\u00f3 en errors
++
++edit_text_act_popup_onDemand=Aparici\u00f3 amb F1
++
++edit_text_act_popup_type=Tipus:
++
++edit_text_act_popup_delay=Retard d'aparici\u00f3:
++
++edit_text_act_popup_maxTime=Temps m\u00e0xim:
++
++edit_text_act_popup_onlyPlay=Nom\u00e9s interpreta so
++
++edit_text_act_err_noSelection=Per crear una nova inc\u00f2gnita cal que seleccioneu un fragment de text!
++
++edit_text_act_err_badCharInSelection=El text de les inc\u00f2gnites no pot incloure retorns de par\u00e0graf ni tabuladors.
++
++edit_text_act_err_nestedTargets=Les inc\u00f2gnites no es poden solapar!
++
++edit_text_act_err_cellInTarget=Les inc\u00f2gnites no poden contindre cel\u00b7les!
++
++edit_text_act_pageBgColor=Color del paper:
++
++edit_text_act_editStylesBtn=Edita els estils del document...
++
++edit_text_act_mainStyle=Estil principal:
++
++edit_text_act_tabSpc=Tab space:
++
++edit_text_act_tabSize=Espais entre marques de tabulador:
++
++edit_text_act_colors=Colors:
++
++edit_text_act_targetStyle=Colors de les inc\u00f2gnites:
++
++edit_text_act_errorStyle=Colors d'error:
++
++edit_text_act_preview=Visualitzaci\u00f3 pr\u00e8via:
++
++edit_text_act_styleSample_default_start=Text normal
++
++edit_text_act_styleSample_target=inc\u00f2gnita
++
++edit_text_act_styleSample_error=error
++
++edit_text_act_styleSample_default_fill=text normal
++
++edit_text_act_styleSample_default_end=text normal.
++
++edit_text_act_warnDeleteTarget=Atenci\u00f3: esta acci\u00f3 suprimir\u00e0 la inc\u00f2gnita actualment seleccionada. Esteu segur que voleu fer-ho?
++
++edit_text_act_prevScreen_title=Finestra pr\u00e8via...
++
++edit_text_act_prevScreen_no=No mostres cap text abans d'iniciar l'activitat
++
++edit_text_act_prevScreen_original=Mostra el text complet de l'exercici
++
++edit_text_act_prevScreen_special=Mostra este text:
++
++edit_text_act_prevScreen_time=Temps m\u00e0xim:
++
++edit_text_act_edit_target=Inc\u00f2gnita...
++
++edit_text_act_checkButton_show=Mostra el bot\u00f3 d'avaluaci\u00f3
++
++edit_text_act_checkButtonText=Text del bot\u00f3:
++
++edit_text_act_checkCase=Comprova maj\u00fascules / min\u00fascules
++
++edit_text_act_checkAccents=Considera accents i car\u00e0cters especials
++
++edit_text_act_checkPunct=Considera els s\u00edmbols de puntuaci\u00f3
++
++edit_text_act_checkDoubleSpc=Permet espais repetits
++
++edit_text_act_checkOptions=Criteris
++
++edit_text_act_checkAutoJump=Salta autom\u00e0ticament a la seg\u00fcent inc\u00f2gnita
++
++edit_text_act_checkForceOk=Avan\u00e7a nom\u00e9s si es respon correctament
++
++edit_text_act_checkDetail=Indica la posici\u00f3 dels errors
++
++edit_text_act_checkDetail_params=Par\u00e0metres de l'algorisme d'an\u00e0lisi:
++
++edit_text_act_checkDetail_steps=Passos:
++
++edit_text_act_checkDetail_field=Camp d'exploraci\u00f3:
++
++edit_text_act_defaultCheckButtonText=Avaluaci\u00f3
++
++edit_text_act_advancedCorrectionOptions=An\u00e0lisi de les respostes
++
++edit_text_act_check_bt=Avaluaci\u00f3...
++
++edit_text_act_checkButton=Bot\u00f3 d'avaluaci\u00f3
++
++edit_text_act_checkProgress=Progr\u00e9s
++
++edit_text_act_typeBtn=Tipus...
++
++edit_text_act_orderParagraphs=Ordena par\u00e0grafs
++
++edit_text_act_orderWords=Ordena paraules
++
++edit_text_act_order_amongstPar=Barreja paraules entre par\u00e0grafs
++
++edit_text_act_type_title=Tipus d'activitat
++
++edit_text_act_warnChangeType=Esta acci\u00f3 suprimir\u00e0 totes les inc\u00f2gnites actualment definides. Esteu segur que voleu fer-ho?
++
++edit_text_act_identWords=Identifica paraules
++
++edit_text_act_identChars=Identifica car\u00e0cters
++
++edit_media_change_name=Canvia el nom...
++
++edit_media_change_file=Canvia el fitxer...
++
++edit_media_includeInZip=Guarda'l en el fitxer ZIP
++
++edit_media_type=Tipus de recurs:
++
++edit_media_size=Mida del fitxer:
++
++edit_media_show_type=Tipus de fitxers :
++
++edit_media_preview=Mostra l'objecte
++
++edit_media_preview_tooltip=Visualitzaci\u00f3 del recurs
++
++edit_media_rename=Canvi del nom del recurs
++
++edit_media_rename_title=Canvi de nom
++
++edit_media_rename_prompt=Nou nom:
++
++edit_media_rename_invalid=Nom de recurs no v\u00e0lid!
++
++edit_media_rename_exists=Ja hi ha un altre recurs amb este nom! Cada recurs ha de tindre un nom \u00fanic en el projecte.
++
++edit_media_chfile_invalid=Fitxer incorrecte!
++
++err_media_chfile_different=El fitxer ha de ser del mateix tipus
++
++edit_media_font_error=No s'ha pogut carregar el tipus de lletra!
++
++edit_media_save_file=Guarda el fitxer (extrau-lo del ZIP)
++
++edit_media_refresh_file=Actualitza el contingut del recurs des del fitxer
++
++edit_media_warn_zipFileNotExternal=Este no \u00e9s un fitxer \u00abreal\u00bb, sin\u00f3 un objecte situat dins d'un contenidor ZIP. Per a fer servir esta funci\u00f3 cal que hi haja un fitxer amb el mateix nom a la carpeta on es troba el fitxer ZIP.
++
++edit_activities=Activitats
++
++edit_sequences=Seq\u00fc\u00e8ncies
++
++edit_media=Mediateca
++
++edit_media_tooltip=Gesti\u00f3 de les Imatges i altres recursos emprats en el projecte.
++
++edit_activities_tooltip=Creaci\u00f3 i modificaci\u00f3 de les activitats del projecte
++
++edit_sequences_tooltip=Creaci\u00f3 i modificaci\u00f3 de seq\u00fc\u00e8ncies d'activitats
++
++edit_project_title=T\u00edtol:
++
++edit_project_title_tooltip=T\u00edtol del projecte
++
++edit_project=Projecte
++
++edit_project_tooltip=Edici\u00f3 de les propietats del projecte
++
++edit_project_description=Descripci\u00f3:
++
++edit_project_description_tooltip=Descripci\u00f3 general del projecte
++
++edit_project_area=\u00c0rees:
++
++edit_project_area_tooltip=\u00c0rees curriculars a qu\u00e8 s'orienta el projecte
++
++edit_project_level=Nivells:
++
++edit_project_level_tooltip=Nivells i cicles educatius a qu\u00e8 s'adre\u00e7a el projecte
++
++edit_project_descriptors=Descriptors:
++
++edit_project_descriptors_tooltip=Descriptors del projecte (separats per comes)
++
++edit_project_languages=Idiomes:
++
++edit_project_languages_tooltip=Idiomes emprats en el projecte
++
++edit_project_languages_modify=Canvia l'idioma seleccionat
++
++edit_project_languages_add=Afegix un idioma
++
++edit_project_languages_select=Codis d'idioma ISO-639:
++
++edit_project_authors=Autors/es:
++
++edit_project_authors_tooltip=Persones que han contribu\u00eft a la creaci\u00f3 del projecte
++
++edit_project_author_name=Nom:
++
++edit_project_author_mail=Correu electr\u00f2nic:
++
++edit_project_author_rol=Rol:
++
++edit_project_author_organization=Organitzaci\u00f3:
++
++edit_project_author_comments=Comentaris:
++
++edit_project_author_url=URL:
++
++edit_project_author_name_tooltip=Nom de l'autor/a (camp obligatori)
++
++edit_project_author_mail_tooltip=Adre\u00e7a de correu electr\u00f2nic de l'autor/a (opcional)
++
++edit_project_author_rol_tooltip=Rol de la persona en el projecte: autor/a, col\u00b7laborador/a, dibuixos, sons... (camp opcional)
++
++edit_project_author_organization_tooltip=Escola, universitat, associaci\u00f3... (camp opcional)
++
++edit_project_author_url_tooltip=P\u00e0gina web personal (camp opcional)
++
++edit_project_author_comments_tooltip=Altres caracter\u00edstiques (camp opcional)
++
++edit_project_author_info=Dades de l'autor/a:
++
++edit_project_author_add=Afegix un autor a la llista
++
++edit_project_author_edit=Modifica les dades de l'autor/a
++
++edit_project_org_name=Nom:
++
++edit_project_org_name_tooltip=Nom de l'escola
++
++edit_project_org_mail=Correu electr\u00f2nic:
++
++edit_project_org_mail_tooltip=Adre\u00e7a de correu electr\u00f2nic de l'escola
++
++edit_project_org_url=URL:
++
++edit_project_org_url_tooltip=Adre\u00e7a web de l'escola
++
++edit_project_org_address=Adre\u00e7a:
++
++edit_project_org_address_tooltip=Adre\u00e7a postal de l'escola
++
++edit_project_org_pc=CP:
++
++edit_project_org_pc_tooltip=Codi postal
++
++edit_project_org_city=Localitat:
++
++edit_project_org_city_tooltip=Localitat de l'escola
++
++edit_project_org_country=Pa\u00eds:
++
++edit_project_org_state=Estat:
++
++edit_project_org_comments=Comentaris:
++
++edit_project_org=Centre/s:
++
++edit_project_org_tooltip=Escoles i altres institucions que han participat en el projecte
++
++edit_project_org_info=Dades de l'organitzaci\u00f3:
++
++edit_project_org_add=Afegix una nova organitzaci\u00f3
++
++edit_project_org_edit=Modifica les dades de l'organitzaci\u00f3
++
++edit_project_org_country_tooltip=Estat, pa\u00eds, federaci\u00f3...
++
++edit_project_org_state_tooltip=Estat federal, nacionalitat, comunitat, regi\u00f3...
++
++edit_project_org_comments_tooltip=Altres dades...
++
++edit_project_rev_date=Data:
++
++edit_project_rev_date_tooltip=Data de la revisi\u00f3
++
++edit_project_rev_authors=Autors/es:
++
++edit_project_rev_authors_tooltip=Autors/es de la revisi\u00f3
++
++edit_project_rev_description=Descripci\u00f3:
++
++edit_project_rev_description_tooltip=Breu descripci\u00f3 dels canvis realitzats
++
++edit_project_rev_comments=Comentaris:
++
++edit_project_rev_comments_tooltip=Informaci\u00f3 addicional
++
++edit_project_rev=Revisions:
++
++edit_project_rev_tooltip=Historial de les principals modificacions realitzades al projecte
++
++edit_project_rev_add=Afegix un registre de revisi\u00f3
++
++edit_project_rev_edit=Modificaci\u00f3 de les dades de la revisi\u00f3
++
++edit_project_rev_info=Dades de la revisi\u00f3
++
++edit_media_objects=objectes
++
++edit_media_object=objecte
++
++edit_evsounds_start=Inici d'activitat:
++
++edit_evsounds_click=Feu clic en un objecte:
++
++edit_evsounds_actionError=Acci\u00f3 err\u00f2nia:
++
++edit_evsounds_actionOk=Acci\u00f3 correcta:
++
++edit_evsounds_finishedError=Activitat acabada amb errors:
++
++edit_evsounds_finishedOk=Activitat acabada correctament:
++
++edit_project_rev_err_nodesc=Error: La descripci\u00f3 no es pot deixar en blanc
++
++edit_evsounds_dlg_title=Edita els sons d'esdeveniments
++
++edit_project_evsounds=Sons d'esdeveniment:
++
++edit_project_evsounds_tooltip=Assigna sons espec\u00edfics per a cada esdeveniment del JClic
++
++edit_act_evsounds=Sons d'esdeveniment:
++
++edit_act_evsounds_tooltip=Assigna sons espec\u00edfics per a cada esdeveniment del JClic
++
++edit_evsounds_default=so per defecte
++
++edit_evsounds_disabled=desactivat
++
++edit_evsounds_chk_tooltip=Activa o desactiva el so per este esdeveniment
++
++edit_evsounds_select_tooltip=Cliqueu per a seleccionar un so per este esdeveniment, o desmarqueu per a emprar el so per defecte
++
++action_newProject_caption=Nou projecte...
++
++action_newProject_keys=NN
++
++action_newProject_tooltip=Crea un nou projecte JClic
++
++edit_arith_op_from=Des de:
++
++edit_arith_op_from_tooltip=Valor m\u00ednim de l'operand
++
++edit_arith_op_to=Fins a:
++
++edit_arith_op_to_tooltip=Valor m\u00e0xim de l'operand
++
++edit_arith_op_with=Amb:
++
++edit_arith_op_with_tooltip=Si es marca, l'operand port tindre tamb\u00e9 este valor
++
++edit_arith_op_fromList=Un de la llista:
++
++edit_arith_op_fromList_tooltip=Llista de possibles valors de l'operand
++
++edit_arith_op_decimals=Decimals:
++
++edit_arith_op_decimals_tooltip=Nombre de decimals de l'operand
++
++edit_arith_op_dec0=\# (enter)
++
++edit_arith_op_dec1=\#,\#
++
++edit_arith_op_dec2=\#,\#\#
++
++edit_arith_firstOp=Primer operand
++
++edit_arith_secondOp=Segon operand
++
++edit_arith_title=Arith2 pel JClic
++
++edit_arith_operations=Operacions:
++
++edit_arith_operations_tooltip=Seleccioneu el tipus d'operacions a efectuar
++
++edit_arith_operations_plus=Sumes
++
++edit_arith_operations_minus=Restes
++
++edit_arith_operations_multiply=Multiplicacions
++
++edit_arith_operations_divide=Divisions
++
++edit_arith_unknown=Inc\u00f2gnita:
++
++edit_arith_unknown_tooltip=Seleccioneu l'element que far\u00e0 d'inc\u00f2gnita
++
++edit_arith_unknown_aobx=La inc\u00f2gnita \u00e9s el resultat
++
++edit_arith_unknown_aoxr=La inc\u00f2gnita \u00e9s el segon operand
++
++edit_arith_unknown_xobr=El primer operand \u00e9s la inc\u00f2gnita
++
++edit_arith_unknown_axbr=La operaci\u00f3 \u00e9s la inc\u00f2gnita
++
++edit_arith_unknown_invert=Escriviu l'expressi\u00f3 comen\u00e7ant pel resultat
++
++edit_arith_result=Resultat:
++
++edit_arith_result_notCarry=Sense \u00abportar-ne\u00bb
++
++edit_arith_result_random=Aleatori
++
++edit_arith_result_asc=Ascendent
++
++edit_arith_result_order=Ordena per resultat:
++
++edit_arith_result_desc=Descendent
++
++edit_arith_result_avoidDup=Evita duplicats
++
++edit_arith_cond=Condicions:
++
++edit_arith_cond_ind=Indiferent
++
++edit_arith_cond_agb=El primer operand ha de ser m\u00e9s gran que el segon
++
++edit_arith_cond_alb=El primer operand ha de ser menor que el segon
++
++edit_arith_cond_tooltip=Altres condicions
++
++edit_autocp=Generador autom\u00e0tic de contingut:
++
++edit_autocp_tooltip=Selecci\u00f3 del tipus de generador autom\u00e0tic de contingut per a esta activitat.
++
++edit_autocp_block=Generador de contingut
++
++edit_autocp_btn=Configuraci\u00f3...
++
++edit_autocp_btn_tooltip=Configura els par\u00e0metres del generador de contingut
++
++edit_data=Edici\u00f3 de dades
++
++edit_act=Edici\u00f3 de l'activitat
++
++edit_acp=Edici\u00f3 del generador de contingut
++
++edit_acp_err_creating=S'ha produ\u00eft un error en crear el generador autom\u00e0tic de contingut!
++
++edit_project_author_group=Creaci\u00f3
++
++edit_project_description_block=Descripci\u00f3
++
++edit_project_ui_block=Interf\u00edcie d'usuari
++
++edit_act_description=Descripci\u00f3:
++
++m_Edit=Edita
++
++m_Edit_Mnemonic=E
++
++edit_media_preview_keys=V*
++
++edit_act_newActivity=Nova activitat...
++
++edit_act_newActivity_keys=A*
++
++edit_act_testAction_keys=M\#10
++
++edit_seq_newElement_keys=S*
++
++m_Insert=Inserix
++
++m_Insert_Mnemonic=I
++
++m_View=Visualitza
++
++m_View_Mnemonic=V
++
++action_editProject_caption=Projecte
++
++action_editProject_keys=PP
++
++action_editProject_tooltip=Edita les propietats del projecte
++
++action_editMedia_caption=Mediateca
++
++action_editMedia_keys=MM
++
++action_editMedia_tooltip=Edita la biblioteca de recursos multim\u00e8dia del projecte
++
++action_editActivities_caption=Activitats
++
++action_editActivities_keys=AA
++
++action_editActivities_tooltip=Edita les activitats
++
++action_editSeq_caption=Seq\u00fc\u00e8ncies
++
++action_editSeq_keys=SS
++
++action_editSeq_tooltip=Edita les sequencies d'activitats
++
++warn_project_modified=El projecte actual ha estat modificat. Voleu guardar els canvis?
++
++edit_project_descriptors_block=Descriptors
++
++edit_media_new=Nou objecte multim\u00e8dia...
++
++edit_media_new_tooltip=Afegix una imatge o un objecte multim\u00e8dia a la mediateca
++
++edit_media_new_keys=M*
++
++edit_seq_threshold=Llindar de puntuaci\u00f3:
++
++edit_seq_threshold_tooltip_up=V\u00e9s per este cam\u00ed quan la puntuaci\u00f3 global siga igual o superior a...
++
++edit_seq_time=Llindar de temps:
++
++edit_seq_time_tooltip_up=Per a seguir este cam\u00ed cal haver realitzat les activitats en un temps inferior a...
++
++edit_seq_threshold_tooltip_down=Seguix este cam\u00ed sempre que la puntuaci\u00f3 global siga inferior a...
++
++edit_seq_time_tooltip_down=Seguix este cam\u00ed sempre que el temps emprat en les activitats siga superior a...
++
++edit_seq_condJump=Salts condicionals
++
++edit_seq_condJump_tooltip=Especifica salts que s'executaran nom\u00e9s si es donen determinades condicions
++
++edit_seq_condJump_upper_tooltip=Indica les condicions per a saltar a un nivell superior
++
++edit_seq_condJump_lower=Salt inferior:
++
++edit_seq_condJump_upper=Salt superior:
++
++edit_seq_condJump_lower_tooltip=Indica les condicions per a saltar a un nivell inferior
++
++edit_seq_action_tooltip_fw=Acci\u00f3 assignada al bot\u00f3 d'avan\u00e7ar
++
++edit_seq_action_tooltip_bk=Acci\u00f3 assignada al bot\u00f3 de retrocedir
++
++edit_seq_jump_tooltip=Indica el dest\u00ed del salt
++
++edit_seq_action_tooltip=Acci\u00f3 a realitzar
++
++edit_seq_activity_tooltip=Activitat associada a este element de seq\u00fc\u00e8ncia
++
++edit_seq_tag_tooltip=Etiqueta emprada per a referir-se a este element de seq\u00fc\u00e8ncia (camp opcional)
++
++edit_seq_description_tooltip=Descripci\u00f3 de l'element de seq\u00fc\u00e8ncia (camp opcional)
++
++edit_seq_button_enabled_tooltip=Activa o desactiva el bot\u00f3 de pas d'activitat
++
++edit_seq_auto_tooltip=Avan\u00e7a autom\u00e0ticament en acabar l'activitat
++
++edit_seq_delay_tooltip=Nombre de segons a esperar abans de realitzar el pas autom\u00e1tic
++
++edit_color_dlgTitle=Selecci\u00f3 del color
++
++edit_media_renaming=Espereu mentres es canvia el nom del recurs...
++
++edit_act_cell_width=Ampl\u00e0ria:
++
++edit_act_cell_width_tooltip=Ampl\u00e0ria de les cel\u00b7les (en p\u00edxels)
++
++edit_act_cell_height=Al\u00e7\u00e0ria:
++
++edit_act_cell_height_tooltip=Al\u00e7\u00e0ria de les cel\u00b7les (en p\u00edxels)
++
++edit_act_hiddenWords=Paraules amagades:
++
++edit_act_hiddenWords_tooltip=Llista de les paraules que s'han amagat al plaf\u00f3
++
++edit_act_wordSearch_panelB=Empra el plaf\u00f3 B
++
++edit_act_wordSearch_panelB_tooltip=Fes servir un segon plaf\u00f3, que es mostrar\u00e0 a mesura que es troben les paraules
++
++edit_act_shaper_tooltip=Selecci\u00f3 del tipus de generador de formes del plaf\u00f3
++
++edit_act_num_cols_tooltip=Nombre de columnes del plaf\u00f3
++
++edit_act_num_rows_tooltip=Nombre de files del plaf\u00f3
++
++edit_act_wildTransparent=Separadors transparents
++
++edit_act_wildTransparent_tooltip=Mostra els separadors (cel\u00b7les negres) com a forats transparents
++
++edit_act_behavior_scramble_times=Barreges:
++
++edit_act_behavior_scramble_times_tooltip=Nombre de vegades que es barrejaran les peces
++
++edit_act_copy_title=Copia atributs a...
++
++edit_act_copy_attributes=Atributs
++
++edit_act_copy_dest=Aplica a:
++
++edit_act_copy_style_main=Finestra principal
++
++edit_act_copy_style_play=Finestra de joc
++
++edit_act_copy_activities=Activitats a modificar:
++
++edit_act_copyAttributes=Copia atributs
++
++edit_act_copyAttributes_keys=T
++
++edit_act_copyAttributes_tooltip=Copia a altres activitats alguns dels atributs de l'activitat actual
++
++edit_new_project_name=Nom del projecte:
++
++edit_new_project_name_tooltip=Nom curt i descriptiu del projecte
++
++edit_new_project_filename=Nom del fitxer:
++
++edit_new_project_filename_tooltip=Nom del fitxer del projecte, sense extensi\u00f3
++
++edit_new_project_folder=Carpeta:
++
++edit_new_project_folder_tooltip=Nom de la carpeta on es guardar\u00e0 el projecte
++
++edit_new_project_folder_browse=Navega...
++
++edit_new_project_title=Creaci\u00f3 d'un nou projecte JClic
++
++edit_new_project_err_empty=Error: Tant el projecte com el fitxer i la carpeta han de tindre noms v\u00e0lids.
++
++edit_new_project_warning_noEmptyFolder=En esta carpeta ja hi ha un altre projecte Clic3.0 o JClic. Per a evitar confusions es recomana mantindre cada projecte en una carpeta independent, tot i que aix\u00f2 no \u00e9s un requisit imprescindible. Realment voleu crear el nou projecte en esta carpeta?
++
++edit_new_project_err_folderCreation=Error: No s'ha pogut crear la carpeta que heu indicat!
++
++edit_act_copy_err_noSelection=No heu seleccionat cap activitat! Per a fer servir esta funci\u00f3 cal seleccionar a la llista l'activitat o activitats a les quals s'aplicaran els atributs indicats.
++
++edit_act_copy_action_prefix=Copiant atributs a:
++
++edit_act_copy_margin=Marge
++
++edit_act_copy_bgColor=Color de fons
++
++edit_act_copy_gradient=Degradat
++
++edit_act_copy_bgImage=Imatge de fons
++
++edit_act_copy_border=Vora
++
++edit_act_copy_transparentBg=Fons transparent
++
++edit_act_copy_position=Posici\u00f3
++
++edit_act_copy_messages=Missatges
++
++edit_act_copy_messages_ini=Estil del missatge inicial
++
++edit_act_copy_messages_end=Estil del missatge final
++
++edit_act_copy_messages_err=Estil del missatge d'error
++
++edit_act_copy_reports=Informes
++
++edit_act_copy_rep_include=Inclou l'activitat als informes
++
++edit_act_copy_rep_actions=Grava les accions
++
++edit_act_copy_interface=Interf\u00edcie d'usuari
++
++edit_act_copy_skin=Entorn visual
++
++edit_act_copy_evSounds=Sons d'esdeveniment
++
++edit_act_copy_counters=Comptadors
++
++edit_act_copy_cTime=Comptador de temps
++
++edit_act_copy_maxTime=Temps m\u00e0xim
++
++edit_act_copy_cTries=Comptador d'intents
++
++edit_act_copy_maxTries=Nombre m\u00e0xim d'intents
++
++edit_act_copy_cScore=Comptador d'encerts
++
++edit_act_copy_scramble=Nombre de vegades que cal barrejar
++
++edit_act_copy_buttons=Botons
++
++edit_act_copy_btnHelp=Bot\u00f3 d'ajuda
++
++edit_act_copy_btnInfo=Bot\u00f3 d'informaci\u00f3
++
++edit_act_copy_grids=Plafons
++
++edit_act_copy_gridA=Estil del plaf\u00f3 A
++
++edit_act_copy_gridB=Estil del plaf\u00f3 B
++
++edit_act_copy_textGrid=Estil dels plafons de text
++
++edit_act_copy_text=Activitats de text
++
++edit_act_copy_fontFace=Tipus de lletra
++
++edit_act_copy_fontSize=Mida de lletra
++
++edit_act_copy_fontStyle=Estil de lletra
++
++edit_act_copy_textColour=Color del text principal
++
++edit_act_copy_textTargetColour=Color de les inc\u00f2gnites
++
++edit_act_copy_textErrorColour=Color dels errors
++
++edit_act_copy_tabSpace=Espai entre tabuladors
++
++edit_act_copy_messages_prev=Estil del missatge previ
++
++edit_act_changeType=Canvia el tipus d'activitat
++
++edit_act_newActivity_class_tooltip=Nom complet de la classe que es far\u00e0 servir per a construir l'activitat (usuaris avan\u00e7ats!)
++
++edit_act_newActivity_other=Altres...
++
++edit_act_newActivity_info=Els usuaris/es avan\u00e7ats/es poden crear tamb\u00e9 altres tipus d'activitats JClic no registrades. Escriviu davall el nom complet de la classe, precedida pel del paquet (per exemple: \u00abcom.acme.activities.FooActivity\u00bb). Les noves activitats han d'estendre edu.xtec.jclic.Activity, i han de ser accessibles al carregador de classes de la m\u00e0quina virtual de Java.
++
++edit_act_newActivity_name=Nom de l'activitat:
++
++edit_act_newActivity_name_tooltip=Cada activitat ha de tindre un nom \u00fanic en el projecte
++
++edit_act_changeType_warning=<html><p style\="font-family:Helvetica; font-size:10px;"><b>Atenci\u00f3:</b> El canvi de tipus pot comportar la p\u00e8rdua d'alguns objectes i atributs de l'activitat que s'est\u00e0 editant. Feu servir esta funci\u00f3 amb atenci\u00f3!</p><p>&nbsp;</p></html>
++
++applet_codebase=Ubicaci\u00f3 del codi JClic:
++
++applet_codebase_tooltip=URL que apunta a una carpeta on estiguen ubicats els fitxers de programa i els scripts del JClic
++
++applet_prev_text=Codi HTML previ:
++
++# Text to be displayed below the applet. HTM code allowed.
++applet_prev_text_tooltip=Text o codi HTML que apareixer\u00e0 abans de la miniaplicaci\u00f3
++
++applet_post_text=Codi HTML posterior:
++
++applet_post_text_tooltip=Text o codi HTML que apareixer\u00e0 despr\u00e9s de la miniaplicaci\u00f3
++
++applet_size=Mida de la miniaplicaci\u00f3:
++
++applet_size_tooltip=Ampl\u00e0ria i al\u00e7\u00e0ria de la miniaplicaci\u00f3, en valor absolut o percentual.
++
++applet_page_title=T\u00edtol de la p\u00e0gina:
++
++applet_page_title_tooltip=Text que es mostrar\u00e0 dalt de la finestra del navegador
++
++applet_created_info=La p\u00e0gina web \u00ab%s\u00bb s'ha creat amb \u00e8xit.
++
++applet_created_prompt=Voleu obrir-la ara amb el navegador?
++
++action_createHTML_caption=Crea una p\u00e0gina web...
++
++applet_create_title=Creaci\u00f3 d'una p\u00e0gina HTML amb una miniaplicaci\u00f3 JClic
++
++action_createHTML_tooltip=Crea una p\u00e0gina HTML amb una miniaplicaci\u00f3 que continga el projecte actual
++
++applet_filename=Nom del fitxer:
++
++applet_filename_tooltip=Nom del fitxer HTML que es crear\u00e0
++
++action_createHTML_keys=H*
++
++settings_applet=Miniaplicaci\u00f3
++
++settings_applet_tooltip=Valors per defecte emprats en la creaci\u00f3 de p\u00e0gines web
++
++applet_bgcolor=Color de fons:
++
++applet_bgcolor_tooltip=Color de fons de la p\u00e0gina web
++
++applet_centered=Centrat
++
++applet_centered_tooltip=Situa la miniaplicaci\u00f3 centrada horitzontalment
++
++applet_width_tooltip=Ampl\u00e0ria de la miniaplicaci\u00f3 (en valor absolut o percentual)
++
++applet_height_tooltip=Al\u00e7\u00e0ria de la miniaplicaci\u00f3 (en valor absolut o percentual)
++
++applet_exitUrl=En eixir, v\u00e9s a:
++
++applet_exitUrl_tooltip=URL cap on es redirigir\u00e0 la navegaci\u00f3 en eixir del JClic
++
++applet_infoFrame=Marc d'informaci\u00f3:
++
++applet_infoFrame_tooltip=Nom del marc emprat per a mostrar el contingut lligat al bot\u00f3 \u00abinfo\u00bb
++
++action_createInstaller_caption=Crea un instal\u00b7lador del projecte...
++
++action_createInstaller_keys=I*
++
++action_createInstaller_tooltip=Crea un fitxer d'instal\u00b7laci\u00f3 del projecte per al JClic player
++
++installer_caption=Edici\u00f3 del fitxer d'instal\u00b7laci\u00f3 del projecte
++
++installer_title=T\u00edtol:
++
++installer_title_tooltip=T\u00edtol del projecte que es mostrar\u00e0 a l'assistent d'instal\u00b7laci\u00f3
++
++installer_authors=Autors/es:
++
++installer_authors_tooltip=Autors/es del projecte (text curt)
++
++installer_folder=Carpeta:
++
++installer_folder_tooltip=Nom de carpeta que suggerir\u00e0 l'assistent d'instal\u00b7laci\u00f3
++
++installer_files=Fitxers a copiar:
++
++installer_files_tooltip=Fitxers que es copiaran durant la instal\u00b7laci\u00f3
++
++installer_files_available=Fitxers disponibles
++
++installer_files_selected=Fitxers seleccionats
++
++installer_files_add=>> afegix >>
++
++installer_files_add_tooltip=Afegix el fitxer seleccionat a la llista
++
++installer_files_remove=<< trau <<
++
++installer_files_remove_tooltip=Trau el fitxer seleccionat de la llista
++
++installer_button=Bot\u00f3 d'activaci\u00f3
++
++installer_button_tooltip=Propietats del bot\u00f3 que es mostrar\u00e0 a la biblioteca de projectes
++
++installer_button_project=Projecte principal:
++
++installer_button_project_tooltip=Projecte JClic associat al bot\u00f3
++
++installer_button_text=Etiqueta:
++
++installer_button_text_tooltip=Breu etiqueta de text, que apareixer\u00e0 dins del bot\u00f3
++
++installer_button_icon=Icona:
++
++installer_button_icon_tooltip=Imatge que mostrar\u00e1 el bot\u00f3. Deixeu-ho en blanc per a mostrar la icona per defecte del JClic.
++
++installer_button_description=Descripci\u00f3
++
++installer_button_description_tooltip=Text d'ajuda emergent que mostrar\u00e0 el bot\u00f3
++
++installer_error_noTitle=Error: Cal indicar el t\u00edtol del projecte
++
++installer_error_noBaseFolder=Error: Cal indicar el nom de la carpeta on s'instal\u00b7lar\u00e0 el projecte
++
++installer_error_noFilesSelected=Error: No heu seleccionat cap fitxer
++
++installer_error_noButtonText=Error: Cal indicar el text del bot\u00f3 d'activaci\u00f3
++
++installer_error_projectNotInFiles=Error: El projecte assignat al bot\u00f3 d'activaci\u00f3 no es troba a la llista de fitxers a copiar
++
++applet_page_full=La miniaplicaci\u00f3 ocupa tota la p\u00e0gina
++
++applet_page_mixed=La miniaplicaci\u00f3 t\u00e9 unes dimensions espec\u00edfiques
++
++edit_text_align_left=Alinea el text a l'esquerra
++
++edit_text_align_center=Text centrat
++
++edit_text_align_right=Alinea el text a la dreta
++
++edit_text_act_target_toggle=Crea una inc\u00f2gnita o suprimix-la
++
++edit_text_act_insertCell=Inserix una cel\u00b7la
++
++edit_text_act_content=Contingut
++
++edit_text_act_style=Estil
++
++edit_cell_size=Dimensions:
++
++edit_project_orphanActivities=Les seg\u00fcents activitats mai no arribaran a executar-se, ja que no apareixen en cap seq\u00fc\u00e8ncia d'activitats del projecte:
++
++edit_project_orphanMedia=Els seg\u00fcents objectes de la mediateca no es fan servir directament en cap activitat:
++
++edit_project_orphanActivities_prompt=Voleu afegir-les al final de la darrera seq\u00fc\u00e8ncia d'activitats?
++
++edit_project_orphanMedia_prompt=Voleu eliminar-los?
++
++edit_project_orphanMedia_title=Retirada d'objectes multim\u00e8dia no utilitzats
++
++edit_project_orphanActivities_title=Activitats \u00f2rfenes
++
++edit_media_refreshAll=Actualitza el contingut de tots els recursos
++
++edit_media_refreshAll_tooltip=Actualitza tots els recursos tornant a carregar els seus fitxers
++
++edit_media_refreshAll_keys=R*
++
++edit_media_refreshAll_working=Actualitzant recursos...
++
++edit_media_exportAll=Exporta tots els recursos
++
++edit_media_exportAll_tooltip=Grava en fitxers el contingut de tots els recursos
++
++edit_media_exportAll_keys=X*
++
++edit_shape_select=Selecciona
++
++edit_shape_addPoint=Afegix un punt
++
++edit_shape_deletePoint=Elimina
++
++edit_shape_drawRect=Dibuixa un rectangle
++
++edit_shape_drawEllipse=Dibuixa una el\u00b7lipse
++
++edit_shape_drawPoly=Dibuixa un pol\u00edgon
++
++edit_shape_toLine=Convertix en l\u00ednia
++
++edit_shape_toBezier=Convertix en corba de B\u00e9zier
++
++edit_shape_toQuad=Convertix en qu\u00e0drica
++
++edit_shape_rLeft=Gira a l'esquerra
++
++edit_shape_rRight=Gira a la dreta
++
++edit_shape_expand=Expandix
++
++edit_shape_contract=Contrau
++
++edit_shape_zoomIn=Apropa
++
++edit_shape_zoomOut=Allunya
++
++edit_shape_aproxPoints=Ajunta punts propers
++
++edit_shape_showPoints=Mostra els punts
++
++edit_shape_showPoints_tooltip=Mostra/Amaga els punts
++
++edit_shape_gridSize=Reixeta:
++
++edit_shape_hideGrid=Mostra o amaga la reixeta
++
++edit_shape_magnetRadius=Radi de l'imant:
++
++edit_shape_elements=Elements definits
++
++edit_shape_elemName=Nom de l'element seleccionat
++
++edit_shape_magnetRadius_tooltip=Radi d'acci\u00f3 de l'imant quan es troba activat
++
++edit_shape_gridSize_tooltip=Mida de la reixeta
++
++edit_mc_activity=Activitat:
++
++edit_mc_sequence=Seq\u00fc\u00e8ncia:
++
++edit_mc_url=URL:
++
++edit_mc_project=Projecte:
++
++edit_mc_activity_selection=Selecci\u00f3 de l'activitat
++
++edit_mc_sequence_selection=Selecci\u00f3 de la seq\u00fc\u00e8ncia
++
++edit_mc_err_nullContent=Dades insuficients!
++
++edit_act_arrowColor=Color de les fletxes:
++
++edit_act_arrowColor_tooltip=Color emprat per l'editor per a dibuixar les fletxes (no \u00e9s exacte, ja que es fa servir una m\u00e0scara XOR de bits)
++
++edit_act_editActivity=Edita...
++
++edit_act_editActivity_tooltip=Edita l'activitat seleccionada
++
++action_saveFileAs_caption=Anomena i guarda...
++
++action_saveFileAs_keys=AA
++
++action_saveFileAs_tooltip=Guarda el projecte amb un nom diferent
++
++edit_act_behavior_block=Comportament
++
++edit_act_behavior=Comportament
++
++edit_act_behavior_drag=Arrossega
++
++edit_act_behavior_drag_tooltip=Arrossega els objectes en comptes d'unir-los amb una l\u00ednia
++
++edit_act_behavior_order=Comprova l'orde de resoluci\u00f3
++
++edit_act_behavior_order_tooltip=Les caselles s'han de resoldre ordenadament
++
++edit_act_scramble=Barreja
++
++action_importActivities_caption=Importa activitats...
++
++action_importActivities_keys=I*
++
++action_importActivities_tooltip=Importa activitats d'un altre projecte
++
++import_warn_samefile=El fitxer que heu seleccionat correspon al projecte actual. La importaci\u00f3 d'activitats nom\u00e9s es pot fer entre projectes diferents. Per favor, seleccioneu un altre fitxer de projecte.
++
++import_selectActivities=Seleccioneu una o m\u00e9s activitats per a importar-les al projecte actual:
++
++import_importing=S'est\u00e0 important...
++
++import_checkdep=S'estan comprovant les depend\u00e8ncies...
++
++import_impmedia=S'estan important recursos:
++
++import_impact=S'est\u00e0 important l'activitat:
++
++import_selectProject=Seleccioneu el projecte JClic del qual desitgeu importar activitats
++
++edit_tagRep_tags=Marques d'etiqueta
++
++edit_tagRep_tagStart=Marca d'inici:
++
++edit_tagRep_tagStart_tooltip=Marca que indica inici d'etiqueta
++
++edit_tagRep_tagEnd=Marca d'acabament:
++
++edit_tagRep_tagEnd_tooltip=Marca que indica acabament d'etiqueta
++
++edit_tagRep_file=Fitxer
++
++edit_tagRep_fileName=Fitxer o URL:
++
++edit_tagRep_fileName_tooltip=Nom o URL del fitxer que cont\u00e9 els valors que substituiran les etiquetes
++
++edit_tagRep_charset=Codificaci\u00f3:
++
++edit_tagRep_charset_tooltip=Tipus de codificaci\u00f3 emprada en el fitxer
++
++edit_tagRep_browseFile=Navega...
++
++edit_tagRep_browseFile_tooltip=Navega pel sistema de fitxers
++
++edit_tagRep_title=Substituci\u00f3 d'etiquetes
+diff --git a/src/core/edu/xtec/resources/about/credits_ca_ES_valencia.html b/src/core/edu/xtec/resources/about/credits_ca_ES_valencia.html
+new file mode 100644
+index 0000000..bcbc74c
+--- /dev/null
++++ b/src/core/edu/xtec/resources/about/credits_ca_ES_valencia.html
+@@ -0,0 +1,8 @@
++Francesc Busquets (<A HREF="mailto:fbusquets@xtec.net">fbusquets@xtec.net</A>)<BR>
++Generalitat de Catalunya<BR>
++Departament d'Educaci&oacute;<BR>
++&nbsp;<BR>
++Amb la col&middot;laboraci&oacute; de:<BR>
++M&ograve;nica Grau<BR>
++Fernando Cuartero<BR>
++Albert Llastarri<BR>
+diff --git a/src/core/edu/xtec/resources/about/license_ca_ES_valencia.html b/src/core/edu/xtec/resources/about/license_ca_ES_valencia.html
+new file mode 100644
+index 0000000..4922e88
+--- /dev/null
++++ b/src/core/edu/xtec/resources/about/license_ca_ES_valencia.html
+@@ -0,0 +1,17 @@
++Copyright &copy; 2000-2005 Francesc Busquets
++ (<a href="mailto:fbusquets@xtec.net">fbusquets@xtec.net</a>) i Departament
++ d'Educaci&oacute; de la Generalitat de Catalunya
++ (<a href="mailto:info@xtec.net">info@xtec.net</a>).<BR>
++&nbsp;<BR>
++Este programa &eacute;s lliure. Podeu distribuir-lo i/o modificar-lo conforme
++ a les disposicions de la Llic&egrave;ncia P&uacute;blica General de GNU (GPL),
++ publicada per la Free Software Foundation, ja siga la versi&oacute; 2 de la
++ llic&egrave;ncia o qualsevol versi&oacute; posterior.<br>
++&nbsp;<BR>
++Este programa es distribuïx amb la intenci&oacute;
++ de resultar &uacute;til, per&ograve; SENSE CAP GARANTIA, fins i tot sense
++ la garantia impl&iacute;cita de COMERCIALITZACIÓ o CONVENI&Egrave;NCIA
++ PER A UN PROP&Ograve;SIT PARTICULAR. Per a m&eacute;s detalls, vegeu la
++ <a href="http://www.gnu.org/copyleft/gpl.html">Llic&egrave;ncia P&uacute;blica
++ General de GNU</a>.<br>
++&nbsp;<BR>
+diff --git a/src/core/edu/xtec/resources/messages/JClicMessages_ca_ES_valencia.java b/src/core/edu/xtec/resources/messages/JClicMessages_ca_ES_valencia.java
+new file mode 100644
+index 0000000..7cbdf7a
+--- /dev/null
++++ b/src/core/edu/xtec/resources/messages/JClicMessages_ca_ES_valencia.java
+@@ -0,0 +1,4 @@
++package edu.xtec.resources.messages;
++
++public class JClicMessages_ca_ES_valencia {
++}
+diff --git a/src/core/edu/xtec/resources/messages/JClicMessages_ca_ES_valencia.properties b/src/core/edu/xtec/resources/messages/JClicMessages_ca_ES_valencia.properties
+new file mode 100644
+index 0000000..4db4332
+--- /dev/null
++++ b/src/core/edu/xtec/resources/messages/JClicMessages_ca_ES_valencia.properties
+@@ -0,0 +1,388 @@
++#SOME DESCRIPTIVE TITLE.
++#Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++#This file is distributed under the same license as the PACKAGE package.
++#FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++!=Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2008-06-30 12:04+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset\=UTF-8\nContent-Transfer-Encoding: 8bit\n
++
++# JClic main messages
++label_time=temps
++
++label_actions=intents
++
++label_score=encerts
++
++Skin=Aspecte
++
++action_next_caption=Seg\u00fcent
++
++action_next_tooltip=Activitat seg\u00fcent
++
++action_prev_caption=Anterior
++
++action_prev_tooltip=Activitat anterior
++
++action_reset_caption=Reinicia
++
++action_reset_tooltip=Reinicia l'activitat
++
++action_info_caption=Informaci\u00f3
++
++about_window_lb_project=Projecte
++
++about_window_lb_languages=Idiomes
++
++about_window_lb_language=Idioma
++
++about_window_close_button=Torna
++
++about_window_caption=Quant a...
++
++action_about_tooltip=Informes d'usuari
++
++about_window_lb_report=Informes
++
++about_window_browser_button=Veure-ho en el navegador
++
++report_no_activities=No hi ha cap activitat informada!
++
++report_system_standard=L'informe no s'est\u00e0 gravant en cap base de dades
++
++report_lb_time=Temps
++
++msg_error_loading_sequence=Error en carregar la seq\u00fc\u00e8ncia
++
++media_qt_error_initializing=Error en inicialitzar el QuickTime!
++
++media_check_url=messages/checkmedia_ca.html
++
++filesystem_openURL=Obri l'URL...
++
++filesystem_openFile=Obri el fitxer...
++
++filesystem_enterURL=Escriviu l'URL del recurs a qu\u00e8 voleu accedir.
++
++msg_error_executing_external=Error en executar l'orde:
++
++editor_moveDown_tooltip=Mou l'element seleccionat cap avall
++
++editor_moveUp_tooltip=Mou l'element seleccionat cap amunt
++
++editor_moveDown=Mou cap avall
++
++editor_moveUp=Mou cap amunt
++
++filefilter_all_images=Imatges (*.gif, *.jpg, *.png, *.bmp, *.ico)
++
++filefilter_png=Imatges PNG
++
++filefilter_jpg=Imatges JPG
++
++filefilter_gif=Imatges GIF
++
++filesystem_saveURLerror=Els fitxers obtinguts d'un URL s\u00f3n nom\u00e9s de lectura.
++
++filefilter_all_clic=Paquets Clic 3.0 (*.pac, *.pcc)
++
++filefilter_all=Tots els fitxers
++
++filefilter_all_jclic_clic=Projectes JClic i Clic 3.0 (*.jclic, *.jclic.zip, *.pac, *.pcc)
++
++filefilter_all_jclic=Projectes JClic (*.jclic, *.jclic.zip)
++
++filefilter_pcc=Paquets compactes Clic 3.0 (*.pcc)
++
++filefilter_pac=Paquets oberts Clic 3.0 (*.pac)
++
++filefilter_jclic_zip=Projectes JClic comprimits (*.jclic.zip)
++
++filefilter_jclic=Projectes JClic (*.jclic)
++
++about_window_lb_mediaSystem=Sistema multim\u00e8dia
++
++about_window_lb_level=Nivell
++
++about_window_lb_area=\u00c0rea
++
++report_num_actions=Accions fetes:
++
++report_project=Projecte:
++
++report_lb_totals=Totals:
++
++report_num_projects=Projectes:
++
++report_session=Sessi\u00f3:
++
++msg_warn_no_exec_in_applets=Per raons de seguretat l'execuci\u00f3 de programes externs est\u00e0 inhabilitada en les miniaplicacions JClic.
++
++msg_error_starting_activity=Error en iniciar l'activitat!
++
++msg_error_loading_project=Error en carregar el projecte
++
++msg_error_playing_media=Error del recurs multim\u00e8dia!
++
++msg_activity_finished=Activitat acabada!
++
++msg_playing_media=Interpretant multim\u00e8dia
++
++msg_activity_running=Activitat en marxa
++
++msg_activity_ready=Activitat preparada
++
++msg_initializing=Inicialitzant...
++
++msg_preparing_media=Preparant multim\u00e8dia
++
++msg_error_loading_activity=Error en carregar l'activitat
++
++msg_loading_activity=Carregant l'activitat...
++
++msg_loading_project=Carregant el projecte...
++
++msg_ready=Fet
++
++err_reading_data=Error en llegir el fitxer
++
++err_file_save=Error en guardar el fitxer!
++
++err_file_open=Error en obrir el fitxer!
++
++report_started=Inici de sessi\u00f3:
++
++report_lb_score=Puntuaci\u00f3
++
++report_lb_actions=Accions
++
++report_lb_solved=Correcta
++
++report_lb_activity=Activitat
++
++report_lb_sequence=Seq\u00fc\u00e8ncia
++
++report_global_score=Puntuaci\u00f3 global:
++
++report_total_time=Temps total en activitats:
++
++report_num_activities_solved=Activitats correctes:
++
++report_num_activities=Activitats realitzades:
++
++report_num_sequences=Seq\u00fc\u00e8ncies:
++
++report_system=Sistema d'informes:
++
++report_user=Usuari:
++
++report_not_finished=Activitat no acabada encara
++
++action_info_tooltip=Informaci\u00f3 addicional
++
++action_help_caption=Ajuda
++
++action_help_tooltip=Ajuda sobre l'activitat
++
++action_audio_caption=Sons
++
++action_audio_tooltip=Activa/desactiva els sons
++
++about_window_lb_system=Sistema
++
++about_window_lb_total_mem=Mem\u00f2ria total
++
++about_window_lb_free_mem=Mem\u00f2ria lliure
++
++about_window_lb_java_home=Ubicaci\u00f3 de Java
++
++about_window_lb_java_vm=M\u00e0quina virtual Java
++
++about_window_lb_java_version=Versi\u00f3 de Java
++
++about_window_lb_os=Sistema operatiu
++
++about_window_lb_version=Versi\u00f3
++
++about_window_lb_descriptors=Descriptors
++
++about_window_lb_description=Descripci\u00f3
++
++about_window_lb_history=Revisions
++
++about_window_lb_organizations=Organitzacions
++
++about_window_lb_organization=Organitzaci\u00f3
++
++about_window_lb_authors=Autors/es
++
++about_window_lb_author=Autor/a
++
++about_window_lb_activity=Activitat
++
++help_window_close_button=Torna a l'activitat
++
++help_window_caption=Finestra d'ajuda
++
++action_about_caption=Informes
++
++action_about_keys=II
++
++action_audio_keys=OS
++
++action_help_keys=JJ
++
++action_info_keys=NN
++
++action_next_keys=S*
++
++action_prev_keys=A*
++
++action_reset_keys=R*
++
++filefilter_install=Instal\u00b7ladors de projectes JClic (*.jclic.inst)
++
++report_err_no_users=No hi ha cap usuari definit a la base de dades d'informes!
++
++report_err_no_users_in_group=No hi ha cap usuari definit en este grup a la base de dades d'informes!
++
++report_new_user=Usuari nou...
++
++report_new_user_tooltip=Crea un nou usuari a la base de dades d'informes
++
++report_err_creating_user=Error en crear el nou usuari!
++
++report_select_user=Identificaci\u00f3 d'usuari per la base de dades d'informes
++
++report_userlist_title=Seleccioneu el vostre nom:
++
++report_ident_user=Identificaci\u00f3 d'usuari
++
++report_name_prompt=Nom:
++
++report_id_prompt=Identificador:
++
++report_pw_prompt=Contrasenya:
++
++report_pw_prompt_confirm=Confirmaci\u00f3 de la contrasenya:
++
++report_new_user_data=Creaci\u00f3 d'un nou usuari
++
++report_err_bad_data=Dades incorrectes!
++
++report_generic_group_name=Gen\u00e8ric
++
++report_new_group=Crea un nou grup...
++
++report_err_creating_group=Error en crear el nou grup!
++
++report_grouplist_title=Seleccioneu el vostre grup:
++
++report_new_group_data=Creaci\u00f3 d'un nou grup d'usuaris:
++
++report_err_invalid_user=Usuari inexistent o contrasenya incorrecta.
++
++report_user_has_pwd=El compte d'este usuari est\u00e0 protegit per contrasenya.
++
++report_err_init=Error en inicialitzar el sistema d'informes.
++
++report_not_connected=no connectat
++
++report_err_creating=Error en crear l'agent d'informes
++
++action_return_caption=Torna
++
++action_return_tooltip=Torna al darrer men\u00fa
++
++action_return_keys=T*
++
++filefilter_all_sounds=Sons (*.wav, *.mp3, *.au, *.aiff)
++
++filefilter_midi=Fitxers MIDI (*.mid)
++
++filefilter_all_video=V\u00eddeo (*.avi, *.mov, *.mpeg)
++
++filefilter_all_anim=Fitxers Flash 2.0 (*.swf)
++
++filefilter_skins=Entorns visuals (*.xml)
++
++filefilter_all_media=Tots els recursos
++
++filesystem_copyToRoot_1=El fitxer
++
++filesystem_copyToRoot_2=es troba en una carpeta diferent a la de l'actual projecte.
++
++filesystem_copyToRoot_3=Es recomana tindre tots els fitxers en la mateixa carpeta.
++
++filesystem_copyToRoot_4=Voleu copiar el fitxer seleccionat a la carpeta del projecte?
++
++filesystem_copyFile=Copiant el fitxer
++
++msg_loading=Carregant
++
++report_err_bad_id=Identificador incorrecte!
++
++report_err_duplicate_id=Este identificador ja existix a la base de dades!
++
++report_err_bad_name=Nom incorrecte!
++
++report_err_bad_pw=Les contrasenyes no coincidixen!
++
++report_err_connect=Error en connectar amb la base de dades d'informes!
++
++test_alert_exit=IX: En este punt el JClic es tancaria.
++
++test_alert_jump_to=En este punt es produiria un salt al projecte:
++
++ftype_image=Imatge
++
++ftype_audio=So digital
++
++ftype_midi=Fitxer MIDI
++
++ftype_xml=Fitxer XML
++
++ftype_anim=Animaci\u00f3
++
++ftype_video=V\u00eddeo digital
++
++ftype_font=Tipus de lletra TrueType
++
++ftype_jclic=Projecte JClic
++
++ftype_inst=Seq\u00fc\u00e8ncia d'instal\u00b7laci\u00f3 de projectes JClic
++
++ftype_unknown=Desconegut
++
++ftype_animated=animada
++
++filefilter_fonts=Tipus de lletra (*.ttf)
++
++editor_moveUp_keys=U\#38
++
++editor_moveDown_keys=V\#40
++
++filefilter_all_html=Documents HTML (*.htm, *.html)
++
++about_creditsDoc=about/credits_ca_ES_valencia.html
++
++about_licenseDoc=about/license_ca_ES_valencia.html
++
++about_sponsorsCaption=Amb el suport de:
++
++about_window_systemInfo=Informaci\u00f3 del sistema
++
++about_window_projectInfo=Informaci\u00f3 del projecte actual
++
++about_window_reportInfo=Resultats de la sessi\u00f3 actual
++
++about_otherCreditsCaption=Este producte inclou programari eleborat per:
++
++msg_saving_project=Guardant el projecte...
++
++filefilter_text=Fitxers de text (*.txt)
++
++# Translation credits displayed on the about window, in HTML format
++html_translation_credits=Versi\u00f3 en valenci\u00e0, per l'Equip Lliurex
++
++# Abstract of the GPL license, version 2.0, as shown on the About window
++html_gpl_license=Este programa &eacute;s lliure. Podeu distribuir-lo i/o modificar-lo conforme a les disposicions de la Llic&egrave;ncia P&uacute;blica General de GNU (GPL), publicada per la Free Software Foundation, ja siga la versi&oacute; 2 de la llic&egrave;ncia o qualsevol versi&oacute; posterior.<br>&nbsp;<BR>Este programa es distribu\u00efx amb la intenci&oacute; de resultar &uacute;til, per&ograve; SENSE CAP GARANTIA, fins i tot sense la garantia impl&iacute;cita de COMERCIALITZACI&oacute; o CONVENI&Egrave;NCIA PER A UN PROP&Ograve;SIT PARTICULAR. Per a m&eacute;s detalls, vegeu la <a href\="http://www.gnu.org/copyleft/gpl.html">Llic&egrave;ncia P&uacute;blica General de GNU</a>.
+diff --git a/src/core/edu/xtec/resources/messages/checkmedia_ca_ES_valencia.html b/src/core/edu/xtec/resources/messages/checkmedia_ca_ES_valencia.html
+new file mode 100644
+index 0000000..b5b2c97
+--- /dev/null
++++ b/src/core/edu/xtec/resources/messages/checkmedia_ca_ES_valencia.html
+@@ -0,0 +1,39 @@
++<html>
++<head>
++<title>JClic - Comprovaci&oacute; del sistema multim&egrave;dia</title>
++</head>
++<body bgcolor="#EFF7DD">
++<table width="100%" border="0" cellpadding="5" style="color: black; font-family: Helvetica, sans-serif; font-size: 13;">
++<tr>
++<td>
++<p style="color: Maroon; font-size: 16;"><b>No s'ha pogut detectar cap extensi&oacute; multim&egrave;dia en el vostre sistema Java!</b></p>
++<p>El JClic pot interpretar fitxers d'&agrave;udio de diferents formats (wav, au, mp3, ogg...), per&ograve; necessita una extensi&oacute; del sistema Java per a poder interpretar v&iacute;deos i altres continguts multim&egrave;dia, com ara animacions Flash.</p>
++<p>En estos moments el vostre ordinador no compta amb cap extensi&oacute; multim&egrave;dia Java instal&middot;lada. Podeu continuar aix&iacute; (els fitxers multim&egrave;dia s'ignoraran), per&ograve; &eacute;s recomanable instal&middot;lar-ne una per tal de poder gaudir de tots els continguts de les activitats JClic. El proc&eacute;s
++d'instal&middot;laci&oacute; &eacute;s molt senzill, i nom&eacute;s s'ha de fer una vegada.</p>
++<p>Podeu escollir entre dues opcions: "QuickTime for Java" o "Java Media Framework".
++<br>
++En ambd&oacute;s casos, llegiu detalladament les instruccions i reinicialitzeu tots els navegadors i aplicacions Java una vegada realitzada la instal&middot;laci&oacute;.</p>
++<p style="color: navy; font-size: 14;"><b>Java Media Framework</b>
++<hr>
++Opci&oacute; recomanada per a Linux i altres sistemes operatius.</p>
++<p>Una versi&oacute; b&agrave;sica (nom&eacute;s 2 Mb) del Java Media Framework per a Windows es pot baixar des de:
++<br>
++<a
++href="http://clic.xtec.net/dist/java/customJMFinstal.exe"><b>http://clic.xtec.net/dist/java/customJMFinstal.exe</b></a></p>
++<p>Les versions completes per a Linux (i386), Solaris, Windows i altres sistemes es poden baixar des de la pàgina web de Sun:
++<br>
++<a href="http://java.sun.com/products/java-media/jmf/downloads/index.html"><B>http://java.sun.com/products/java-media/jmf/downloads/index.html</b></a></p>
++<p>&nbsp;</p>
++<p style="color: navy; font-size: 14;"><b>QuickTime for Java</b>
++<hr>
++Opci&oacute; recomanada per a usuaris de Mac OS-X.</p>
++<p>El programa QuickTime Player &eacute;s gratu&iuml;t i es pot baixar des de la pàgina web:
++<br>
++<a href="http://www.apple.com/quicktime/download/"><b>http://www.apple.com/quicktime/download</b></a>
++<p style="font-size: 12;"></p>
++<p><b>Important:</b> En comen&ccedil;ar el proc&eacute;s d'instal&middot;laci&oacute; trieu l'opci&oacute; "Personalitzada" i assegureu-vos de seleccionar "QuickTime Java" en la llista de components a instal&middot;lar. En la modalitat "Est&agrave;ndard" s'acostuma a ometre la instal&middot;laci&oacute; d'este component.</p>
++</td>
++</tr>
++</table>
++</body>
++</html>
+diff --git a/src/extra/edu/xtec/resources/activities/listactivities_ca_ES_valencia.properties b/src/extra/edu/xtec/resources/activities/listactivities_ca_ES_valencia.properties
+new file mode 100644
+index 0000000..c8cd64b
+--- /dev/null
++++ b/src/extra/edu/xtec/resources/activities/listactivities_ca_ES_valencia.properties
+@@ -0,0 +1,47 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++!=Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2008-06-30 12:04+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset\=UTF-8\nContent-Transfer-Encoding: 8bit\n
++
++# List of currently registered types of JClic activities.
++# All JClic Activity classes must extend edu.xtec.jclic.Activity
++# and must be accessibles to the JVM classloader.
++# List format:
++#   full_class_name_including_package=activity_type_name[|activity_type_description]
++# The symbol "@" can be used in place of the standard package name: "edu.xtec.jclic.activities."
++# Example:
++#   com.acme.jclic.TestActivity=Acme test activity|This JClic activity is just a test...
++@associations.ComplexAssociation=Associaci\u00f3 complexa|En este tipus d'activitat es presenten tamb\u00e9 dos conjunts d'informaci\u00f3, per\u00f2 estos poden tindre un nombre diferent d'elements entre els quals es poden donar diversos tipus de relaci\u00f3: un a un, diversos a un, elements sense assignar...
++
++@associations.SimpleAssociation=Associaci\u00f3 simple|Es presenten dos conjunts d'informaci\u00f3 que tenen el mateix nombre d'elements. A cada element del conjunt origen correspon un i nom\u00e9s un element del conjunt imatge.
++
++@memory.MemoryGame=Joc de mem\u00f2ria|Cada una de les peces que formen l'objecte apareix amagat dos vegades dins de la finestra de joc. En cada tirada es destapen un parell de peces, que es tornen a amagar si no s\u00f3n id\u00e8ntiques. L'objectiu \u00e9s destapar totes les parelles.
++
++@panels.Explore=Activitat d'exploraci\u00f3|Es mostra una informaci\u00f3 inicial i en fer clic damunt seu es mostra, per a cada element, una determinada pe\u00e7a d'informaci\u00f3.
++
++@panels.Identify=Activitat d'identificaci\u00f3|Es presenta nom\u00e9s un conjunt d'informaci\u00f3 i cal fer clic damunt aquells elements que complisquen una determinada condici\u00f3.
++
++@panels.InformationScreen=Pantalla d'informaci\u00f3|Es mostra un conjunt d'informaci\u00f3 i, opcionalment, s'oferix la possibilitat d'activar el contingut multim\u00e8dia que porte cada element.
++
++@puzzles.DoublePuzzle=Puzle doble|Es mostren dos plafons. En un hi ha la informaci\u00f3 desordenada i l'altre est\u00e0 buit. Cal reconstruir l'objecte en el plaf\u00f3 buit portant-hi les peces una per una.
++
++@puzzles.ExchangePuzzle=Puzle d'intercanvi|En un \u00fanic plaf\u00f3 es barreja la informaci\u00f3. En cada tirada es commuten les posicions de dos peces, fins a ordenar l'objecte.
++
++@puzzles.HolePuzzle=Puzle de forat|En un \u00fanic plaf\u00f3 es fa desapar\u00e9ixer una pe\u00e7a i es barregen les restants. En cada tirada es pot despla\u00e7ar una de les peces ve\u00efnes al forat, fins a tindre-les totes en l'orde original.
++
++@text.WrittenAnswer=Resposta escrita|Es mostra un conjunt d'informaci\u00f3 i, per a cadascun dels seus elements, cal escriure el text corresponent.
++
++@text.FillInBlanks=Text: Omplir forats|En un text se seleccionen determinades paraules, lletres i frases que s'amaguen o es camuflen i l'usuari ha de completar. La resoluci\u00f3 de cadascun dels elements amagats es pot plantejar de maneres diferents: escrivint en un espai buit, corregint una expressi\u00f3 que cont\u00e9 errades o seleccionant en una llista de diverses respostes possibles.
++
++@text.Identify=Text: Identificar elements|L'usuari ha d'assenyalar amb un clic de ratol\u00ed determinades paraules, lletres, xifres, s\u00edmbols o signes de puntuaci\u00f3.
++
++@text.Order=Text: Ordenar elements|En el moment de dissenyar l'activitat se seleccionen en el text algunes paraules o par\u00e0grafs que es barrejaran entre si. L'usuari ha de tornar a posar-ho en orde.
++
++@text.Complete=Text: Completar text|En un text es fan desapar\u00e9ixer determinades parts (lletres, paraules, signes de puntuaci\u00f3, frases) i l'usuari ha de completar-lo.
++
++@textGrid.CrossWord=Mots encreuats|Cal anar omplint el tauler de paraules a partir de les seues definicions. Les definicions poden ser textuals, gr\u00e0fiques o sonores. El programa mostra autom\u00e0ticament les definicions de les dos paraules que es creuen en la posici\u00f3 on es trobe el cursor en cada moment.
++
++@textGrid.WordSearch=Sopa de lletres|Cal trobar les paraules amagades en una graella de lletres. Les caselles neutres de la graella (aquelles que no pertanyen a cap paraula) s'omplin amb car\u00e0cters seleccionats a l'atzar en cada jugada.
+diff --git a/src/extra/edu/xtec/resources/automation/contentproviders_ca_ES_valencia.properties b/src/extra/edu/xtec/resources/automation/contentproviders_ca_ES_valencia.properties
+new file mode 100644
+index 0000000..d3fa7f7
+--- /dev/null
++++ b/src/extra/edu/xtec/resources/automation/contentproviders_ca_ES_valencia.properties
+@@ -0,0 +1,19 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++!=Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2008-06-30 12:04+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset\=UTF-8\nContent-Transfer-Encoding: 8bit\n
++
++# List of currently registered types of content providers for JClic activities.
++# All JClic content providers must extend edu.xtec.jclic.automation.AutoContentProvider
++# and must be accessibles to the JVM classloader.
++# List format:
++#   full_class_name_including_package=content_provider_name[|content_provider_description]
++# The symbol "@" can be used in place of the standard package name: "edu.xtec.jclic.automation."
++# Example:
++#   com.acme.jclic.TestContentProvider=Acme test content|This JClic content provider is just a test...
++@arith.Arith=Arith|Creaci\u00f3 autom\u00e0tica d'exercicis de c\u00e0lcul mental
++
++@tagreplace.TagReplace=TagReplace|Substitu\u00efx determinades etiquetes de text per valors especificats en un fitxer o font de dades externa
+diff --git a/src/extra/edu/xtec/resources/shapers/listshapers_ca_ES_valencia.properties b/src/extra/edu/xtec/resources/shapers/listshapers_ca_ES_valencia.properties
+new file mode 100644
+index 0000000..6cdb400
+--- /dev/null
++++ b/src/extra/edu/xtec/resources/shapers/listshapers_ca_ES_valencia.properties
+@@ -0,0 +1,25 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++!=Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2008-06-30 12:04+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset\=UTF-8\nContent-Transfer-Encoding: 8bit\n
++
++# List of currently registered types of shapers for JClic activities.
++# All JClic shapers must extend edu.xtec.jclic.shapers.Shaper
++# and must be accessibles to the JVM classloader.
++# List format:
++#   full_class_name_including_package=shaper_name[|shaper_description]
++# The symbol "@" can be used in place of the standard package name: "edu.xtec.jclic.shapers."
++# Example:
++#   com.acme.jclic.TestShaper=Acme test shaper|This shaper is just a test...
++@Rectangular=Rectangular|Retallador rectangular est\u00e0ndard.
++
++@JigSaw=Encaixos amb uni\u00f3 rectangular
++
++@TriangularJigSaw=Encaixos amb uni\u00f3 triangular
++
++@ClassicJigSaw=Encaixos amb uni\u00f3 ovalada
++
++@Holes=Retalls
+diff --git a/src/player/edu/xtec/resources/messages/PlayerMessages_ca_ES_valencia.properties b/src/player/edu/xtec/resources/messages/PlayerMessages_ca_ES_valencia.properties
+new file mode 100644
+index 0000000..9320664
+--- /dev/null
++++ b/src/player/edu/xtec/resources/messages/PlayerMessages_ca_ES_valencia.properties
+@@ -0,0 +1,400 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++!=Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2008-06-30 12:04+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset\=UTF-8\nContent-Transfer-Encoding: 8bit\n
++
++# JClic player messages
++m_File=Fitxers
++
++settings_passwordRequired=Per a efectuar esta operaci\u00f3 cal introduir la contrasenya d'administraci\u00f3 del JClic.
++
++m_Help=Ajuda
++
++m_Skin=Aparen\u00e7a
++
++action_helpAbout_caption=Quant a...
++
++libraryManager_mainLibraryTitle=Biblioteca principal
++
++library_badFormat=Este fitxer JClic no \u00e9s del tipus \u00abbiblioteca de projectes\u00bb.\nLes biblioteques s\u00f3n un tipus especial de fitxers JClic.
++
++library_mainMenu=Men\u00fa principal
++
++library_newLibraryName=Nova biblioteca de projectes
++
++libraryManager_new_prompt=Voleu crear una nova biblioteca de projectes o connectar-vos a una biblioteca existent?
++
++libraryManager_connectToLibrary=Connecta't a...
++
++libraryManager_createNewLibrary=Nova
++
++libraryManager_new_tooltip=Crea una nova biblioteca o connecta't a una d'existent
++
++libraryManager_new_caption=Nova
++
++menuElement_dlg_icon_tooltip=Imatge que es mostra al bot\u00f3
++
++menuElement_dlg_description_tooltip=Text flotant que apareixer\u00e0 quan es deixe el punter quiet sobre el bot\u00f3.
++
++menuElement_dlg_description=Descripci\u00f3:
++
++edit_find_image=Busca imatge...
++
++menuElement_dlg_icon=Icona:
++
++edit_find_file=Busca fitxer...
++
++menuElement_dlg_project_tooltip=Ubicaci\u00f3 del projecte JClic
++
++menuElement_dlg_project=Projecte:
++
++menuElement_dlg_text_tooltip=Text del bot\u00f3
++
++edit_text=Text:
++
++menu_dlg_name_tooltip=Nom de la carpeta
++
++library_dlg_name_tooltip=Nom de la biblioteca
++
++edit_name=Nom:
++
++edit_title=T\u00edtol:
++
++library_dlg_title=Propietats de la biblioteca
++
++menu_dlg_title=Propietats de la carpeta
++
++menuElement_dlg_title=Propietats del bot\u00f3
++
++menu_delete_tooltip=Elimina el men\u00fa seleccionat
++
++menu_delete_caption=Elimina
++
++menuElement_delete_tooltip=Elimina l'element de men\u00fa seleccionat
++
++action_libraries_caption=Biblioteques...
++
++dlg_save_title=Guarda el fitxer...
++
++error_propertiesFile_beg=S'ha produ\u00eft un error en obrir "
++
++error_propertiesFile_end=". S'utilitzaran els valors per defecte.
++
++menuElement_delete_caption=Elimina
++
++menu_newMenuElement_tooltip=Crea un nou bot\u00f3 de projecte
++
++menu_newMenuName=Nova carpeta
++
++menu_newMenu_tooltip=Crea una nova carpeta de botons de projecte
++
++menu_newMenu_caption=Nova carpeta d'icones
++
++menu_newMenuElement_caption=Nou bot\u00f3 de projecte
++
++menu_newMenuElementName=Nou bot\u00f3
++
++library_cancel_tooltip=Cancel\u00b7la les modificacions
++
++library_cancel_caption=Cancel\u00b7la
++
++libraryManager_edit_tooltip=Edita la biblioteca seleccionada
++
++libraryManager_edit_caption=Edita
++
++library_select_caption_ok_tooltip=Guarda els canvis
++
++library_select_caption_tooltip=Tria la carpeta seleccionada
++
++library_select_caption_ok=D'acord
++
++library_select_caption=Selecciona
++
++library_caption=Biblioteca de projectes JClic
++
++libraryManager_select_tooltip=Obri la biblioteca seleccionada
++
++libraryManager_cancel_tooltip=Cancel\u00b7la
++
++libraryManager_cancel_caption=Cancel\u00b7la
++
++libraryManager_select_caption=Selecciona
++
++libraryManager_caption=Selecci\u00f3 de la biblioteca de projectes
++
++library_error_reading=S'ha produ\u00eft un error en llegir la biblioteca de projectes!
++
++wizard_next=Avant >
++
++wizard_prev=< Arrere
++
++wizard_finish=Finalitza
++
++library_error_creating_icons=S'ha produ\u00eft un error en crear la icona a la biblioteca!
++
++install_title=Instal\u00b7laci\u00f3 de projectes JClic
++
++install_info_description=Instal\u00b7laci\u00f3 d'un nou projecte JClic
++
++install_info_from=Des de:
++
++wizard_cancel=Cancel\u00b7la
++
++wizard_cancel_tooltip=Cancel\u00b7la l'operaci\u00f3
++
++wizard_finish_tooltip=Finalitza l'operaci\u00f3
++
++wizard_next_tooltip=Pas seg\u00fcent de l'operaci\u00f3
++
++wizard_prev_tooltip=Pas anterior de l'operaci\u00f3
++
++install_select_library=Seleccioneu la biblioteca on s'instal\u00b7lar\u00e0 el projecte:
++
++install_copy_files=C\u00f2pia de fitxers
++
++install_source=Origen:
++
++install_dest=Dest\u00ed:
++
++install_status=Estat:
++
++install_start=Inicia la instal\u00b7laci\u00f3
++
++install_start_tooltip=Inicia la c\u00f2pia de fitxers al vostre ordinador
++
++install_progress_tooltip=Progr\u00e9s de la instal\u00b7laci\u00f3
++
++install_msg_waiting=Esperant confirmaci\u00f3
++
++install_msg_creating_dirs=Creant carpetes
++
++install_msg_copying=Copiant el fitxer
++
++install_msg_end=Acabat!
++
++install_msg_cleanup=Fent neteja...
++
++install_msg_cancel=Instal\u00b7laci\u00f3 cancel\u00b7lada!
++
++install_error=S'ha produ\u00eft un error durant la instal\u00b7laci\u00f3!
++
++install_select_folder=Seleccioneu la carpeta on es crearan les icones del projecte:
++
++install_library_folders=Carpetes de la biblioteca:
++
++install_success_1=El projecte s'ha instal\u00b7lat correctament!
++
++install_success_2=Per a posar-lo en marxa seleccioneu la seua
++
++install_success_3=icona a la biblioteca de projectes.
++
++wizard_info=Feu clic en \u00abAvant\u00bb per a comen\u00e7ar.
++
++install_step_1=1. Selecci\u00f3 de la biblioteca
++
++install_step_2=2. Desc\u00e0rrega de fitxers
++
++install_step_3=3. Creaci\u00f3 d'icones
++
++install_step_4=Instal\u00b7laci\u00f3 acabada!
++
++install_info_info=Heu sol\u00b7licitat instal\u00b7lar el projecte:
++
++settings_title=Configuraci\u00f3
++
++library_error_clone=No s'ha pogut clonar la biblioteca!
++
++settings_security=Seguretat
++
++settings_password_protect=Protegix els canvis de configuraci\u00f3 amb contrasenya
++
++settings_new_password=Nova contrasenya:
++
++settings_new_password_confirm=Confirmaci\u00f3 de la nova contrasenya:
++
++settings_general=General
++
++settings_look=Aspecte:
++
++settings_skin=Pell:
++
++settings_language=Idioma:
++
++settings_reports=Informes
++
++settings_report_use=Grava els resultats de les activitats en una base de dades
++
++settings_report_engine=Classe:
++
++settings_report_params=Par\u00e0metres:
++
++settings_media=Multim\u00e8dia
++
++settings_media_enabled=Multim\u00e8dia activat
++
++settings_media_system=Sistema multim\u00e8dia:
++
++settings_media_event_sounds=Sons d'esdeveniment activats
++
++settings_library=Biblioteques
++
++settings_library_autorun=Mostra autom\u00e0ticament la biblioteca a l'inici
++
++m_Tools=Ferramentes
++
++m_File_Mnemonic=F
++
++m_Tools_Mnemonic=E
++
++m_Help_Mnemonic=J
++
++m_Activity=Activitat
++
++m_Activity_Mnemonic=A
++
++action_openFile_caption=Obri el fitxer...
++
++action_openFile_tooltip=Obri un fitxer de projecte JClic
++
++action_openFile_keys=OO
++
++action_openUrl_caption=Obri una ubicaci\u00f3 web...
++
++action_openUrl_tooltip=Obri un projecte JClic directament des d'Internet
++
++action_openUrl_keys=UU
++
++action_exit_caption=Ix
++
++action_exit_tooltip=Tanca el JClic
++
++action_exit_keys=RX
++
++action_settings_caption=Configuraci\u00f3...
++
++action_settings_tooltip=Ajusta les opcions globals del programa
++
++action_settings_keys=C
++
++action_libraries_tooltip=Obri o modifica una biblioteca JClic
++
++action_libraries_keys=BB
++
++action_helpAbout_tooltip=Informaci\u00f3 sobre el JClic
++
++action_helpAbout_keys=AA
++
++menuElement_err_iconTooLarge=Esta imatge \u00e9s massa gran per a fer-la servir com a icona!
++
++settings_report_tcp=Connecta't a un servidor d'informes JClic:
++
++settings_report_jdbc=Connecta't directament a una base de dades JDBC:
++
++settings_report_other=Altres:
++
++settings_report_address=Servidor:
++
++settings_report_port=Port:
++
++settings_report_driver=Controlador:
++
++settings_report_url=URL:
++
++settings_report_user=Usuari:
++
++settings_report_pwd=Contrasenya:
++
++settings_report_options=Par\u00e0metres:
++
++settings_report_err_server=El nom del servidor d'informes \u00e9s incorrecte!
++
++settings_report_err_port=Valor incorrecte del port en el sistema d'informes! Per favor, indiqueu un valor entre 1000 i 65000.
++
++settings_report_err=Dades incorrectes per al sistema d'informes!
++
++settings_report_type=Sistema d'informes:
++
++settings_media_jmf=Java Media Framework (JMF)
++
++settings_media_qt=QuickTime
++
++settings_media_default=Detecci\u00f3 autom\u00e0tica
++
++settings_security_tooltip=Opcions de seguretat
++
++settings_report_tooltip=Configuraci\u00f3 del sistema d'informes
++
++settings_media_tooltip=Configuraci\u00f3 del sistema multim\u00e8dia
++
++settings_general_tooltip=Opcions d'idioma i aspecte
++
++settings_library_tooltip=Configuraci\u00f3 i edici\u00f3 de biblioteques
++
++settings_look_tooltip=Aspecte de la interf\u00edcie d'usuari
++
++settings_skin_tooltip=Selecci\u00f3 del disseny gr\u00e0fic del JClic
++
++settings_language_tooltip=Selecci\u00f3 d'idioma
++
++settings_report_use_tooltip=Activa o descativa la connexi\u00f3 a una base de dades d'informes JClic
++
++settings_report_tcp_tooltip=Motor d'informes basat en una connexi\u00f3 TCP/IP
++
++settings_report_jdbc_tooltip=Motor d'informes basat en una connexi\u00f3 directa a una base de dades
++
++settings_report_other_tooltip=Altres motors d'informes...
++
++settings_report_address_tooltip=Nom o adre\u00e7a IP del servidor d'informes
++
++settings_report_port_tooltip=Port utilitzat en la connexi\u00f3 (per defecte: 5510)
++
++edit_file=Fitxer:
++
++error_launchLibrary=S'ha produ\u00eft un error en obrir la biblioteca
++
++install_toSourceFolder=Instal\u00b7lant a la carpeta d'origen!
++
++edit_find_media=Busca recurs...
++
++libraryManager_delete_caption=Suprimix
++
++libraryManager_delete_tooltip=Suprimix la refer\u00e8ncia a la biblioteca seleccionada
++
++libraryManager_delete_confirm=Realment voleu suprimir la refer\u00e8ncia a la biblioteca seleccionada?
++
++libraryManager_new_exists=Esta biblioteca ja est\u00e0 connectada al sistema!
++
++edit_find_image_keys=C*
++
++menu_newMenuElement_caption_keys=NN
++
++menu_newMenu_caption_keys=MM
++
++edit_find_file_keys=FF
++
++libraryManager_newLibaryOption=Crea una nova biblioteca de projectes
++
++libraryManager_connectToExistingOption=Afegix un enlla\u00e7 a una biblioteca ja existent
++
++libraryManager_fileOrUrlCaption=Fitxer o URL:
++
++libraryManager_newLibraryTitle=Nova biblioteca de projectes:
++
++libraryManager_warnNoFileSelected=Per favor, escriviu l'URL o el nom de fitxer de la biblioteca de projectes a qu\u00e8 voleu accedir!
++
++install_launchProject=Obri ara el projecte
++
++settings_browser=Navegador preferit:
++
++settings_browser_tooltip=Orde emprada per a iniciar el navegador (firefox, iexplore, mozilla, opera...)
++
++settings_country=Codi de pa\u00eds:
++
++settings_country_tooltip=Codi opcional de dos lletres corresponent a la variant dialectal d'un territori (ex.: BR per a portugu\u00e9s del Brasil)
++
++settings_variant=Variant:
++
++settings_variant_tooltip=Codi opcional de variant de l'idioma
+diff --git a/src/report/reportServer/edu/xtec/resources/messages/ReportServerMessages_ca_ES_valencia.properties b/src/report/reportServer/edu/xtec/resources/messages/ReportServerMessages_ca_ES_valencia.properties
+new file mode 100644
+index 0000000..1a71ee3
+--- /dev/null
++++ b/src/report/reportServer/edu/xtec/resources/messages/ReportServerMessages_ca_ES_valencia.properties
+@@ -0,0 +1,149 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++!=Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2008-06-30 12:04+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset\=UTF-8\nContent-Transfer-Encoding: 8bit\n
++
++error_serverCannotStart=No s'ha pogut posar en funcionament el servidor\\!
++
++error_incorrectData=Dades incorrectes\\!
++
++column_IP_title=IP
++
++column_port_title=Port
++
++column_started_title=En funcionament
++
++column_lastMessage_title=Darrer missatge
++
++column_IP_tooltip=Adre\u00e7a IP de l'ordinador client
++
++column_port_tooltip=Port local emprat per a esta connexi\u00f3
++
++column_started_tooltip=Data i hora en qu\u00e8 s'ha iniciat la connexi\u00f3
++
++column_lastMessage_tooltip=Cap\u00e7alera del darrer missatge rebut
++
++error_propertiesFile_beg=No es pot obrir el fitxer de configuraci\u00f3 "
++
++error_propertiesFile_end=". El programa utilitzar\u00e0 els valors per defecte.
++
++form_title=Servidor d'informes JClic
++
++form_connections_title=Connexions:
++
++form_messages_title=Missatges de sistema:
++
++form_settings_title=Configuraci\u00f3:
++
++form_connections_close=Tanca la connexi\u00f3
++
++form_connections_close_tooltip=Tanca la connexi\u00f3 seleccionada a la llista
++
++form_settings_driver=Controlador:
++
++form_settings_driver_tooltip=Controlador JDBC utilitzat per a connectar amb la base de dades
++
++form_settings_database=Base de dades:
++
++form_settings_database_tooltip=Nom de la base de dades d'informes
++
++form_settings_port=Port:
++
++form_settings_port_tooltip=Port TCP on el servidor atendr\u00e0 les connexions
++
++form_settings_password_tooltip=Contrasenya de l'usuari de sistema
++
++form_settings_password=Contrasenya:
++
++form_settings_user_tooltip=Nom d'usuari de sistema de la base de dades
++
++form_settings_user=Usuari:
++
++ERROR=ERROR
++
++form_settings_timeout=Timeout:
++
++form_settings_timeout_tooltip=M\u00e0xim nombre de segons d'inactivitat perm\u00e9s a les connexions
++
++form_btn_start=Posa en funcionament
++
++form_btn_stop=Para
++
++form_btn_exit=Ix
++
++form_btn_exit_tooltip=Para el servidor i tanca el programa
++
++form_btn_stop_tooltip=Tanca totes les connexions i para el servidor
++
++form_btn_start_tooltip=Inicia l'atenci\u00f3 als clients
++
++form_messages_verbose=Mostra informaci\u00f3 ampliada
++
++form_messages_verbose_tooltip=Mostra tots els missatges entrants
++
++form_messages_copy=Copia
++
++form_messages_copy_tooltip=Copia el contingut de la finestra a la carpeta de sistema
++
++form_messages_clear=Esborra
++
++form_messages_clear_tooltip=Neteja la finestra de missatges
++
++error_DB=L'acci\u00f3 sol\u00b7licitada no s'ha pogut completar
++
++settings_title=Configuraci\u00f3 de servidor d'informes JClic
++
++settings_options_title=Opcions
++
++settings_options_language=Idioma:
++
++settings_options_look=Aparen\u00e7a:
++
++settings_db_title=Base de dades
++
++settings_db_driver=Controlador:
++
++settings_options_tooltips=Etiquetes d'ajuda
++
++settings_db_url=URL:
++
++settings_db_usr=Usuari de la base de dades:
++
++settings_db_pwd=Contrasenya:
++
++settings_server_title=Servidor d'informes
++
++settings_server_timeout=Temps m\u00e0xim d'espera:
++
++settings_server_port=Port:
++
++settings_server_autostart=Posada en funcionament autom\u00e0tica
++
++settings_web_title=Servidor web
++
++settings_server_logFile=Escriu logs al fitxer:
++
++settings_button=Configuraci\u00f3...
++
++error_writting_settings=Error en escriure el fitxer de configuraci\u00f3\\!
++
++form_btn_show=inicia el navegador...
++
++error_starting_browser=Error en executar el navegador\\!
++
++error_opening_logs=Error en obrir els fitxers de registre\\!
++
++settings_file=Fitxer...
++
++settings_tablePrefix=Prefix dels noms de les taules:
++
++settings_createTables=Crea taules si no existixen
++
++settings_session_lifetime=Durada m\u00e0xima d'una sessi\u00f3 inactiva (minuts):
++
++settings_browser=Navegador preferit:
++
++settings_browser_tooltip=Orde emprada per a iniciar el navegador (firefox, iexplore, mozilla, opera...)
+diff --git a/src/report/reportServlets/edu/xtec/resources/messages/reportMessages_ca_ES_valencia.properties b/src/report/reportServlets/edu/xtec/resources/messages/reportMessages_ca_ES_valencia.properties
+new file mode 100644
+index 0000000..14e6430
+--- /dev/null
++++ b/src/report/reportServlets/edu/xtec/resources/messages/reportMessages_ca_ES_valencia.properties
+@@ -0,0 +1,279 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++!=Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2008-06-30 12:04+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset\=UTF-8\nContent-Transfer-Encoding: 8bit\n
++
++login_pwd=Contrasenya:
++
++login_desc=Heu d'escriure una contrasenya correcta per a accedir a la base de dades d'informes.
++
++login_title=Connexi\u00f3 a la base de dades
++
++submit=Envia dades...
++
++login_incorrect=Contrasenya incorrecta!
++
++main_title=Men\u00fa principal
++
++users_admin_title=Administraci\u00f3 de grups i usuaris
++
++group_report_title=Informes de grup
++
++user_report_title=Informes d'usuari/a
++
++act_report_title=Informes d'activitat
++
++db_admin_title=Administraci\u00f3 de la base de dades
++
++db_admin_settings_error=Ha estat impossible fixar els nous valors per a la base de dades!
++
++db_admin_param_agc=Permet als usuaris crear nous grups
++
++db_admin_param_auc=Permet als usuaris la creaci\u00f3 de nous usuaris
++
++db_admin_param_shgl=Selecciona un grup en una llista
++
++db_admin_param_shul=Selecciona el nom d'usuari/a en una llista
++
++db_admin_param_ut=La base de dades t\u00e9 taules d'usuaris i grups
++
++db_admin_edit_btn=Edita les propietats...
++
++db_admin_pw_edit_btn=Establix la contrasenya...
++
++title=T\u00edtol
++
++db_admin_edit_title=Edita les propietats de la base de dades
++
++db_admin_pw_edit_title=Canvia la contrasenya del sistema
++
++db_admin_pw_newPwd=Nova contrasenya
++
++db_admin_pw_verifyPwd=Torna a escriure la contrasenya
++
++db_admin_pw_noFit=Els dos texts no coincidixen!
++
++report_group=Grup:
++
++report_user=Usuari:
++
++report_project=Projecte:
++
++report_all_projects=Tots els projectes
++
++report_key=Clau:
++
++report_code=Codi:
++
++report_context=Context:
++
++report_from=Des de:
++
++month_1=gener
++
++month_2=febrer
++
++month_3=mar\u00e7
++
++month_4=abril
++
++month_5=maig
++
++month_6=juny
++
++month_7=juliol
++
++month_8=agost
++
++month_9=setembre
++
++month_10=octubre
++
++month_11=novembre
++
++month_12=desembre
++
++report_to=Fins a:
++
++report_global_precision=Precisi\u00f3 global
++
++report_solved_activities=Activitats resoltes
++
++report_user_evolution=Evoluci\u00f3 de l'usuari/a
++
++report_group_evolution=Evoluci\u00f3 del grup
++
++report_project_evolution=Evoluci\u00f3 del projecte
++
++report_result_distribution=Distribuci\u00f3 de resultats
++
++report_no_data=SENSE DADES
++
++report_users=Usuaris:
++
++report_sessions=Sessions:
++
++report_projects=Projectes:
++
++report_actDone=Activitats fetes:
++
++report_actSolved=Activitats resoltes:
++
++report_totalTime=Temps total:
++
++report_globalPrec=Precisi\u00f3 global:
++
++report_globalSummary=Resum global
++
++report_header_date=data
++
++report_session_list=Sessions realitzades:
++
++report_header_user=usuari/a
++
++report_header_project=projecte
++
++report_header_numActs=activitats
++
++report_header_actsSolved=act. resoltes
++
++report_header_time=temps
++
++report_header_prec=precisi\u00f3
++
++report_session_detail_show=mostra detalls de la sessi\u00f3
++
++report_session_detail_title=Activitats realitzades a la sessi\u00f3
++
++report_header_activity=activitat
++
++report_header_actions=accions
++
++report_header_score=encerts
++
++report_header_solved=b\u00e9
++
++Y=S
++
++N=N
++
++report_session_detail_hide=amaga els detalls de la sessi\u00f3
++
++report_header_sessions=sessions
++
++report_all_activities=Totes les activitats
++
++report_activity=Activitat:
++
++report_many=diversos
++
++report_n_users=usuaris
++
++group_admin_title=Administraci\u00f3 de grups
++
++group_admin_new_button=Nou grup...
++
++group_admin_groups=Grups
++
++report_actions=Accions
++
++group_admin_edit_button=Modifica...
++
++user_admin_title=Administraci\u00f3 d'usuaris
++
++group_admin_delete_button=Elimina...
++
++group_admin_clear_button=Elimina informes...
++
++group_admin_properties=Propietats del grup
++
++group_admin_name=Nom:
++
++group_admin_id=Identificador:
++
++group_admin_icon=Icona:
++
++error=ERROR
++
++return=torna...
++
++group_admin_users=Usuaris
++
++group_admin_no_users=Este grup no cont\u00e9 cap usuari/a.
++
++group_admin_create_user_button=Crea un nou usuari/a...
++
++cancel=Cancel\u00b7la
++
++group_admin_invalid_name=El nom del grup \u00e9s incorrecte!
++
++group_admin_invalid_id=L'identificador de grup \u00e9s incorrecte!
++
++group_admin_id_already_exists=Ja hi ha un altre grup amb el mateix identificador a la base de dades!
++
++group_admin_delete_group=Elimina el grup
++
++report_areyousure=Segur que voleu realitzar esta operaci\u00f3?
++
++YES=S\u00ed
++
++NOT=No
++
++group_admin_delete_group_explain=Esta operaci\u00f3 tamb\u00e9 eliminar\u00e0 de la base de dades a tots els usuaris d'este grup. Totes les seues dades es perdran.
++
++db_error=No s'ha pogut realitzar l'operaci\u00f3.
++
++group_admin_clear_group=Esborra els informes del grup
++
++group_admin_clear_group_explain=Esta operaci\u00f3 esborrar\u00e0 tots els informes de les activitats realitzades pels membres d'este grup entre les dates indicades.
++
++db_clear_reports_date=Esborra els informes
++
++user_admin_invalid_name=El nom d'usuari/a \u00e9s incorrecte.
++
++user_admin_invalid_id=L'identificador d'usuari/a \u00e9s incorrecte!
++
++user_admin_id_already_exists=Ja hi ha un altre usuari/a amb este identificador a la base de dades. Els noms es poden repetir (en diferents grups), per\u00f2 els identificadors han de ser \u00fanics.
++
++user_admin_user_deleted=L'usuari/a ha estat eliminat satisfact\u00f2riament de la base de dades.
++
++user_admin_id=Identificador:
++
++user_admin_name=Nom:
++
++user_admin_icon=Icona:
++
++user_admin_edit_button=Modifica...
++
++user_admin_delete_button=Elimina...
++
++user_admin_clear_button=Elimina informes...
++
++user_admin_delete_user=Elimina l'usuari/a
++
++user_admin_delete_user_explain=Esta operaci\u00f3 eliminar\u00e0 este/a usuari/a i els seus informes de la base de dades.
++
++user_admin_clear_user=Elimina els informes de l'usuari/a
++
++user_admin_clear_user_explain=Esta operaci\u00f3 eliminar\u00e0 els informes de les activitats realitzades per este/a usuari/a en el per\u00edode especificat.
++
++success=Operaci\u00f3 realitzada amb \u00e8xit
++
++bad_data=Dades incorrectes!
++
++db_admin_param_lap=Temps entre connexions (segons):
++
++jclic_reports=Informes JClic
++
++YES_SHORT=S
++
++NOT_SHORT=N
++
++user_admin_pw_prompt=Contrasenya:
++
++user_admin_pw_prompt_confirm=Confirmaci\u00f3 de la contrasenya:
++
++user_admin_err_bad_pw=Les contrasenyes no coincidixen!
+diff --git a/src/utilities/edu/xtec/resources/messages/BasicMessages_ca_ES_valencia.java b/src/utilities/edu/xtec/resources/messages/BasicMessages_ca_ES_valencia.java
+new file mode 100644
+index 0000000..b0066eb
+--- /dev/null
++++ b/src/utilities/edu/xtec/resources/messages/BasicMessages_ca_ES_valencia.java
+@@ -0,0 +1,4 @@
++package edu.xtec.resources.messages;
++
++public class BasicMessages_ca_ES_valencia {
++}
+diff --git a/src/utilities/edu/xtec/resources/messages/BasicMessages_ca_ES_valencia.properties b/src/utilities/edu/xtec/resources/messages/BasicMessages_ca_ES_valencia.properties
+new file mode 100644
+index 0000000..a0df9b1
+--- /dev/null
++++ b/src/utilities/edu/xtec/resources/messages/BasicMessages_ca_ES_valencia.properties
+@@ -0,0 +1,167 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++!=Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2008-06-30 12:04+0200\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset\=UTF-8\nContent-Transfer-Encoding: 8bit\n
++
++ERROR=ERROR
++
++OK=D'acord
++
++YES=S\u00ed
++
++NO=No
++
++DELETE=Elimina
++
++PASTE=Apega
++
++CUT=Retalla
++
++COPY=Copia
++
++FILE_SAVE=Guarda el fitxer
++
++CONFIRM=Confirma l'operaci\u00f3
++
++FILE_OPEN=Obri el fitxer
++
++FILE_ERR_BEG_DIR=La carpeta
++
++URL=URL:
++
++PASSWORD=Contrasenya:
++
++WARNING=Atenci\u00f3!
++
++FILE_NOT_READABLE=No es pot llegir!
++
++FILE_NOT_EXIST=No existix!
++
++FILE_READONLY=\u00c9s de nom\u00e9s lectura i no pot ser reempla\u00e7at.
++
++FILE_OVERWRITE_DIR_PROMPT=Voleu reempla\u00e7ar-la?
++
++FILE_OVERWRITE_PROMPT=Voleu reempla\u00e7ar-lo?
++
++FILE_EXISTS=ja es troba al vostre ordinador.
++
++FILE_DIR_BEG=La carpeta
++
++FILE_BEG=El fitxer
++
++UNNAMED=Sense nom
++
++FILE_ERR_READING=S'ha produ\u00eft un error en llegir el fitxer
++
++FILE_ERR_SAVING=S'ha produ\u00eft un error en guardar el fitxer
++
++FILE_FIND=Busca d'un fitxer
++
++FILE_ERR_READONLY=\u00e9s de nom\u00e9s lectura.
++
++FILE_ERR_EXISTS=ja existix. Voleu sobreescriure'l?
++
++FILE_ERR_UNREADABLE=no es pot llegir.
++
++FILE_ERR_BEG=El fitxer
++
++LOADING=carregant el programa...
++
++FALSE=fals
++
++CHECK_SIGNATURE_URL=messages/checksignature_ca.html
++
++URL_LAUNCH_ERROR=S'ha produ\u00eft un error en invocar l'URL!
++
++URL_ERROR=S'ha produ\u00eft un error en construir l'URL!
++
++QUESTION=Pregunta
++
++PASSWORD_INCORRECT=Contrasenya incorrecta!
++
++TRUE=cert
++
++CANCEL=Cancel\u00b7la
++
++FILE_ERR_DELETING=S'ha produ\u00eft un error en esborrar el fitxer
++
++URL_OPEN=Obri URL
++
++FILE_ERR_RESTORING=S'ha produ\u00eft un error en restaurar el fitxer
++
++WRITING_FILE=Escrivint fitxer...
++
++XML_ATTRIBUTE=Atribut
++
++XML_VALUE=Valor
++
++XML_NOT_EDITABLE=Este camp no es pot editar!
++
++XML_TEXT=text
++
++XML_NEW_ATTRIBUTE=Afegix un nou atribut
++
++WORKING=Treballant...
++
++LOADING_FILE=Llegint el fitxer
++
++XML_DEL_ATTRIBUTE=Suprimix l'atribut
++
++XML_ELEMENT=Element
++
++XML_NEW_ELEMENT=Nou element
++
++XML_DEL_ELEMENT=Elimina l'element
++
++XML_NAME=Nom
++
++RETRY=Torna a intentar-ho
++
++IGNORE=Ignora
++
++DATE_INCORRECT=Data incorrecta!
++
++BAD_NUMBER=Nombre incorrecte!
++
++NONE=Cap
++
++COPY_keys=CC
++
++CUT_keys=TX
++
++PASTE_keys=NV
++
++DELETE_keys=E\#127
++
++SELECT_ALL=Selecciona-ho tot
++
++SELECT_NONE=Desf\u00e9s la selecci\u00f3
++
++WIDTH=Ampl\u00e0ria:
++
++HEIGHT=Al\u00e7\u00e0ria:
++
++BROWSE_FILES=Busca el fitxer...
++
++VERSION=versi\u00f3
++
++ABOUT=Quant a...
++
++YES_TO_ALL=S\u00ed a tots
++
++NO_TO_ALL=No a tots
++
++SAVE=Guarda
++
++OPEN=Obri
++
++FILE_OPEN_TOOLTIP=Obri el fitxer seleccionat
++
++FILE_SAVE_TOOLTIP=Guarda el fitxer especificat
++
++SAVING=Guardant...
++
++SAVING_FILE=Guardant el fitxer
+diff --git a/src/utilities/edu/xtec/resources/messages/PersistentPathsMessages_ca_ES_valencia.properties b/src/utilities/edu/xtec/resources/messages/PersistentPathsMessages_ca_ES_valencia.properties
+new file mode 100644
+index 0000000..edd5d28
+--- /dev/null
++++ b/src/utilities/edu/xtec/resources/messages/PersistentPathsMessages_ca_ES_valencia.properties
+@@ -0,0 +1,13 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++#, fuzzy
++!=Project-Id-Version\: PACKAGE VERSION\nReport-Msgid-Bugs-To\: \nPOT-Creation-Date\: 2008-06-30 12\:04+0200\nPO-Revision-Date\: YEAR-MO-DA HO\:MI+ZONE\nLast-Translator\: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team\: LANGUAGE <LL@li.org>\nMIME-Version\: 1.0\nContent-Type\: text/plain; charset\=UTF-8\nContent-Transfer-Encoding\: 8bit\n
++
++cl_alert=Esteu utilitzant el programa \u00ab$\u00bb per primera vegada en este ordinador.\nPer favor, indiqueu la carpeta on desitgeu emmagatzemar els fitxers\nde configuraci\u00f3 i les dades del programa.
++
++cl_err_unableToCreateDir=S'ha produit un error en intentar crear la carpeta\! Per favor, indiqueu una ubicaci\u00f3 on tingueu drets d'administraci\u00f3.
++
++cl_prompt_title=Directori d'instal\u00b7laci\u00f3
+diff --git a/src/utilities/edu/xtec/resources/messages/checksignature_ca_ES_valencia.html b/src/utilities/edu/xtec/resources/messages/checksignature_ca_ES_valencia.html
+new file mode 100644
+index 0000000..7e59853
+--- /dev/null
++++ b/src/utilities/edu/xtec/resources/messages/checksignature_ca_ES_valencia.html
+@@ -0,0 +1,26 @@
++<html>
++<head>
++<title>Firma digital</title>
++</head>
++<body bgcolor="#eff7dd">
++<table width="100%" border="0" cellpadding="5" style="font-family: helvetica, sans-serif; font-size: 13;">
++<tr>
++<td><p style="color: maroon; font-size: 16;"><b>El motor Java no reconeix la firma digital d'esta aplicaci&oacute;!</b></p>
++<br>
++Per a executar este programa cal afegir el certificat de l'entitat &quot;clic&quot; a la llista de firmes reconegudes per la vostra m&agrave;quina virtual Java.
++<br>&nbsp;<br>
++Els usuaris de Windows poden afegir f&agrave;cilment este certificat baixant i executant este fitxer:
++<br>&nbsp;<br>
++<a
++href="http://clic.xtec.net/dist/java/instJClicCert.exe"><b>http://clic.xtec.net/dist/java/instJClicCert.exe</b></a> (65 kb)
++<br>&nbsp;<br>
++Per a altres sistemes operatius (Solaris, Linux i Mac OS-X) hi ha una explicaci&oacute; detallada dels passos a seguir a:
++<br>&nbsp;<br>
++<a href="http://clic.xtec.net/ca/support/instjava.htm"><b>http://clic.xtec.net/ca/support/instjava.htm</b></a>
++<br>&nbsp;<br>
++En ambd&oacute;s casos, reinicialitzeu totes les finestres dels navegadors i les aplicacions Java despr&eacute;s d'haver instal&middot;lat el certificat.
++</td>
++</tr>
++</table>
++</body>
++</html>
