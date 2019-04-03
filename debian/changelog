@@ -1,3 +1,9 @@
+jclic (0.3.2.10-lliurex13) bionic; urgency=high
+
+  * Cleaning old pre and postinst code
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 03 Apr 2019 15:45:21 +0200
+
 jclic (0.3.2.10-lliurex12) bionic; urgency=medium
 
   * Bionic release
