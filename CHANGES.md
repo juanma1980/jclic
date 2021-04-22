@@ -1,5 +1,20 @@
 ## Release notes for JClic (https://projectestac.github.io/jclic)
-=================================================================
+###Changes in 0.3.2.13 (Not yet released)
+---------------------------------------------------------------------------------------
+- Added support for Flatpak packaging, thanks to Ismael Olea (ismael@olea.org)
+
+###Changes in 0.3.2.12 (03-Mar-2020)
+---------------------------------------------------------------------------------------
+- Changed logos and references of the Catalan Ministry of Education "Departament d'Ensenyament" to "Departament d'Educació" (main sponsor of the JClic project)
+- Updated desktop files in .deb package
+
+###Changes in 0.3.2.11 (01-Apr-2019)
+---------------------------------------------------------------------------------------
+- Fixed a bug that caused the "animated" attribute of some GIF files to be lost when exporting to HTML5
+
+###New feature: Docker image for JClic Reports (18-Jan-2019)
+---------------------------------------------------------------------------------------
+- A docker image has been created for easy deployment of JClic Reports. See [dist/docker/reports/README.md](https://github.com/projectestac/jclic/tree/master/dist/docker/reports) for more information.
 
 ###Changes in 0.3.2.10 (05-Oct-2018)
 ---------------------------------------------------------------------------------------
@@ -12,7 +27,7 @@
 ---------------------------------------------------------------------------------------
 - Check ZIP file integrity when saving projects
 - Write license tags to `project.json` in HTML5 export
-- Enable 'level' in URL media type (opens in _BLANK)
+- Enable 'level' in URL media type (opens in __BLANK)
 - HTML5 export includes information about number of activities, media objects and size
 - Updated Catalan translation
 - Updated Java code formatting criteria
