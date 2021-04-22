@@ -1,3 +1,9 @@
+jclic (0.3.2.12-lliurex1) focal; urgency=medium
+
+  * First focal release
+
+ -- Juanma1980 <juanma1980@gmail.com>  Thu, 22 Apr 2021 17:13:17 +0200
+
 jclic (0.3.2.10-lliurex13) bionic; urgency=high
 
   * Cleaning old pre and postinst code
