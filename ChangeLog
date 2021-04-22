@@ -1,3 +1,29 @@
+2020-03-03  Francesc Busquets <fbusquets@xtec.cat>
+    *   CREDITS.txt
+    *   dist/jnlp: Updated JNLP files
+    *   dist/linux/applications/jclic.desktop
+    *   dist/linux/applications/jclicauthor.desktop
+    *   dist/linux/applications/jclicreports.desktop
+    *   dist/linux/debian/changelog
+    *   dist/linux/debian/control
+    *   dist/linux/debian/copyright
+    *   dist/linux/debian/jclic-reports.install
+    *   dist/linux/debian/jclic.install: Updated desktop icons
+    *   src/core/edu/xtec/resources/about/credits.html
+    *   src/core/edu/xtec/resources/about/gencat.png: Updated logos and references to the Catalan Ministry of Education
+    *   src/author/edu/xtec/resources/messages/AuthorMessages.properties
+    *   src/core/edu/xtec/resources/activities/listactivities.properties: Changed 'grid' to 'panel' in some contexts
+
+2019-04-01  Francesc Busquets <fbusquets@xtec.cat>
+    *   src/author/edu/xtec/jclic/project/ProjectFileUtils.java
+    *   src/core/edu/xtec/jclic/bags/MediaBagElement.java: Don't reset the 'animated' flag when exporting to HTML5
+    *   dist/jnlp: Updated JNLP files
+
+2019-01-18  Francesc Busquets <fbusquets@xtec.cat>
+    *   dist/docker/reports: Created docker image for JClic Reports, available in docker hub as: projectestac/jclic-reports
+    *   src/author/edu/xtec/jclic/AuthorSingleFrame.java: Log information about unknown activities when loading projects in JClic Author
+    *   dist/jnlp: Updated JNLP files
+
 2018-10-05  Francesc Busquets <fbusquets@xtec.cat>
     *   src/core/edu/xtec/jclic/Player.java: Check core components in delayed event handlers
     *   src/core/edu/xtec/jclic/fileSystem/FileSystem.java: Process HTTP redirects also when protocol changes (from HTTP to HTTPS)
