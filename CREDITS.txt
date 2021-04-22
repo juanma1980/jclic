@@ -14,7 +14,6 @@ Developers:
 With the support of:
    Sara Arjona
    Fernando Cuartero
-   Ismael Olea (Flatpak packaging)
    
 Community support:
    Monica Grau
