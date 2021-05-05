@@ -49,20 +49,22 @@ Subject: lliurex_add_valencian
          pane.setInitialSelectionValue(initialSelection);
          showDlg((Component) options.get(Options.MAIN_PARENT_COMPONENT), pane, "Language selecion");
          String sel = (String) pane.getInputValue();
-@@ -147,6 +153,12 @@
+@@ -147,6 +153,14 @@
  
    public void setLocale(String language, String country, String variant) {
      Locale l;
-+	if (language.contains("val"))
-+	{
-+		language="ca";
-+		country="ES";
-+		variant="valencia";
++    if (language != null) {
++		if (language.contains("val"))
++		{
++			language="ca";
++			country="ES";
++			variant="valencia";
++		}
 +	}
      if (country == null) {
        country = "";
      }
-@@ -677,6 +689,7 @@
+@@ -677,6 +691,7 @@
    static {
      ISO_639_2_CODES.put("ast", "asturianu");
      ISO_639_2_CODES.put("vec", "vèneto");
