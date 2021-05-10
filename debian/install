@@ -1,7 +1,7 @@
 build/*.jar usr/share/java
-*.desktop usr/share/applications
+jclicauthor.desktop  usr/share/applications
+jclic.desktop  usr/share/applications
 jclic usr/bin
 jclicauthor usr/bin
-jclicreports usr/bin
 dist/jclic/icons/jclic.png usr/share/pixmaps
 dist/linux/bin/jclic-libmanager usr/bin
