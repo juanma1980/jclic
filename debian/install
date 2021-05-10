@@ -1,4 +1,5 @@
-build/*.jar usr/share/java
+build/jclic.jar  usr/share/java
+build/jclicauthor.jar  usr/share/java
 jclicauthor.desktop  usr/share/applications
 jclic.desktop  usr/share/applications
 jclic usr/bin
