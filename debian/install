@@ -6,4 +6,5 @@ jclic usr/bin
 jclicauthor usr/bin
 jclicdesktop usr/bin
 dist/jclic/icons/jclic.png usr/share/pixmaps
+dist/jclic/icons/jclicauthor.png usr/share/pixmaps
 dist/linux/bin/jclic-libmanager usr/bin
